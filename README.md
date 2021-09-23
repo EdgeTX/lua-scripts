@@ -4,4 +4,4 @@ The goal for this repo is to have a central place to share example Lua scripts, 
 
 List of Lua-scripts:
 
-* [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript) (currently for Horus-class radios, use [rotorman's fork](https://github.com/rotorman/FrskyTelemetryScript/tree/dev/HORUS/SOURCES/SRC) instead, that has EdgeTX color fixes, and also support for [OlliW MavSDK](http://www.olliw.eu/2020/olliwtelem/) ([EdgeTX PR #150](https://github.com/EdgeTX/edgetx/pull/150)))
+* [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript) (currently for color screen radios, use [rotorman's fork](https://github.com/rotorman/FrskyTelemetryScript/tree/dev/HORUS/SOURCES/SRC) instead, that has EdgeTX color fixes, and also support for [OlliW MavSDK](http://www.olliw.eu/2020/olliwtelem/) ([EdgeTX PR #150](https://github.com/EdgeTX/edgetx/pull/150)))
