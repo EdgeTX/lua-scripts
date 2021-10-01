@@ -32,7 +32,7 @@ Scripts to complement the Multi Protocol Module, such as allowing you to configu
 * [Betaflight LUA Script](https://github.com/betaflight/betaflight-tx-lua-scripts) - Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.<br/>
 <img src="https://oscarliang.com/ctt/uploads/2021/07/betaflight-lua-script-config-home-menu-screen-options.jpg" width="250"></a>
 
-* [Inav-EdgeTX-OpenTX-Telemetry-Widget](https://github.com/stronnag/inav-EdgeTX-OpenTX-Telemetry-Widget) - INAV Lua script show you telementry and flight status information. Supports radios with color and black and white screens.
+* [INAV Lua Telemetry Flight Status](https://github.com/iNavFlight/OpenTX-Telemetry-Widget) - INAV Lua script show you telementry and flight status information. Supports radios with color and black and white screens.
 <br/><img  src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavHorus.png" width="250"></a>
 <img src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavQX7.png" width="128"></a>
 
