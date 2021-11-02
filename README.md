@@ -38,4 +38,9 @@ Scripts to complement the Multi Protocol Module, such as allowing you to configu
 <img src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavQX7.png" width="128"></a>
 
 * [FM2M ToolBox](http://fm2m.jimb40.com/ToolBox.html) - FM2M ToolBox is a feature rich toolbox that provides a dashboard, telemetry info, alerts and much more.<br/>
-<img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-db-212x64.png"> <img src="http://fm2m.jimb40.com/assets/images/config02-212x64.png"> <img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-newfeature-212x64.png">
+<img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-db-212x64.png"></a>
+<img src="http://fm2m.jimb40.com/assets/images/config02-212x64.png"></a>
+<img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-newfeature-212x64.png"></a>
+
+* [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx) - LUA configurator for numerous TBS products<br/><img src="http://fm2m.jimb40.com/assets/images/tbs-agent-lite-480x272.png" width="250"></a>
+
