@@ -3,9 +3,9 @@
 The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them. 
 
 List of Lua-scripts:
-* [ExpressLRS](https://www.expresslrs.org/1.0/quick-start/tx-prep/#lua-script) - LUA configurator for ExpressLRS hardware<br/>
-<img src="https://www.expresslrs.org/1.0/assets/images/lua2.jpg" width="250"></a>
-<img src="https://www.expresslrs.org/1.0/assets/images/lua1.jpg" width="250"></a>
+* [ExpressLRS](https://www.expresslrs.org/2.0/quick-start/tx-prep/#lua-script) - LUA configurator for ExpressLRS hardware<br/>
+<img src="https://www.expresslrs.org/2.0/assets/images/lua2.jpg" width="250"></a>
+<img src="https://www.expresslrs.org/2.0/assets/images/lua1.jpg" width="250"></a>
 
 * [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript) - ArduPilot LUA telemetry script for color and B&W
 <br/>For color screen radios, use [rotorman's fork](https://github.com/rotorman/FrskyTelemetryScript/tree/dev/HORUS/SOURCES/SRC) instead, which has EdgeTX color fixes, and support for [OlliW MavSDK](http://www.olliw.eu/2020/olliwtelem/) ([EdgeTX PR #150](https://github.com/EdgeTX/edgetx/pull/150))<br/>
