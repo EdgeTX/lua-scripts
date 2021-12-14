@@ -3,7 +3,7 @@
 The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them. 
 
 List of Lua-scripts:
-* [ExpressLRS](https://www.expresslrs.org/2.0/quick-start/tx-prep/#lua-script) - LUA configurator for ExpressLRS hardware<br/>
+* [ExpressLRS](https://www.expresslrs.org/2.0/quick-start/lua-howto/) - LUA configurator for ExpressLRS hardware<br/>
 <img src="https://www.expresslrs.org/2.0/assets/images/lua2.jpg" width="250"></a>
 <img src="https://www.expresslrs.org/2.0/assets/images/lua1.jpg" width="250"></a>
 
