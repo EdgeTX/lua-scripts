@@ -1,0 +1,34 @@
+[
+    {
+        "name": "TBS Agent Lite",
+        "description": "Configure TBS products using only your radio.",
+        "filename": "https://www.team-blacksheep.com/tbs-agent-lite.zip",
+        "infourl": "https://www.team-blacksheep.com/products/prod:agentx",
+        "default": false,
+        "official": false
+    },
+    {
+        "name": "ExpressLRS Lua V2",
+        "description": "Configure ExpressLRS Modules and Receivers running v2 firmware.",
+        "filename": "https://raw.githubusercontent.com/ExpressLRS/ExpressLRS/master/src/lua/elrsV2.lua",
+        "infourl": "https://www.expresslrs.org/2.0/quick-start/lua-howto/",
+        "default": false,
+        "official": false
+    },
+    {
+        "name": "Multi-Module Lua Scripts",
+        "description": "Configure Internal or External Multiprotocol modules.",
+        "filename": "https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/releases/download/v1.3.3.0/MultiLuaScripts.zip",
+        "infourl": "https://github.com/pascallanger/DIY-Multiprotocol-TX-Module",
+        "default": true,
+        "official": false
+    },
+    {
+        "name": "Betaflight Lua Scripts",
+        "description": "Configure PIDs, Rates, and more on your Betaflight quad.",
+        "filename": "https://github.com/betaflight/betaflight-tx-lua-scripts/releases/download/1.5.0/betaflight-tx-lua-scripts_1.5.0.zip",
+        "infourl": "https://github.com/betaflight/betaflight-tx-lua-scripts",
+        "default": false,
+        "official": false
+    }
+]
