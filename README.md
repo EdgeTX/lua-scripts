@@ -1,6 +1,6 @@
 # Lua-scripts
 
-The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them. 
+The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them.
 
 List of Lua-scripts:
 ## [ExpressLRS](https://www.expresslrs.org/2.0/quick-start/lua-howto/)
@@ -28,7 +28,7 @@ GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from
 Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.</br>
 <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png" width="250"></a>
 <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905913-151-screenshot_tx16s_21-04-25_20-19-25.png" width="250"></a>
-          
+
 ## [Multi Protocol Module](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
 Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
 <img src="https://camo.githubusercontent.com/dfaff56a2701fde5d8b70af711536a7f59234ab0dc600f8f7a67661ff6cef215/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250"></a>
@@ -45,10 +45,10 @@ Shows you telementry and flight status information. Supports radios with color a
 <img src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavQX7.png" width="128"></a>
 
 ## [FM2M ToolBox](http://fm2m.jimb40.com/ToolBox.html)
-A feature rich toolbox that provides a dashboard, telemetry info, alerts and much more.<br/>
-<img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-db-212x64.png"></a>
-<img src="http://fm2m.jimb40.com/assets/images/config02-212x64.png"></a>
-<img src="http://fm2m.jimb40.com/assets/images/fm2m-toolboxbw-newfeature-212x64.png"></a>
+Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links,  custom alerts , VTx info and much more. Supports radios with color and black and white screens.<br/>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_db.png" width="250"></a>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_cfg.png" width="250"></a>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_vtx.png" width="250"></a>
 
 ## [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx)
 LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<br/>
