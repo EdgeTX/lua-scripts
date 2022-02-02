@@ -46,9 +46,9 @@ Shows you telementry and flight status information. Supports radios with color a
 
 ## [FM2M ToolBox](http://fm2m.jimb40.com/ToolBox.html)
 Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links,  custom alerts , VTx info and much more. Supports radios with color and black and white screens.<br/>
-<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_db.png"></a>
-<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_cfg.png"></a>
-<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_vtx.png"></a>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_db.png" width="250"></a>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_cfg.png" width="250"></a>
+<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_vtx.png" width="250"></a>
 
 ## [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx)
 LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<br/>
