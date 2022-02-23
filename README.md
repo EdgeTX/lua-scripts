@@ -20,7 +20,7 @@ Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV
 <br/><img src="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" width="250"></a>
 
 ## [GPS widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
-GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file, and has a log viewer so you don't have to worry about losing the coordinates if you turn the transmitter off.  Use [pfeerick's fork](https://github.com/pfeerick/OpenTX_GPS_Telemetry/tree/otx-etx-color-support) instead, which fixes some issues with EdgeTX color themes.</br>
+GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file, and has a log viewer so you don't have to worry about losing the coordinates if you turn the transmitter off.</br>
 <img src="https://raw.githubusercontent.com/moschotto/OpenTX_GPS_Telemetry/main/media/description.png" width="250"></a>
 <img src="https://github.com/moschotto/OpenTX_GPS_Telemetry/blob/main/media/x9_GPS_screen.PNG" width="350"></a>
 
