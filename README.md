@@ -53,3 +53,7 @@ Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dash
 ## [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx)
 LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<br/>
 <img src="http://fm2m.jimb40.com/assets/images/tbs-agent-lite-480x272.png" width="250"></a>
+
+## [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
+ShowItAll displays various information in a single pane.<br/>
+<img src="https://rc-soar.com/opentx/lua/showitall/sia.png" width="250"></a>
