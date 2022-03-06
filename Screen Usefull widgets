@@ -1,0 +1,4 @@
+XTotcels you can see Battery cells values and main baterry value from frsky lipo sensosr.
+XCeles show in screen Minum cell value and RSSI value whit the lower value of both (Can use Cel- , VFAS-, RxBt- you can change in lua script)
+XRssi Show 3 bars with actual value in left side, maxium value in screen middle and minium value at right side of screen  
+XGpsvals Show Ground Speed and Airspeed sensors also with minium values at bottom screen 
