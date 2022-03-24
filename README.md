@@ -24,6 +24,14 @@ GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from
 <img src="https://raw.githubusercontent.com/moschotto/OpenTX_GPS_Telemetry/main/media/description.png" width="250"></a>
 <img src="https://github.com/moschotto/OpenTX_GPS_Telemetry/blob/main/media/x9_GPS_screen.PNG" width="350"></a>
 
+## [GPS Plus Code, Home Arrow and AvgBatt widgets](https://github.com/kristjanbjarni/opentx-widgets)
+Collection of Colorlcd & B&W widgets. 
+For colorlcd includes GPS lat/long and Google Plus code widget, Home direction/distance widget, and average battery voltage widget.
+For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
+<img src="https://github.com/kristjanbjarni/opentx-widgets/blob/main/docs/images/GPS.png" width="250"></a>
+<img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/AvgBatt.png" width="250"></a>
+<img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/home_taranis.png" width="250"></a>
+
 ## [Switch2 widget](https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793)
 Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.</br>
 <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png" width="250"></a>
