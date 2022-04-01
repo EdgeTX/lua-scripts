@@ -59,7 +59,7 @@ Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dash
 <img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_vtx.png" width="250"></a>
 
 ## [FM2M Widgets Pack](http://fm2m.jimb40.com/download.html)
-Standard EdgeTX widgets replacements for Model, Timer, Channels and Analog Clock widgets.<br/>
+Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
 <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-155327-480x272.png" width="250"></a>
 <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-132700-480x272.png" width="250"></a>
 <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-155436-480x272.png" width="250"></a>
