@@ -68,7 +68,8 @@ Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
 
 ## [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx)
 LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<br/>
-<img src="http://fm2m.jimb40.com/assets/images/tbs-agent-lite-480x272.png" width="250"></a>
+<img src="https://www.team-blacksheep.com/img/gallery/conIkNCQ.jpg" width="250"></a>
+<img src="https://www.team-blacksheep.com/img/gallery/scressen-2022-02-23-181848.jpg" width="250"></a>
 
 ## [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
 ShowItAll displays various information in a single pane.<br/>
