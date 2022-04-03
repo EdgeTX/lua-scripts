@@ -10,7 +10,7 @@ LUA configurator for ExpressLRS hardware<br/>
 
 ## [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript)
 ArduPilot LUA telemetry script for color and B&W. For color screen radios, use [Yaapu's development branch](https://github.com/yaapu/FrskyTelemetryScript/tree/dev) instead, which has EdgeTX color fixes (these are expected to be available from 1.9.6 release of Yaapu LUA telemetry widget).<br/>
-<a href="https://github.com/yaapu/FrskyTelemetryScript/raw/master/HORUS/IMAGES/x10.png" target="_blank" title="Click for larger version"><img src="https://github.com/yaapu/FrskyTelemetryScript/raw/master/HORUS/IMAGES/x10.png" width="250"></a>
+<a href="https://user-images.githubusercontent.com/30294218/135524984-f732af4a-490b-4ce2-b4dc-9c8bfe1f6d4c.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/135524984-f732af4a-490b-4ce2-b4dc-9c8bfe1f6d4c.png" width="250"></a>
 <img src="https://raw.githubusercontent.com/yaapu/FrskyTelemetryScript/master/TARANIS/IMAGES/x9d.png" width="212"></a>
 <img src="https://raw.githubusercontent.com/yaapu/FrskyTelemetryScript/master/TARANIS/IMAGES/x7.png" width="128"></a>
 
