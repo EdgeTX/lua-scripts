@@ -74,3 +74,8 @@ LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<b
 ## [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
 ShowItAll displays various information in a single pane.<br/>
 <img src="https://rc-soar.com/opentx/lua/showitall/sia.png" width="250"></a>
+
+## [vu fullscreen image viewer widget for big screens](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
+View fullscreen images with layouted information or photos, cycle through them and have quick access to your favourite one.<br/>
+<img src="https://www.schleth.com/wp-content/uploads/vu-screen1.jpg"  width="250"></a>
+<img src="https://www.schleth.com/wp-content/uploads/vu-screen2.jpg"  width="250"></a>
