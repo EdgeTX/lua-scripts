@@ -79,3 +79,10 @@ ShowItAll displays various information in a single pane.<br/>
 View fullscreen images with layout information or photos, cycle through them and have quick access to your favourite one.<br/>
 <img src="https://www.schleth.com/wp-content/uploads/vu-screen1.jpg"  width="250"></a>
 <img src="https://www.schleth.com/wp-content/uploads/vu-screen2.jpg"  width="250"></a>
+
+## [EdgeTX Goodies](https://github.com/MadMonkey87/EdgeTX-Goodies)
+Some widgets, themes and other scripts for EdgeTX<br/>
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-49-59.png"  width="250"></a>
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-52-08.png"  width="250"></a>
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-07_10-35-43.png"  width="250"></a>
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-00.png"  width="250"></a>
