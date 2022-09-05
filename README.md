@@ -8,10 +8,8 @@ LUA configurator for ExpressLRS hardware<br/>
 <img src="https://www.expresslrs.org/2.0/assets/images/lua3.jpg" width="250"></a>
 <img src="https://www.expresslrs.org/2.0/assets/images/lua/config-bw.png" width="250"></a>
 
-widget to display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.
-
+### [ExpressLRS Telemetry Widget](https://github.com/ExpressLRS/ElrsTelemWidget) to display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.
 <img src="https://raw.githubusercontent.com/ExpressLRS/ElrsTelemWidget/main/docs/images/screen-2-1.png" width="250"></a>
-
 
 ## [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript)
 ArduPilot LUA telemetry script for color and B&W. For color screen radios, use [Yaapu's development branch](https://github.com/yaapu/FrskyTelemetryScript/tree/dev) instead, which has EdgeTX color fixes (these are expected to be available from 1.9.6 release of Yaapu LUA telemetry widget).<br/>
