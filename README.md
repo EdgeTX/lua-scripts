@@ -3,10 +3,10 @@
 The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them.
 
 List of Lua-scripts:
-## [ExpressLRS](https://www.expresslrs.org/2.0/quick-start/transmitters/lua-howto/)
+## [ExpressLRS](https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/)
 LUA configurator for ExpressLRS hardware<br/>
-<img src="https://www.expresslrs.org/2.0/assets/images/lua3.jpg" width="250"></a>
-<img src="https://www.expresslrs.org/2.0/assets/images/lua/config-bw.png" width="250"></a>
+<img src="https://www.expresslrs.org/3.0/assets/images/lua3.jpg" width="250"></a>
+<img src="https://www.expresslrs.org/3.0/assets/images/lua/config-bw.png" width="250"></a>
 
 ### [ExpressLRS Telemetry Widget](https://github.com/ExpressLRS/ElrsTelemWidget) 
 Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.
