@@ -92,3 +92,18 @@ Some widgets, themes and other scripts for EdgeTX<br/>
 <img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-52-08.png"  width="250"></a>
 <img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-07_10-35-43.png"  width="250"></a>
 <img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-00.png"  width="250"></a>
+
+## [EdgeTx Log Viewer](https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer)
+The **_LogViewer_** read and present up to 4 columns from a log file.<br/>
+
+<img src="https://user-images.githubusercontent.com/7026911/193409795-38f96602-be4c-4395-95a3-c46852767fae.png" width="400"></a>
+
+###### Selecting files & columns
+<img src="https://user-images.githubusercontent.com/7026911/193409667-75e314ab-06cb-4136-a18f-88647755c755.png" width="200"></a>
+<img src="https://user-images.githubusercontent.com/7026911/193409686-4fff1c25-229a-419e-8a2a-e64e703a4fc2.png" width="200"></a>
+<img src="https://user-images.githubusercontent.com/7026911/193409707-1020eebe-f2af-4d83-b0a9-a138aad4aca3.png" width="200"></a>
+<img src="https://user-images.githubusercontent.com/7026911/193409719-bd1b2f27-ad19-452b-b042-bba85822a5c1.png" width="200"></a>
+
+###### Viewing the data
+<img src="https://user-images.githubusercontent.com/7026911/193409739-346562ec-468c-431b-8e8c-8d23222de9a7.png" width="200"></a>
+
