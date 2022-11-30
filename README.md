@@ -44,8 +44,10 @@ For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
     <img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/home_taranis.png" width="250">
 </a>
 
-## [Switch2 widget](https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793)
+## [Switch2 widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
 Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.</br>
+Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config), [RCGroups](https://www.rcgroups.com/forums/showpost.php?p=50176699&postcount=4012)
+
 <a href="https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793">
     <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png" width="250">
     <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905913-151-screenshot_tx16s_21-04-25_20-19-25.png" width="250">
