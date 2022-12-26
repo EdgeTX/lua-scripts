@@ -139,3 +139,12 @@ The **_LogViewer_** read and present up to 4 columns from a log file.<br/>
     <img src="https://user-images.githubusercontent.com/7026911/193409707-1020eebe-f2af-4d83-b0a9-a138aad4aca3.png" width="200">
     <img src="https://user-images.githubusercontent.com/7026911/193409719-bd1b2f27-ad19-452b-b042-bba85822a5c1.png" width="200">
 </a>
+
+## [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
+Displays various battery related data.<br/>
+<a href="https://github.com/fdm225/mahRe2/blob/main/README.md">
+    <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
+    <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
+    <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
+    <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
+</a>
