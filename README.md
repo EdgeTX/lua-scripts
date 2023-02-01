@@ -13,7 +13,7 @@ LUA configurator for ExpressLRS hardware<br/>
 </a>
 
 ### [ExpressLRS Telemetry Widget](https://github.com/ExpressLRS/ElrsTelemWidget) 
-Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.
+Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.<br\>
 <a href="https://github.com/ExpressLRS/ElrsTelemWidget"> 
     <img src="https://raw.githubusercontent.com/ExpressLRS/ElrsTelemWidget/main/docs/images/screen-2-1.png" width="250">
 </a>
@@ -25,10 +25,9 @@ ArduPilot LUA telemetry script for color and B&W.<br/>
 <a href="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" width="212"></a>
 <a href="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" width="128"></a>
 
-## [Yaapu Horus Mapping Widget for iNAV/Betaflight](https://github.com/yaapu/HorusMappingWidget)
-Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV, Betaflight, Crossfire and whatever FC or firmware that can send GPS info to OpenTX.
-<br/>Presently use [rotorman's fork](https://github.com/rotorman/HorusMappingWidget/tree/etx-colors/HORUS/SOURCES/SRC) instead, which has EdgeTX color fixes.
-<br/><img src="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" width="250"></a>
+## [Yaapu Horus Mapping Widget](https://github.com/yaapu/HorusMappingWidget)
+Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV, Betaflight, Crossfire and whatever FC or firmware that can send GPS info to EdgeTX.<br/>
+<a href="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" width="250"></a>
 
 ## [GPS widget](https://github.com/moschotto/OpenTX_GPS_Telemetry)
 GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file, and has a log viewer so you don't have to worry about losing the coordinates if you turn the transmitter off.</br>
