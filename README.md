@@ -19,10 +19,11 @@ Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav fli
 </a>
 
 ## [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript)
-ArduPilot LUA telemetry script for color and B&W. For color screen radios, use [Yaapu's development branch](https://github.com/yaapu/FrskyTelemetryScript/tree/dev) instead, which has EdgeTX color fixes (these are expected to be available from 1.9.6 release of Yaapu LUA telemetry widget).<br/>
-<a href="https://user-images.githubusercontent.com/30294218/135524984-f732af4a-490b-4ce2-b4dc-9c8bfe1f6d4c.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/135524984-f732af4a-490b-4ce2-b4dc-9c8bfe1f6d4c.png" width="250"></a>
-<img src="https://raw.githubusercontent.com/yaapu/FrskyTelemetryScript/master/TARANIS/IMAGES/x9d.png" width="212"></a>
-<img src="https://raw.githubusercontent.com/yaapu/FrskyTelemetryScript/master/TARANIS/IMAGES/x7.png" width="128"></a>
+ArduPilot LUA telemetry script for color and B&W.<br/>
+<a href="https://user-images.githubusercontent.com/30294218/198382377-cb48032f-ea5c-4f8d-aa12-f592c1e09358.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/198382377-cb48032f-ea5c-4f8d-aa12-f592c1e09358.png" width="250"></a>
+<a href="https://user-images.githubusercontent.com/30294218/216000387-f330a204-b674-48ea-bdaf-64ec33871eb2.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/216000387-f330a204-b674-48ea-bdaf-64ec33871eb2.png" width="150"></a>
+<a href="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" width="212"></a>
+<a href="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" target="_blank" title="Click for larger version"><img src="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" width="128"></a>
 
 ## [Yaapu Horus Mapping Widget for iNAV/Betaflight](https://github.com/yaapu/HorusMappingWidget)
 Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV, Betaflight, Crossfire and whatever FC or firmware that can send GPS info to OpenTX.
