@@ -13,7 +13,7 @@ LUA configurator for ExpressLRS hardware<br/>
 </a>
 
 ### [ExpressLRS Telemetry Widget](https://github.com/ExpressLRS/ElrsTelemWidget) 
-Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.<br\>
+Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.<br/>
 <a href="https://github.com/ExpressLRS/ElrsTelemWidget"> 
     <img src="https://raw.githubusercontent.com/ExpressLRS/ElrsTelemWidget/main/docs/images/screen-2-1.png" width="250">
 </a>
