@@ -148,3 +148,9 @@ Displays various battery related data.<br/>
     <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
     <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
 </a>
+
+## [EdgeTX Quad telemetry dashboard](https://github.com/mvaldesshc/advanced-edgetx-dashboard)
+Advanced lua-based dashboard for the EdgeTX Monochrome LCD Transmitters.<br/>
+<a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
+    <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif">
+</a>
