@@ -8,8 +8,8 @@ List of Lua-scripts:
 ## [ExpressLRS](https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/)
 LUA configurator for ExpressLRS hardware<br/>
 <a href="https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/">
-    <img src="https://www.expresslrs.org/3.0/assets/images/lua3.jpg" width="250">
-    <img src="https://www.expresslrs.org/3.0/assets/images/lua/config-bw.png" width="250">
+    <img src="https://www.expresslrs.org/assets/images/lua3.jpg" width="250">
+    <img src="https://www.expresslrs.org/assets/images/lua/config-bw.png" width="250">
 </a>
 
 ### [ExpressLRS Telemetry Widget](https://github.com/ExpressLRS/ElrsTelemWidget) 
