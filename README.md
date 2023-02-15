@@ -150,7 +150,7 @@ Displays various battery related data.<br/>
 </a>
 
 ## [EdgeTX Quad telemetry dashboard](https://github.com/mvaldesshc/advanced-edgetx-dashboard)
-Advanced lua-based dashboard for the EdgeTX Monochrome LCD Transmitters.<br/>
+LUA-based dashboard (only for black-and-white display radios).<br/>
 <a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
     <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif">
 </a>
