@@ -154,3 +154,10 @@ LUA-based dashboard (only for black-and-white display radios).<br/>
 <a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
     <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif">
 </a>
+
+## [TSwitch Widget](https://github.com/Ziege-One/TSwitch)
+Widget for color screen radios that allows touch buttons via logical switches (in German).<br/>
+<a href="https://github.com/Ziege-One/TSwitch">
+    <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
+    <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
+</a>
