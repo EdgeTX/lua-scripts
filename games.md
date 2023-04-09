@@ -14,8 +14,8 @@
 ![](https://raw.githubusercontent.com/alexeystn/lua-fpv-sim/master/images/scr3.png)
 
 ## [GaLuaxian](https://github.com/timmalahov/galuaxian)
-![](https://user-images.githubusercontent.com/61071739/209030311-f39def84-f7fe-4f33-b1ae-4bf86ad3efd6.png)
-![](https://user-images.githubusercontent.com/61071739/209030304-fdbe57f4-a00b-4b88-865b-a8810ada9dd1.png)
+![](https://user-images.githubusercontent.com/61071739/210536027-88f94be0-f7e7-4a4c-a8d7-34821bd01494.jpeg)
+![](https://user-images.githubusercontent.com/61071739/210536020-fd2888df-b61d-4dfa-be3f-279537ed3778.jpeg)
 
 ![](https://user-images.githubusercontent.com/61071739/209031393-089fd118-8d46-4912-9b01-c5c66882268e.png)
 ![](https://user-images.githubusercontent.com/61071739/209030458-455f44ae-3d48-488b-9f82-07bc89121f5c.png)
