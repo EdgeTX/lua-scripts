@@ -63,6 +63,26 @@ Scripts to complement the Multi Protocol Module, such as allowing you to configu
     <img src="https://camo.githubusercontent.com/86dd3c9e3976aa9224378573bdddd163db07b062964a925399fff2e41eba154a/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f736a49614477356a396e452f302e6a7067" width="250">
 </a>
 
+## [Spektrum DSM Tools](https://github.com/frankiearzu/DSMTools)
+Scripts to use with Spektrum Receivers. It has easy to install zip files versions of:
+- DSM Forward Programming (In collaboration with Multi-Module)
+- Spektrum Telemetry Scripts, Including TextGen for AVIAN ESC programming. Will become telemetry widgets in the future.
+    - Smart RXs (AR631,AR637, etc)
+    - Blade Heli helpers (AR636 based)
+- Interim EdgeTX Firmware with latest (but tested) changes for Spektrum Sensors and TextGen  (Official EdgeTx 2.8.1 + only Spektrum Telemetry changes). This change will be included in EdgeTx 2.9.0
+</br></br>
+<a href="https://github.com/frankiearzu/DSMTools">
+<img src="https://user-images.githubusercontent.com/32604366/230751340-dd118f36-1884-405b-b12b-81cba16c7321.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751281-0c71ff4a-179f-41fd-9290-302a6e0fe821.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751350-59070e75-afa3-439b-8902-bc7b3b901084.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751370-b4e4355f-a3d2-4c44-aa1a-57861f1ff3da.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230123260-614f4e5e-9546-4439-9196-db885894083f.jpg" width="250"/>
+<br>
+<img src="https://user-images.githubusercontent.com/32604366/230751833-e92d3eae-2782-4009-a3dc-63ce893f2a38.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751488-70b396b7-f08e-4152-a516-d355b3cf4001.png" width="250"/>
+</a>
+
+
 ## [Betaflight LUA Script](https://github.com/betaflight/betaflight-tx-lua-scripts)
 The Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.<br/>
 <a href="https://github.com/betaflight/betaflight-tx-lua-scripts">
