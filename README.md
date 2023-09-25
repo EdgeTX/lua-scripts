@@ -197,7 +197,7 @@ Nice presentation of log file on the field<br>
 no computer needed for logs anymore.
 
 <a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer"> 
-    <img src="https://user-images.githubusercontent.com/7026911/193412100-5cdb3b51-1e33-4eaa-94cd-6ca07aede43b.gif" width="600">
+    <img src="https://user-images.githubusercontent.com/7026911/193412100-5cdb3b51-1e33-4eaa-94cd-6ca07aede43b.gif" width="480">
 </a>
 
 ###### Selecting files & columns
