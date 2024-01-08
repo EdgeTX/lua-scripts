@@ -235,3 +235,16 @@ Widget for color screen radios that allows touch buttons via logical switches (i
     <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
     <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
 </a>
+
+## [Lap Timer](https://github.com/RadioMasterRC/EdgeTX-LapTimer)
+Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
+<a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-1.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-2.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-3.bmp" height="128px"/>
+  <br>
+  <br>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-4.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-5.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-6.bmp" height="128px"/>
+</a>
