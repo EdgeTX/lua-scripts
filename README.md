@@ -86,9 +86,9 @@ Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=
 ## [Multi Protocol Module Tools](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
 Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
 <a href="https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts">
-    <img src="https://camo.githubusercontent.com/dfaff56a2701fde5d8b70af711536a7f59234ab0dc600f8f7a67661ff6cef215/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250">
-    <img src="https://camo.githubusercontent.com/d1197777b39f854c1c87a3a3220f03ea750bf095b49b90c61fe0ede65a124d80/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c353861795875657779412f302e6a7067" width="250">
-    <img src="https://camo.githubusercontent.com/86dd3c9e3976aa9224378573bdddd163db07b062964a925399fff2e41eba154a/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f736a49614477356a396e452f302e6a7067" width="250">
+    <img src="https://camo.githubusercontent.com/85db5f399440dee68d8d95ae994aab3f2fbb99d511c97326c0b976f23d17c170/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250">
+    <img src="https://camo.githubusercontent.com/51e5b6cae5631eb356e65d9ce5a344bcbb3348196da330f1612a2f560154cf65/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c353861795875657779412f302e6a7067" width="250">
+    <img src="https://camo.githubusercontent.com/f0fb3d2234f8cac646b44e9c253c9d6ac7d0f648edb2b36c4b49ab6d94f75190/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6536393870517866762d412f302e6a7067" width="250">
 </a>
 <br/>
 
