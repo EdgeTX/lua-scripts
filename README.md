@@ -248,3 +248,20 @@ Advanced lap timer script using as little controls as possible. It stores race a
   <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-5.bmp" height="128px"/>
   <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-6.bmp" height="128px"/>
 </a>
+
+## [F3A Caller](https://github.com/jrwieland/F3A)
+Caller for practicing F3A pattern - Updated to 2024 Season<br/>
+<a href="https://github.com/jrwieland/F3A">
+<img src="https://github.com/jrwieland/F3A/blob/main/Screenshots/p-21.png">
+<img src="https://github.com/jrwieland/F3A/blob/main/Screenshots/f25.png">
+</a>
+
+## [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x)
+Enhanced music player for OpenTX & EdgeTX radios Multiple Playlists allow you to listen to your music while flying Your RC<br/>
+<a href="https://github.com/jrwieland/TaraniTunes-v4.x">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Color%20Screen%20Widget/Screenshots3/Features.png" width="500">
+<br>
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Color%20Screen%20Widget/Screenshots3/Colorscreen.PNG" width="300">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Screenshots/TaraniTunesQX7.PNG" width="300">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Screenshots/Customize.PNG" width="300">
+</a>
