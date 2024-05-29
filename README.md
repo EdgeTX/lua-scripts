@@ -267,7 +267,9 @@ Enhanced music player for OpenTX & EdgeTX radios Multiple Playlists allow you to
 </a>
 
 ## [GPS QR Code generator](https://github.com/alufers/edgetx-gps-qrcode)
-Generates a QR code of last GPS coordinates received<br/>
+Generates a QR code of last GPS coordinates received (for black-and-white screen radios)<br/>
 <a href="https://github.com/alufers/edgetx-gps-qrcode">
 <img src="https://raw.githubusercontent.com/alufers/edgetx-gps-qrcode/master/docs/sim-screenshot.png" width="500">
+<br>
+<img src="https://raw.githubusercontent.com/alufers/edgetx-gps-qrcode/master/docs/x9dp-screenshot.png" width="500">
 </a>
