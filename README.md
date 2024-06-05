@@ -273,3 +273,10 @@ Generates a QR code of last GPS coordinates received (for black-and-white screen
 <br>
 <img src="https://raw.githubusercontent.com/alufers/edgetx-gps-qrcode/master/docs/x9dp-screenshot.png" width="500">
 </a>
+
+## [Battery Percentage and mAh Used](https://github.com/jrwieland/Battery-mAh)
+Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on battery voltage from 'Cels' sensor (FLVSS)<br/>
+<a href="https://github.com/jrwieland/Battery-mAh">
+<img src="https://github.com/jrwieland/Battery-mAh/blob/main/Screenshots/4_2lipo.png" width="400">
+<img src="https://github.com/jrwieland/Battery-mAh/blob/main/Screenshots/4_35lipo.png" width="400">  
+</a>
