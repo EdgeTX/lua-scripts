@@ -284,7 +284,7 @@ Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on batt
 ## [TxBatTele](https://github.com/derelict/TxBatTele)
 Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possible on radio settings (Everything is defined in the Script). So no need for "manual" Logical Switches or Custom Functions.
 <a href="https://github.com/derelict/TxBatTele">
-<img src="https://github.com/derelict/TxBatTele/blob/main/demov1.gif">
+<img src="https://github.com/derelict/TxBatTele/blob/main/screenshots/demovid.gif">
 </a>
 
 
