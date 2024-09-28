@@ -288,4 +288,11 @@ Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possi
 <img src="https://github.com/derelict/TxBatTele/blob/main/screenshots/demovid.gif">
 </a>
 
+## [SwitchOverview](https://github.com/druckgott/getswitchesWdgets/)
+A simple widget to display switches which are configured in special function and have a PLAY_TRACK behind.
+
+<a href="https://github.com/druckgott/getswitchesWdgets">
+<img src="https://github.com/druckgott/getswitchesWdgets/raw/main/doc/img/example1.png">
+</a>
+
 
