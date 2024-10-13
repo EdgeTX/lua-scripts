@@ -296,3 +296,9 @@ A simple widget to display switches which are configured in special function and
 </a>
 
 
+## [Log Viewer (BW only)](https://github.com/nikbg3/EdgeTXLogViewerBW)
+Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary wheel is used to change the read value. Back is used to switch between modes. i.e., changing columns, rows or files.
+
+<a href="https://github.com/nikbg3/EdgeTXLogViewerBW">
+<img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
+</a>
