@@ -302,3 +302,10 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 <a href="https://github.com/nikbg3/EdgeTXLogViewerBW">
 <img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
 </a>
+
+## [GPS Viewer](https://github.com/ktaliaferro/gps-viewer)
+Plot logged flight telemetry data on a map of your airfield.
+
+<a href="https://github.com/ktaliaferro/gps-viewer">
+<img src="https://github.com/ktaliaferro/gps-viewer/blob/master/images/screenshot_points.png">
+</a>
