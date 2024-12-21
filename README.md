@@ -213,6 +213,7 @@ no computer needed for logs anymore.
 </a>
 
 **Selecting files & columns**
+
 <a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer"> 
     <img src="https://user-images.githubusercontent.com/7026911/193409667-75e314ab-06cb-4136-a18f-88647755c755.png" width="200">
     <img src="https://user-images.githubusercontent.com/7026911/193409686-4fff1c25-229a-419e-8a2a-e64e703a4fc2.png" width="200">
