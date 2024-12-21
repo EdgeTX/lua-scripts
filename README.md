@@ -75,49 +75,6 @@ For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
 
 <br/>
 
-## Other
-
-### [Switch2 widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
-Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.</br>
-Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config), [RCGroups](https://www.rcgroups.com/forums/showpost.php?p=50176699&postcount=4012)
-
-<a href="https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793">
-    <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png" width="250">
-    <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905913-151-screenshot_tx16s_21-04-25_20-19-25.png" width="250">
-</a>
-<br/>
-
-### [Multi Protocol Module Tools](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
-Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
-<a href="https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts">
-    <img src="https://camo.githubusercontent.com/85db5f399440dee68d8d95ae994aab3f2fbb99d511c97326c0b976f23d17c170/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250">
-    <img src="https://camo.githubusercontent.com/51e5b6cae5631eb356e65d9ce5a344bcbb3348196da330f1612a2f560154cf65/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c353861795875657779412f302e6a7067" width="250">
-    <img src="https://camo.githubusercontent.com/f0fb3d2234f8cac646b44e9c253c9d6ac7d0f648edb2b36c4b49ab6d94f75190/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6536393870517866762d412f302e6a7067" width="250">
-</a>
-<br/>
-
-### [Spektrum DSM Tools](https://github.com/frankiearzu/DSMTools)
-Scripts to use with Spektrum Receivers. It has easy to install zip files versions of:
-- DSM Forward Programming (In collaboration with Multi-Module)
-- Spektrum Telemetry Scripts, Including TextGen for AVIAN ESC programming. Will become telemetry widgets in the future.
-    - Smart RXs (AR631,AR637, etc)
-    - Blade Heli helpers (AR636 based)
-- Interim EdgeTX Firmware with latest (but tested) changes for Spektrum Sensors and TextGen  (Official EdgeTx 2.8.1 + only Spektrum Telemetry changes). This change will be included in EdgeTx 2.9.0
-</br></br>
-<a href="https://github.com/frankiearzu/DSMTools">
-<img src="https://user-images.githubusercontent.com/32604366/230751340-dd118f36-1884-405b-b12b-81cba16c7321.png" width="250"/>
-<img src="https://user-images.githubusercontent.com/32604366/230751281-0c71ff4a-179f-41fd-9290-302a6e0fe821.png" width="250"/>
-<img src="https://user-images.githubusercontent.com/32604366/230751350-59070e75-afa3-439b-8902-bc7b3b901084.png" width="250"/>
-<img src="https://user-images.githubusercontent.com/32604366/230751370-b4e4355f-a3d2-4c44-aa1a-57861f1ff3da.png" width="250"/>
-<img src="https://user-images.githubusercontent.com/32604366/230123260-614f4e5e-9546-4439-9196-db885894083f.jpg" width="250"/>
-<br>
-<img src="https://user-images.githubusercontent.com/32604366/230751833-e92d3eae-2782-4009-a3dc-63ce893f2a38.png" width="250"/>
-<img src="https://user-images.githubusercontent.com/32604366/230751488-70b396b7-f08e-4152-a516-d355b3cf4001.png" width="250"/>
-</a>
-
-
-<br/>
-
 ## Telemetery & Flight Controllers
 
 ### [Betaflight Setup](https://github.com/betaflight/betaflight-tx-lua-scripts)
@@ -168,15 +125,15 @@ LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<b
 
 <br/>
 
-## [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
+## Other
+
+### [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
 ShowItAll displays various information in a single pane.<br/>
 <a href="https://rc-soar.com/opentx/lua/showitall/index.htm">
     <img src="https://rc-soar.com/opentx/lua/showitall/sia.png" width="250">
 </a>
 
 <br/>
-
-## Other
 
 ### [vu fullscreen image viewer widget for big screens](https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html)
 View fullscreen images with layout information or photos, cycle through them and have quick access to your favourite one.<br/>
@@ -200,13 +157,52 @@ Some widgets, themes and other scripts for EdgeTX<br/>
 
 <br/>
 
-
 ### [ImpExp](https://github.com/forbesmyester/EdgeTX-ImpExp)
 Basic and slightly incomplete on-radio import / export functionality for EdgeTX. Can be used to move functions / logical switches / mixes etc between models.
 
 <a href="https://github.com/forbesmyester/EdgeTX-ImpExp">
 <img src="https://raw.githubusercontent.com/forbesmyester/EdgeTX-ImpExp/main/Screenshot.png" width="480">
 </a>
+
+### [Switch2 widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
+Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.</br>
+Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config), [RCGroups](https://www.rcgroups.com/forums/showpost.php?p=50176699&postcount=4012)
+
+<a href="https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793">
+    <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png" width="250">
+    <img src="https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905913-151-screenshot_tx16s_21-04-25_20-19-25.png" width="250">
+</a>
+<br/>
+
+### [Multi Protocol Module Tools](https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts)
+Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
+<a href="https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts">
+    <img src="https://camo.githubusercontent.com/85db5f399440dee68d8d95ae994aab3f2fbb99d511c97326c0b976f23d17c170/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250">
+    <img src="https://camo.githubusercontent.com/51e5b6cae5631eb356e65d9ce5a344bcbb3348196da330f1612a2f560154cf65/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c353861795875657779412f302e6a7067" width="250">
+    <img src="https://camo.githubusercontent.com/f0fb3d2234f8cac646b44e9c253c9d6ac7d0f648edb2b36c4b49ab6d94f75190/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6536393870517866762d412f302e6a7067" width="250">
+</a>
+<br/>
+
+### [Spektrum DSM Tools](https://github.com/frankiearzu/DSMTools)
+Scripts to use with Spektrum Receivers. It has easy to install zip files versions of:
+- DSM Forward Programming (In collaboration with Multi-Module)
+- Spektrum Telemetry Scripts, Including TextGen for AVIAN ESC programming. Will become telemetry widgets in the future.
+    - Smart RXs (AR631,AR637, etc)
+    - Blade Heli helpers (AR636 based)
+- Interim EdgeTX Firmware with latest (but tested) changes for Spektrum Sensors and TextGen  (Official EdgeTx 2.8.1 + only Spektrum Telemetry changes). This change will be included in EdgeTx 2.9.0
+</br></br>
+<a href="https://github.com/frankiearzu/DSMTools">
+<img src="https://user-images.githubusercontent.com/32604366/230751340-dd118f36-1884-405b-b12b-81cba16c7321.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751281-0c71ff4a-179f-41fd-9290-302a6e0fe821.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751350-59070e75-afa3-439b-8902-bc7b3b901084.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751370-b4e4355f-a3d2-4c44-aa1a-57861f1ff3da.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230123260-614f4e5e-9546-4439-9196-db885894083f.jpg" width="250"/>
+<br>
+<img src="https://user-images.githubusercontent.com/32604366/230751833-e92d3eae-2782-4009-a3dc-63ce893f2a38.png" width="250"/>
+<img src="https://user-images.githubusercontent.com/32604366/230751488-70b396b7-f08e-4152-a516-d355b3cf4001.png" width="250"/>
+</a>
+
+<br/>
 
 ### [Log Viewer](https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer)
 Nice presentation of log file on the field<br>
