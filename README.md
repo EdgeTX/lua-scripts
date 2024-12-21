@@ -201,6 +201,13 @@ Some widgets, themes and other scripts for EdgeTX<br/>
 <br/>
 
 
+### [ImpExp](https://github.com/forbesmyester/EdgeTX-ImpExp)
+Basic and slightly incomplete on-radio import / export functionality for EdgeTX. Can be used to move functions / logical switches / mixes etc between models.
+
+<a href="https://github.com/forbesmyester/EdgeTX-ImpExp">
+<img src="https://raw.githubusercontent.com/forbesmyester/EdgeTX-ImpExp/main/Screenshot.png" width="480">
+</a>
+
 ### [Log Viewer](https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer)
 Nice presentation of log file on the field<br>
 no computer needed for logs anymore.
