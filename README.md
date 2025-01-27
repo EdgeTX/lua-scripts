@@ -94,24 +94,35 @@ Shows you telementry and flight status information. Supports radios with color a
 
 <br/>
 
-### [FM2M ToolBox](http://fm2m.jimb40.com/ToolBox.html)
-Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links,  custom alerts , VTx info and much more. Supports radios with color and black and white screens.<br/>
-<a href="http://fm2m.jimb40.com/ToolBox.html">
-<img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_db.png" width="250">
-    <img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_cfg.png" width="250">
-    <img src="http://fm2m.jimb40.com/pub/FM2M_ToolBox073_vtx.png" width="250">
+### [FM2M ToolBox](https://fm2m.online/toolbox-edgetx/)
+Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links,  custom alerts , VTx info, GPS and much more. Supports radios with color and black and white screens.<br/>
+<a href="https://fm2m.online/toolbox-edgetx/">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-db.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-vtx.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-armstop.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-gps.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-sticks.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-db.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-vtx.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-armstop.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-dbgps.png" width="250">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-sticks.png" width="250">
 </a>
 
 <br/>
 
-### [FM2M Widgets Pack](http://fm2m.jimb40.com/download.html)
+### [FM2M Digital Clock](https://fm2m.online/digital-clock-edgetx/)
+Configurable EdgeTX widget that shows nifty Digital Clock.<br/>
+<a href="https://fm2m.online/digital-clock-edgetx/">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-dclock-10-1.png" width="400">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-dclock-10-2.png" width="400">
+</a>
+<br/>
+
+### [FM2M Widgets Pack](https://fm2m.online/addons-edgetx/#WPack)
 Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
-<a href="http://fm2m.jimb40.com/download.html">
-    <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-155327-480x272.png" width="250">
-    <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-132700-480x272.png" width="250">
-    <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-pack-155436-480x272.png" width="250">
-    <br/>
-    <img src="http://fm2m.jimb40.com/assets/images/fm2m-widget-clock-22-00-9-480x272.png" width="250">
+<a href="https://fm2m.online/addons-edgetx/#WPack">
+    <img src="https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-widgets-pack-021-promo.png" width="400">
 </a>
 
 <br/>
