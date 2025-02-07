@@ -330,3 +330,11 @@ Plot logged flight telemetry data on a map of your airfield.
 <a href="https://github.com/ktaliaferro/gps-viewer">
 <img src="https://github.com/ktaliaferro/gps-viewer/blob/master/images/screenshot_points.png">
 </a>
+
+
+### [GPS Logger](https://github.com/poweredjj/gpslog)
+Log each flight GPS coordinates to a separate GPX file.
+
+<a href="https://github.com/poweredjj/gpslog">
+<img src="https://github.com/poweredjj/gpslog/raw/main/screenshot.png"  width="300">
+</a>
