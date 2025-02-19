@@ -258,13 +258,13 @@ no computer needed for logs anymore.
 
 Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary wheel is used to change the read value. Back is used to switch between modes. i.e., changing columns, rows or files.
 
-### [flylog.lua](https://github.com/JohnnyCarvi/flylog_edgetx)
-
-This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
-
 <a href="https://github.com/nikbg3/EdgeTXLogViewerBW">
 <img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
 </a>
+
+### [flylog.lua](https://github.com/JohnnyCarvi/flylog_edgetx)
+
+This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
 
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
 
