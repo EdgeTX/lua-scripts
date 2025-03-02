@@ -266,23 +266,26 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 
 This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
 
+<a href="https://github.com/JohnnyCarvi/flylog_edgetx">
+  <img src="https://raw.githubusercontent.com/JohnnyCarvi/flylog_edgetx/refs/heads/main/screenshots/1_special_functions_tab.png" width="250">
+  <img src="https://github.com/JohnnyCarvi/flylog_edgetx/blob/main/screenshots/2_special_functions.png?raw=true" width="250">
+</a>
+
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
 
 Displays various battery related data.<br/>
 <a href="https://github.com/fdm225/mahRe2/raw/main/README.md">
-<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
-<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
-<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
-<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
+  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
+  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
+  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
+  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
 </a>
-
-<br/>
 
 ### [Quad Telemetry Dashboard (BW only)](https://github.com/mvaldesshc/advanced-edgetx-dashboard)
 
 LUA-based dashboard (only for black-and-white display radios).<br/>
 <a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
-<!-- <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif"> -->
+  <!-- <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif"> -->
 </a>
 
 <br/>
@@ -291,30 +294,30 @@ LUA-based dashboard (only for black-and-white display radios).<br/>
 
 Widget for color screen radios that allows touch buttons via logical switches (in German).<br/>
 <a href="https://github.com/Ziege-One/TSwitch">
-<img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
-<img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
+  <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
+  <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
 </a>
 
 ### [Lap Timer](https://github.com/RadioMasterRC/EdgeTX-LapTimer)
 
 Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
 <a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp" height="128px"/>
-<br>
-<br>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp" height="128px"/>
+  <br>
+  <br>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp" height="128px"/>
+  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp" height="128px"/>
 </a>
 
 ### [F3A Caller](https://github.com/jrwieland/F3A)
 
 Caller for practicing F3A pattern - Updated to 2024 Season<br/>
 <a href="https://github.com/jrwieland/F3A">
-<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png">
-<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png">
+  <img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png">
+  <img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png">
 </a>
 
 ### [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x)
