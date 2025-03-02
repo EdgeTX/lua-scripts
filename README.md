@@ -64,7 +64,7 @@ Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV
 GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file, and has a log viewer so you don't have to worry about losing the coordinates if you turn the transmitter off.</br>
 <a href="https://github.com/moschotto/OpenTX_GPS_Telemetry">
 <img src="https://raw.githubusercontent.com/moschotto/OpenTX_GPS_Telemetry/main/media/description.png" width="250">
-<img src="https://github.com/moschotto/OpenTX_GPS_Telemetry/blob/main/media/x9_GPS_screen.PNG" width="350">
+<img src="https://github.com/moschotto/OpenTX_GPS_Telemetry/raw/main/media/x9_GPS_screen.PNG" width="350">
 </a>
 
 <br/>
@@ -75,7 +75,7 @@ Collection of Colorlcd & B&W widgets.
 For colorlcd includes GPS lat/long and Google Plus code widget, Home direction/distance widget, and average battery voltage widget.
 For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
 <a href="https://github.com/kristjanbjarni/opentx-widgets">
-<img src="https://github.com/kristjanbjarni/opentx-widgets/blob/main/docs/images/GPS.png" width="250">
+<img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/GPS.png" width="250">
 <img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/AvgBatt.png" width="250">
 <img src="https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/home_taranis.png" width="250">
 </a>
@@ -97,8 +97,8 @@ The Betaflight LUA script allows you to change flight controller settings on you
 
 Shows you telementry and flight status information. Supports radios with color and black and white screens.<br/>
 <a href="https://github.com/iNavFlight/OpenTX-Telemetry-Widget">
-<img  src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavHorus.png" width="250">
-<img src="https://github.com/teckel12/LuaTelemetry/blob/master/assets/iNavQX7.png" width="128">
+<img  src="https://github.com/teckel12/LuaTelemetry/raw/master/assets/iNavHorus.png" width="250">
+<img src="https://github.com/teckel12/LuaTelemetry/raw/master/assets/iNavQX7.png" width="128">
 </a>
 
 <br/>
@@ -176,10 +176,10 @@ View fullscreen images with layout information or photos, cycle through them and
 
 Some widgets, themes and other scripts for EdgeTX<br/>
 <a href="https://github.com/MadMonkey87/EdgeTX-Goodies">
-<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-49-59.png"  width="250">
-<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-52-08.png"  width="250">
-<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-07_10-35-43.png"  width="250">
-<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/blob/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-00.png"  width="250">
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-49-59.png"  width="250">
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-52-08.png"  width="250">
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-07_10-35-43.png"  width="250">
+<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-00.png"  width="250">
 </a>
 
 <br/>
@@ -207,9 +207,9 @@ Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=
 
 Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
 <a href="https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts">
-<img src="https://camo.githubusercontent.com/85db5f399440dee68d8d95ae994aab3f2fbb99d511c97326c0b976f23d17c170/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6c47794356326b707148552f302e6a7067" width="250">
-<img src="https://camo.githubusercontent.com/51e5b6cae5631eb356e65d9ce5a344bcbb3348196da330f1612a2f560154cf65/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c353861795875657779412f302e6a7067" width="250">
-<img src="https://camo.githubusercontent.com/f0fb3d2234f8cac646b44e9c253c9d6ac7d0f648edb2b36c4b49ab6d94f75190/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6536393870517866762d412f302e6a7067" width="250">
+<img src="https://img.youtube.com/vi/lGyCV2kpqHU/0.jpg" width="250">
+<img src="https://img.youtube.com/vi/L58ayXuewyA/0.jpg" width="250">
+<img src="https://img.youtube.com/vi/81wd8NlF3Qw/0.jpg" width="250">
 </a>
 <br/>
 
@@ -262,14 +262,14 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 <img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
 </a>
 
-### [flylog.lua](https://github.com/JohnnyCarvi/flylog_edgetx)
+### [FlyLog](https://github.com/JohnnyCarvi/flylog_edgetx)
 
 This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
 
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
 
 Displays various battery related data.<br/>
-<a href="https://github.com/fdm225/mahRe2/blob/main/README.md">
+<a href="https://github.com/fdm225/mahRe2/raw/main/README.md">
 <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
 <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
 <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
@@ -282,7 +282,7 @@ Displays various battery related data.<br/>
 
 LUA-based dashboard (only for black-and-white display radios).<br/>
 <a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
-<img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif">
+<!-- <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif"> -->
 </a>
 
 <br/>
@@ -299,33 +299,33 @@ Widget for color screen radios that allows touch buttons via logical switches (i
 
 Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
 <a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-1.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-2.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-3.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp" height="128px"/>
 <br>
 <br>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-4.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-5.bmp" height="128px"/>
-<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/blob/master/ScreenShot/screen-6.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp" height="128px"/>
 </a>
 
 ### [F3A Caller](https://github.com/jrwieland/F3A)
 
 Caller for practicing F3A pattern - Updated to 2024 Season<br/>
 <a href="https://github.com/jrwieland/F3A">
-<img src="https://github.com/jrwieland/F3A/blob/main/Screenshots/p-21.png">
-<img src="https://github.com/jrwieland/F3A/blob/main/Screenshots/f25.png">
+<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png">
+<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png">
 </a>
 
 ### [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x)
 
 Enhanced music player for OpenTX & EdgeTX radios Multiple Playlists allow you to listen to your music while flying Your RC<br/>
 <a href="https://github.com/jrwieland/TaraniTunes-v4.x">
-<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Color%20Screen%20Widget/Screenshots3/Features.png" width="500">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Color%20Screen%20Widget/Screenshots3/Features.png" width="500">
 <br>
-<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Color%20Screen%20Widget/Screenshots3/Colorscreen.PNG" width="300">
-<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Screenshots/TaraniTunesQX7.PNG" width="300">
-<img src="https://github.com/jrwieland/TaraniTunes-v4.x/blob/master/Screenshots/Customize.PNG" width="300">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Color%20Screen%20Widget/Screenshots3/Colorscreen.PNG" width="300">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Screenshots/TaraniTunesQX7.PNG" width="300">
+<img src="https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Screenshots/Customize.PNG" width="300">
 </a>
 
 ### [GPS QR Code generator](https://github.com/alufers/edgetx-gps-qrcode)
@@ -341,8 +341,8 @@ Generates a QR code of last GPS coordinates received (for black-and-white screen
 
 Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on battery voltage from 'Cels' sensor (FLVSS)<br/>
 <a href="https://github.com/jrwieland/Battery-mAh">
-<img src="https://github.com/jrwieland/Battery-mAh/blob/main/Screenshots/4_2lipo.png" width="400">
-<img src="https://github.com/jrwieland/Battery-mAh/blob/main/Screenshots/4_35lipo.png" width="400">  
+<img src="https://github.com/jrwieland/Battery-mAh/raw/main/Screenshots/4_2lipo.png" width="400">
+<img src="https://github.com/jrwieland/Battery-mAh/raw/main/Screenshots/4_35lipo.png" width="400">  
 </a>
 
 ### [TxBatTele](https://github.com/derelict/TxBatTele)
@@ -350,7 +350,7 @@ Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on batt
 Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possible on radio settings (Everything is defined in the Script). So no need for "manual" Logical Switches or Custom Functions.
 
 <a href="https://github.com/derelict/TxBatTele">
-<img src="https://github.com/derelict/TxBatTele/blob/main/screenshots/demovid.gif">
+<img src="https://github.com/derelict/TxBatTele/raw/main/screenshots/demovid.gif">
 </a>
 
 ### [SwitchOverview](https://github.com/druckgott/getswitchesWdgets/)
@@ -366,7 +366,7 @@ A simple widget to display switches which are configured in special function and
 Plot logged flight telemetry data on a map of your airfield.
 
 <a href="https://github.com/ktaliaferro/gps-viewer">
-<img src="https://github.com/ktaliaferro/gps-viewer/blob/master/images/screenshot_points.png">
+<img src="https://github.com/ktaliaferro/gps-viewer/raw/master/images/screenshot_points.png">
 </a>
 
 ### [GPS Logger (BW only)](https://github.com/poweredjj/gpslog)
