@@ -141,13 +141,7 @@ Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
 
 ### [TBS Agent Lite](https://www.team-blacksheep.com/products/prod:agentx)
 
-LUA configurator for numerous TBS products. Use this instead of Crossfire lua.<br/>
-<a href="https://www.team-blacksheep.com/products/prod:agentx">
-<img src="https://www.team-blacksheep.com/img/gallery/conIkNCQ.jpg" width="250">
-<img src="https://www.team-blacksheep.com/img/gallery/scressen-2022-02-23-181848.jpg" width="250">
-</a>
-
-<br/>
+LUA configurator for numerous TBS products. Use this instead of Crossfire lua.
 
 ## Other
 
