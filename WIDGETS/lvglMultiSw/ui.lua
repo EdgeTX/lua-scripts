@@ -202,7 +202,7 @@ local function createButton(i, width)
                             }
         }};
     elseif (settings.buttons[i].type == TYPE_TOGGLE) then
-        return {type = "box", flexFlow = lvgl.FLOW_ROW, children = {
+        return {type = "box", flexFlow = lvgl.FLOW_ROW, x = 0, w = width, children = {
             { type = "label", text = (function() 
                 local sw = settings.buttons[i].switch * settings.show_physical;
                 if (sw > 0) then
@@ -211,7 +211,7 @@ local function createButton(i, width)
                     return settings.buttons[i].name;
                 end
              end)(), 
-              w = width / 2, font = settings.buttons[i].font },
+              w = width / 2, x = 0, font = settings.buttons[i].font },
             { type = "toggle", get = (function() if (state.buttons[i].value ~= 0) then return 1; else return 0; end; end), 
                                set = (function(v) state.buttons[i].value = v; fsm.update(); end), w = width / 2 ,
                                active = (function() if (settings.buttons[i].switch > 0) then return false; else return true; end; end),
@@ -355,15 +355,16 @@ local function createSettingsRow(i, edit_width, maxLen)
             { type = "toggle", get = (function() return settings.buttons[i].visible; end),
                                set = (function(v) settings.buttons[i].visible = v; end) },
             { type = "label", text = " Type:" },
-            { type = "choice", title = "Type", values = {"Button", "Toggle", "3-Pos", "Momentary", "Slider"}, get = (function() return settings.buttons[i].type; end), set = (function(t) settings.buttons[i].type = t; end) }, 
+            { type = "choice", title = "Type", values = {"Button", "Toggle", "3Pos", "Momentary", "Slider"}, w = edit_width,
+                               get = (function() return settings.buttons[i].type; end), set = (function(t) settings.buttons[i].type = t; end) }, 
             { type = "label", text = " Switch:" },
             { type = "switch", filter = filter, 
                 active = (function() if ((settings.buttons[i].type == TYPE_SLIDER) or (settings.buttons[i].type == TYPE_MOMENTARY)) then return false; else return true; end; end), 
                 get = (function() return settings.buttons[i].switch; end), set = (function(s) settings.buttons[i].switch = s; end) },
             { type = "label", text = " Switch2:", 
-                visible = (function() if (settings.buttons[i].type == TYPE_3POS) then return true; else return false; end; end) },
+                active = (function() if (settings.buttons[i].type == TYPE_3POS) then return true; else return false; end; end) },
             { type = "switch", filter = filter, 
-                visible = (function() if (settings.buttons[i].type == TYPE_3POS) then return true; else return false; end; end),
+                active = (function() if (settings.buttons[i].type == TYPE_3POS) then return true; else return false; end; end),
                 get = (function() return settings.buttons[i].switch2; end), set = (function(s) settings.buttons[i].switch2 = s; end) },
             { type = "label", text = " Source:" },
             { type = "source", active = (function() if (settings.buttons[i].type ~= TYPE_SLIDER) then return false; else return true; end; end), 
@@ -377,7 +378,7 @@ local function createSettingsRow(i, edit_width, maxLen)
                               set = (function(v) settings.buttons[i].textColor = v; end) },                                     
             { type = "label", text = " Font:" },
             { type = "font", get = (function() return settings.buttons[i].font; end),
-                            set = (function(v) settings.buttons[i].font = v; end) },                                     
+                            set = (function(v) settings.buttons[i].font = v; end), w = 2 * edit_width / 3 },                                     
         }
     };
 end
@@ -397,7 +398,7 @@ function widget.settingsPage()
         subtitle = "Function-Settings",
         back = (function() askClose(); end),
     });
-    local edit_width = widget.zone.w / 2 - 120;
+    local edit_width = widget.zone.w / 6;
     local maxLen = 16;
     local uit = { {
             type = "box",
