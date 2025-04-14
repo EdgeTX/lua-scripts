@@ -373,3 +373,43 @@ Log each flight GPS coordinates to a separate GPX file.
 <a href="https://github.com/poweredjj/gpslog">
 <img src="https://github.com/poweredjj/gpslog/raw/main/screenshot.png"  width="300">
 </a>
+
+
+
+<br/><br/><br/>
+
+## [Rotorflight Dashboard widget (for Heli flights)](https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dash2)
+
+* part of the rf2-touch-suite for edgexTx
+* design for [rotorflight2](https://www.rotorflight.org/)
+* the widget have 3 types of views
+
+<img src="https://github.com/user-attachments/assets/7a98c153-4e23-4344-b4e4-c2acba6d116c" width="60">
+
+<br>
+dashboard type 1 
+
+<a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dash2"> 
+    <img src="https://github.com/user-attachments/assets/9b95d285-7881-4286-883a-ad68321e9f7f" width="550">
+</a>
+
+<br>
+dashboard type 2
+
+<a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dash2"> 
+    <img src="https://github.com/user-attachments/assets/6c051557-f94b-432d-bda1-fcacb36c9c0d" width="550">
+</a>
+
+<br>
+dashboard style 3
+
+<a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dash2"> 
+    <img src="https://github.com/user-attachments/assets/d2bcee9d-e5be-42a0-b2cc-868a900c5040" width="550">
+</a>
+
+
+
+<br/><br/><br/>
+
+
+
