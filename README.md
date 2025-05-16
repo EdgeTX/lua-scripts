@@ -374,7 +374,6 @@ Log each flight GPS coordinates to a separate GPX file.
 <img src="https://github.com/poweredjj/gpslog/raw/main/screenshot.png"  width="300">
 </a>
 
-
 ### [Rotorflight Dashboard widget (for Heli flights)](https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard)
 
 * part of the rf2-touch-suite for EdgeTX
