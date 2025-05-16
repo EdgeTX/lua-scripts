@@ -396,3 +396,38 @@ Log each flight GPS coordinates to a separate GPX file.
 <a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard"> 
     <img src="https://github.com/user-attachments/assets/d2bcee9d-e5be-42a0-b2cc-868a900c5040" width="550">
 </a>
+
+### [Multiswitch widget](https://github.com/wimalopaan/LUA)
+This widget controls a so-called multiswitch inside a model. A multiswitch is a device that is most popular in the field of ship/crawler/functional-models, and its purpos is to switch on/off multiple electronic motors, LEDs, ... inside the model.
+
+This widget controls a multiswitch via the CRSF protocol (ExpressLRS): https://github.com/wimalopaan/Electronics?tab=readme-ov-file#elrs_msw (or via ACCST/AFHDS2A and SBus ).
+Multiple instances of this widget can control multiple multiswitches inside a model, upto 255 theoretically.
+
+![Multiswitch widget controls](ASSETS/multiswitch_widget_1.png)
+![Multiswitch widget function settings](ASSETS/multiswitch_widget_2.png)
+![Multiswitch widget global settings](ASSETS/multiswitch_widget_3.png)
+
+
+### [Hardware extension widget](https://github.com/wimalopaan/LUA)
+This widget is called the hardware extension widget. Its purpose is to read and visualize the state of external controls like pots, switches, buttons, incrementals, ... . This is done via one of the serial connections of the radio (AUX1, AUX2) reading messages of the hardware extension protocol: https://github.com/wimalopaan/Electronics?tab=readme-ov-file#hwext.
+
+By this means it can read external controls, like upto 16 11-bit (proportional) values as well as 64 binary switch values.
+
+Ideally the firmware for the radio has PR EdgeTX/edgetx#5885, so that this widget can set the virtual controls according to the external controls.
+
+![Hardware extension widget controls](ASSETS/hardware_extension_widget_1.png)
+![Hardware extension widget settings](ASSETS/hardware_extension_widget_2.png)
+![Hardware extension widget mapping](ASSETS/hardware_extension_widget_3.png)
+
+
+### [Virtual controls widget](https://github.com/wimalopaan/LUA)
+This widget mainly manipulates the virtual controls as described in EdgeTX/edgetx#5885.
+Virtual controls (virtual inputs and virtual switches) are non-physical inputs/switches for the radio. The main purpose is to extend the number of controls by use of virtual controls.
+
+This widget can manipulate these virtual controls by means of up to 16 sliders and/or 64 buttons (normal, momentary or toggle).
+
+If no virtual controls are available (firmware / simulator without EdgeTX/edgetx#5885), it is still useful as it can also manipulate the shm variables, which serve as a data exchange between widgets and mixer-scripts.
+
+![Virtual controls widget sliders](ASSETS/virtual_controls_widget_1.png)
+![Virtual controls widget buttons](ASSETS/virtual_controls_widget_2.png)
+![Virtual controls widget settings](ASSETS/virtual_controls_widget_3.png)
