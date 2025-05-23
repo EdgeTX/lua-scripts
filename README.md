@@ -431,3 +431,9 @@ If no virtual controls are available (firmware / simulator without EdgeTX/edgetx
 ![Virtual controls widget sliders](ASSETS/virtual_controls_widget_1.png)
 ![Virtual controls widget buttons](ASSETS/virtual_controls_widget_2.png)
 ![Virtual controls widget settings](ASSETS/virtual_controls_widget_3.png)
+
+
+### [Stick Commands](https://github.com/DHaacke/Mambo-Tango)
+Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.
+![Stick commands B&W Betaflight](https://github.com/DHaacke/Mambo-Tango/raw/master/betaflight.bmp)
+![Stick commands colorlcd](https://github.com/DHaacke/Mambo-Tango/raw/master/edgetx.bmp)
