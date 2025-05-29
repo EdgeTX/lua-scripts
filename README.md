@@ -368,10 +368,18 @@ Plot logged flight telemetry data on a map of your airfield.
 
 ### [GPS Logger (BW only)](https://github.com/poweredjj/gpslog)
 
-Log each flight GPS coordinates to a separate GPX file.
+Log each flight GPS coordinates to a separate GPX file (telemetry script for radios with BW displays only).
 
 <a href="https://github.com/poweredjj/gpslog">
 <img src="https://github.com/poweredjj/gpslog/raw/main/screenshot.png"  width="300">
+</a>
+
+### [GPS Logger (color only)](https://github.com/poweredjj/gpslog_color)
+
+Log each flight GPS coordinates to a separate GPX file (widget for radios with color displays only).
+
+<a href="https://github.com/poweredjj/gpslog_color">
+<img src="https://github.com/poweredjj/gpslog_color/raw/main/screenshot.jpg"  width="300">
 </a>
 
 ### [Rotorflight Dashboard widget (for Heli flights)](https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard)
