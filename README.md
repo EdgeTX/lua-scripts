@@ -256,6 +256,15 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 <img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
 </a>
 
+### [LogManager](https://github.com/icebreaker-ch/EdgeTX-LogManager)
+
+A tool for managing Log files (created by the SD Logging Special Function) on an EdgeTX B&C or color RC transmitter. Actions can be performed on all models or a selected model.
+
+> [!NOTE]  
+> The color version of this tool uses the LVGL widgets API, thus EdgeTX version 2.11 or later is needed to run it. However, the B&W version can be used on color radios with older versions of EdgeTX.
+
+![LogManagerColor](https://github.com/user-attachments/assets/891b5514-155c-4b78-80e0-24974929412a) ![LogManagerBW](https://github.com/user-attachments/assets/0836feaf-15ea-4b13-9185-b1557f2f7c04)
+
 ### [FlyLog](https://github.com/JohnnyCarvi/flylog_edgetx)
 
 This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
