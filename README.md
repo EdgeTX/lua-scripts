@@ -258,8 +258,10 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 
 ### [LogManager](https://github.com/icebreaker-ch/EdgeTX-LogManager)
 
-A tool for managing LOG-Files in an EdgeTX b/w or color RC transmitter. Actions can be performed on all models or a selected model.
-Since the color version is using the LVGL widgets API, EdgeTX version 2.11 or later is needed to run. However, the b/w version can be used on color radios with older versions of EdgeTX.
+A tool for managing Log files (created by the SD Logging Special Function) on an EdgeTX B&C or color RC transmitter. Actions can be performed on all models or a selected model.
+
+> [!NOTE]  
+> The color version of this tool uses the LVGL widgets API, thus EdgeTX version 2.11 or later is needed to run it. However, the B&W version can be used on color radios with older versions of EdgeTX.
 
 ![LogManagerColor](https://github.com/user-attachments/assets/891b5514-155c-4b78-80e0-24974929412a) ![LogManagerBW](https://github.com/user-attachments/assets/0836feaf-15ea-4b13-9185-b1557f2f7c04)
 
