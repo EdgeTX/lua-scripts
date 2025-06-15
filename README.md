@@ -256,9 +256,23 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 <img src="https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc">
 </a>
 
+### [LogViz](https://github.com/icebreaker-ch/EdgeTX-LogViz)
+A tool to visualize log entries, recorded by the SD Logging special function
+on an EdgeTX B&W or color radio.
+
+![screenshot_zorro_25-06-15_13-22-16](https://github.com/user-attachments/assets/bad26c6b-6f1c-467a-bb1b-4762f5a93560)
+![screenshot_zorro_25-06-15_13-22-37](https://github.com/user-attachments/assets/dd4e7625-e1fb-4d82-9f45-2cfb8ccd79fb)
+
+**Tested radios:** Radiomaster Zorro, Horus X12S, Horus X10S, Taranis X7 ACCESS, Taranis X9D+ 2019
+
+**Features:**
+- Selection of Model, File and Log-Entry.
+- Display single Entry in graphical view
+- Cursor navigation to see value and time stamp at position
+
 ### [LogManager](https://github.com/icebreaker-ch/EdgeTX-LogManager)
 
-A tool for managing Log files (created by the SD Logging Special Function) on an EdgeTX B&C or color RC transmitter. Actions can be performed on all models or a selected model.
+A tool for managing Log files (created by the SD Logging Special Function) on an EdgeTX B&W or color RC transmitter. Actions can be performed on all models or a selected model.
 
 > [!NOTE]  
 > The color version of this tool uses the LVGL widgets API, thus EdgeTX version 2.11 or later is needed to run it. However, the B&W version can be used on color radios with older versions of EdgeTX.
