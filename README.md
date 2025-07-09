@@ -387,7 +387,7 @@ Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possi
 A simple widget to display switches which are configured in special function and have a PLAY_TRACK behind.
 
 <a href="https://github.com/druckgott/getswitchesWdgets">
-<img src="https://github.com/druckgott/getsswitchesWdgets/raw/main/doc/img/example1.png">
+<img src="https://github.com/druckgott/getswitchesWdgets/raw/main/doc/img/example1.png">
 </a>
 
 ### [GPS Viewer](https://github.com/ktaliaferro/gps-viewer)
