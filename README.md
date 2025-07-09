@@ -257,6 +257,7 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 </a>
 
 ### [LogViz](https://github.com/icebreaker-ch/EdgeTX-LogViz)
+
 A tool to visualize log entries, recorded by the SD Logging special function
 on an EdgeTX B&W or color radio.
 
@@ -266,6 +267,7 @@ on an EdgeTX B&W or color radio.
 **Tested radios:** Radiomaster Zorro, Horus X12S, Horus X10S, Taranis X7 ACCESS, Taranis X9D+ 2019
 
 **Features:**
+
 - Selection of Model, File and Log-Entry.
 - Display single Entry in graphical view
 - Cursor navigation to see value and time stamp at position
@@ -279,29 +281,36 @@ A tool for managing Log files (created by the SD Logging Special Function) on an
 
 ![LogManagerColor](https://github.com/user-attachments/assets/891b5514-155c-4b78-80e0-24974929412a) ![LogManagerBW](https://github.com/user-attachments/assets/0836feaf-15ea-4b13-9185-b1557f2f7c04)
 
-### [FlyLog](https://github.com/JohnnyCarvi/flylog_edgetx)
+### [FlyLog & TeleLog - Logging Scripts for EdgeTX](https://github.com/JohnnyCarvi/flylog_edgetx)
 
-This script logs the arming and disarming events of your model, along with date/time and the model name and creates an CSV Log. Really Simple.
+These scripts provide simple logging functionality for your flights, making it easy to record and review important flight events and telemetry data.
+
+`flylog.lua`: Logs arming/disarming events, timestamps, GPS coordinates, and model name.  
+`tellog.lua`: Logs detailed telemetry data at regular intervals during flight.
+
+For analyzing and visualizing the generated logs, you can use the [UAV Manager](https://github.com/CarviFPV/UAV_Manager).
 
 <a href="https://github.com/JohnnyCarvi/flylog_edgetx">
   <img src="https://raw.githubusercontent.com/JohnnyCarvi/flylog_edgetx/refs/heads/main/screenshots/1_special_functions_tab.png" width="250">
   <img src="https://github.com/JohnnyCarvi/flylog_edgetx/blob/main/screenshots/2_special_functions.png?raw=true" width="250">
+  <img src="https://github.com/CarviFPV/flylog_edgetx/blob/main/screenshots/flightdetails.png?raw=true" width="250">
 </a>
 
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
 
 Displays various battery related data.<br/>
 <a href="https://github.com/fdm225/mahRe2/raw/main/README.md">
-  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
-  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
-  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
-  <img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
+<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png" width="250">
+<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png" width="250">
+<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png" width="250">
+<img src="https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png" width="250">
 </a>
 
 ### [Quad Telemetry Dashboard (BW only)](https://github.com/mvaldesshc/advanced-edgetx-dashboard)
 
 LUA-based dashboard (only for black-and-white display radios).<br/>
 <a href="https://github.com/mvaldesshc/advanced-edgetx-dashboard">
+
   <!-- <img src="https://i.postimg.cc/Jz1CdwTG/opentx-quad-telemetry.gif"> -->
 </a>
 
@@ -311,30 +320,30 @@ LUA-based dashboard (only for black-and-white display radios).<br/>
 
 Widget for color screen radios that allows touch buttons via logical switches (in German).<br/>
 <a href="https://github.com/Ziege-One/TSwitch">
-  <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
-  <img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
+<img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png" width="250">
+<img src="https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png" width="250">
 </a>
 
 ### [Lap Timer](https://github.com/RadioMasterRC/EdgeTX-LapTimer)
 
 Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
 <a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp" height="128px"/>
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp" height="128px"/>
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp" height="128px"/>
-  <br>
-  <br>
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp" height="128px"/>
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp" height="128px"/>
-  <img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp" height="128px"/>
+<br>
+<br>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp" height="128px"/>
+<img src="https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp" height="128px"/>
 </a>
 
 ### [F3A Caller](https://github.com/jrwieland/F3A)
 
 Caller for practicing F3A pattern - Updated to 2024 Season<br/>
 <a href="https://github.com/jrwieland/F3A">
-  <img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png">
-  <img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png">
+<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png">
+<img src="https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png">
 </a>
 
 ### [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x)
@@ -378,7 +387,7 @@ Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possi
 A simple widget to display switches which are configured in special function and have a PLAY_TRACK behind.
 
 <a href="https://github.com/druckgott/getswitchesWdgets">
-<img src="https://github.com/druckgott/getswitchesWdgets/raw/main/doc/img/example1.png">
+<img src="https://github.com/druckgott/getsswitchesWdgets/raw/main/doc/img/example1.png">
 </a>
 
 ### [GPS Viewer](https://github.com/ktaliaferro/gps-viewer)
@@ -407,28 +416,32 @@ Log each flight GPS coordinates to a separate GPX file (widget for radios with c
 
 ### [Rotorflight Dashboard widget (for Heli flights)](https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard)
 
-* part of the rf2-touch-suite for EdgeTX
-* designed for [rotorflight2](https://www.rotorflight.org/)
-* the widget has 3 types of views
+- part of the rf2-touch-suite for EdgeTX
+- designed for [rotorflight2](https://www.rotorflight.org/)
+- the widget has 3 types of views
 
 <img src="https://github.com/user-attachments/assets/7a98c153-4e23-4344-b4e4-c2acba6d116c" width="60">
 
 #### Dashboard type 1
+
 <a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard"> 
     <img src="https://github.com/user-attachments/assets/9b95d285-7881-4286-883a-ad68321e9f7f" width="550">
 </a>
 
 #### Dashboard type 2
+
 <a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard"> 
     <img src="https://github.com/user-attachments/assets/6c051557-f94b-432d-bda1-fcacb36c9c0d" width="550">
 </a>
 
 #### Dashboard style 3
+
 <a href="https://github.com/offer-shmuely/rf2-touch-suite-edgeTx/wiki/widget-%E2%80%90-rf2_dashboard"> 
     <img src="https://github.com/user-attachments/assets/d2bcee9d-e5be-42a0-b2cc-868a900c5040" width="550">
 </a>
 
 ### [Multiswitch widget](https://github.com/wimalopaan/LUA)
+
 This widget controls a so-called multiswitch inside a model. A multiswitch is a device that is most popular in the field of ship/crawler/functional-models, and its purpos is to switch on/off multiple electronic motors, LEDs, ... inside the model.
 
 This widget controls a multiswitch via the CRSF protocol (ExpressLRS): https://github.com/wimalopaan/Electronics?tab=readme-ov-file#elrs_msw (or via ACCST/AFHDS2A and SBus ).
@@ -438,8 +451,8 @@ Multiple instances of this widget can control multiple multiswitches inside a mo
 ![Multiswitch widget function settings](ASSETS/multiswitch_widget_2.png)
 ![Multiswitch widget global settings](ASSETS/multiswitch_widget_3.png)
 
-
 ### [Hardware extension widget](https://github.com/wimalopaan/LUA)
+
 This widget is called the hardware extension widget. Its purpose is to read and visualize the state of external controls like pots, switches, buttons, incrementals, ... . This is done via one of the serial connections of the radio (AUX1, AUX2) reading messages of the hardware extension protocol: https://github.com/wimalopaan/Electronics?tab=readme-ov-file#hwext.
 
 By this means it can read external controls, like upto 16 11-bit (proportional) values as well as 64 binary switch values.
@@ -450,8 +463,8 @@ Ideally the firmware for the radio has PR EdgeTX/edgetx#5885, so that this widge
 ![Hardware extension widget settings](ASSETS/hardware_extension_widget_2.png)
 ![Hardware extension widget mapping](ASSETS/hardware_extension_widget_3.png)
 
-
 ### [Virtual controls widget](https://github.com/wimalopaan/LUA)
+
 This widget mainly manipulates the virtual controls as described in EdgeTX/edgetx#5885.
 Virtual controls (virtual inputs and virtual switches) are non-physical inputs/switches for the radio. The main purpose is to extend the number of controls by use of virtual controls.
 
@@ -463,8 +476,8 @@ If no virtual controls are available (firmware / simulator without EdgeTX/edgetx
 ![Virtual controls widget buttons](ASSETS/virtual_controls_widget_2.png)
 ![Virtual controls widget settings](ASSETS/virtual_controls_widget_3.png)
 
-
 ### [Stick Commands](https://github.com/DHaacke/Mambo-Tango)
+
 Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.
 ![Stick commands B&W Betaflight](https://github.com/DHaacke/Mambo-Tango/raw/master/betaflight.bmp)
 ![Stick commands colorlcd](https://github.com/DHaacke/Mambo-Tango/raw/master/edgetx.bmp)
