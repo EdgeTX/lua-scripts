@@ -455,3 +455,11 @@ If no virtual controls are available (firmware / simulator without EdgeTX/edgetx
 Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.
 ![Stick commands B&W Betaflight](https://github.com/DHaacke/Mambo-Tango/raw/master/betaflight.bmp)
 ![Stick commands colorlcd](https://github.com/DHaacke/Mambo-Tango/raw/master/edgetx.bmp)
+
+
+### [Battery and Connection Bars Widgets](https://github.com/calmarc/EdgeTX-Widgets)
+ 
+Battery Voltage + LQ Display (custom Lua widget)
+
+![Screenshot Battmeter Linkmeter](https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png)
+
