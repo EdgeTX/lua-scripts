@@ -461,5 +461,5 @@ Standalone Lua tool which provides a scrollable list of common stick commands fo
  
 Battery Voltage + LQ Display (custom Lua widget)
 
-![Stick commands colorlcd](https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png)
+![Screenshot Battmeter Linkmeter](https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png)
 
