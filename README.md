@@ -27,7 +27,7 @@ Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav fli
 
 <br/>
 
-## [ExpressLRS RF Telemetry Widget (for fixed wing/heli)](https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf)
+### [ExpressLRS RF Telemetry Widget (for fixed wing/heli)](https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf)
 
 - Display **_RF Only_** telemetry for Planes/Heli/Glider (i.e. line of site)
 - Display rf-rate / link-quality / power / rssi1 / rssi2
@@ -39,6 +39,15 @@ Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav fli
 </a>
 
 <br/>
+
+### [ELRS Finder](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw?tab=readme-ov-file#1-elrs_finderlua)
+
+An RSSI-based quad finder using ELRS/CRSF telemetry.
+
+- Shows live signal strength (dBm)
+- Displays a bar graph and numeric value
+- Plays faster beeps as you point toward the quad
+
 
 ## GPS
 
@@ -463,3 +472,11 @@ Battery Voltage + LQ Display (custom Lua widget)
 
 ![Screenshot Battmeter Linkmeter](https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png)
 
+
+### [Field Notes](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw?tab=readme-ov-file#2-fieldnoteslua)
+
+A quick logging tool for recording flight details directly from your radio. Perfect for keeping track of pack health, prop condition, and flight notes between packs.
+
+- Single-page list of editable fields (scroll & press-to-edit)
+- Saves timestamped entries to /LOGS/fieldnotes.txt
+- Exits automatically after saving
