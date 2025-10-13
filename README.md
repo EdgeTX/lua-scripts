@@ -48,6 +48,17 @@ An RSSI-based quad finder using ELRS/CRSF telemetry.
 - Displays a bar graph and numeric value
 - Plays faster beeps as you point toward the quad
 
+### [ExpressLRS Signal/Battery Widgets for ColorLCD](https://github.com/SpiderFI)
+- LQorDBM for LQ, DBM, SNR and TX power
+- TXBatt for transmitter battery voltage and percentage
+- Battery for any battery sensor
+
+<a href="https://github.com/SpiderFI"> 
+    <img src="https://github.com/user-attachments/assets/a03a616a-3ba6-4947-ba4a-3166cc8b8812" width="400">
+</a>
+
+<br/>
+
 
 ## GPS
 
