@@ -8,10 +8,10 @@ Games and other fun Lua scripts are listed [seperately here](/games.md).
 
 ## ExpressLRS
 
-### [ExpressLRS Configurator](https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/)
+### [ExpressLRS Configurator](https://www.expresslrs.org/quick-start/transmitters/lua-howto/)
 
 LUA configurator for ExpressLRS hardware<br/>
-<a href="https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/">
+<a href="https://www.expresslrs.org/quick-start/transmitters/lua-howto/">
 <img src="https://www.expresslrs.org/assets/images/lua3.jpg" width="250">
 <img src="https://www.expresslrs.org/assets/images/lua/config-bw.png" width="250">
 </a>
