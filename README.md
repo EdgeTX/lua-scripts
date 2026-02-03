@@ -491,3 +491,11 @@ A quick logging tool for recording flight details directly from your radio. Perf
 - Single-page list of editable fields (scroll & press-to-edit)
 - Saves timestamped entries to /LOGS/fieldnotes.txt
 - Exits automatically after saving
+
+### [RGB Throttle indicator](https://github.com/btastic/rgb-throttle-edgetx/)
+
+A script that lights up LED's based on the throttle input.
+
+Only supports radios that have RGB leds special function capabilities.
+
+![Turn Your Radio's LEDs Into a Throttle Indicator | EdgeTX Tutorial](https://img.youtube.com/vi/Pv36h7FIiYc/0.jpg)
