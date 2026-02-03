@@ -498,4 +498,4 @@ A script that lights up LED's based on the throttle input.
 
 Only supports radios that have RGB leds special function capabilities.
 
-![Turn Your Radio's LEDs Into a Throttle Indicator | EdgeTX Tutorial](https://img.youtube.com/vi/Pv36h7FIiYc/0.jpg)
+<a href="https://www.youtube.com/watch?v=Pv36h7FIiYc">![Turn Your Radio's LEDs Into a Throttle Indicator | EdgeTX Tutorial](https://img.youtube.com/vi/Pv36h7FIiYc/0.jpg)</a>
