@@ -313,7 +313,7 @@ For analyzing and visualizing the generated logs, you can use the [UAV Desk](htt
 <a href="https://github.com/JohnnyCarvi/flylog_edgetx">
   <img src="https://raw.githubusercontent.com/JohnnyCarvi/flylog_edgetx/refs/heads/main/screenshots/1_special_functions_tab.png" width="250">
   <img src="https://github.com/JohnnyCarvi/flylog_edgetx/blob/main/screenshots/2_special_functions.png?raw=true" width="250">
-  <img src="https://github.com/CarviFPV/flylog_edgetx/blob/main/screenshots/flightdetails.png?raw=true" width="250">
+  <img src="https://github.com/CarviFPV/flylog_edgetx/blob/main/screenshots/flightdetails.png?raw=true" width="500">
 </a>
 
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
