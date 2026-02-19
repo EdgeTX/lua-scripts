@@ -308,7 +308,7 @@ These scripts provide simple logging functionality for your flights, making it e
 `flylog.lua`: Logs arming/disarming events, timestamps, GPS coordinates, and model name.  
 `tellog.lua`: Logs detailed telemetry data at regular intervals during flight.
 
-For analyzing and visualizing the generated logs, you can use the [UAV Manager](https://github.com/CarviFPV/UAV_Manager).
+For analyzing and visualizing the generated logs, you can use the [UAV Desk](https://uavdesk.app).
 
 <a href="https://github.com/JohnnyCarvi/flylog_edgetx">
   <img src="https://raw.githubusercontent.com/JohnnyCarvi/flylog_edgetx/refs/heads/main/screenshots/1_special_functions_tab.png" width="250">
