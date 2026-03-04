@@ -5,8 +5,8 @@
     "description": "LUA configurator for ExpressLRS hardware.",
     "infourl": "https://www.expresslrs.org/3.0/quick-start/transmitters/lua-howto/",
     "images": [
-      "https://www.expresslrs.org/assets/images/lua3.jpg",
-      "https://www.expresslrs.org/assets/images/lua/config-bw.png"
+      "ASSETS/expresslrs-configurator/screenshot-1.jpg",
+      "ASSETS/expresslrs-configurator/screenshot-3.png"
     ],
     "tags": [
       "expresslrs",
@@ -21,7 +21,7 @@
     "description": "Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.",
     "infourl": "https://github.com/ExpressLRS/ElrsTelemWidget",
     "images": [
-      "https://raw.githubusercontent.com/ExpressLRS/ElrsTelemWidget/main/docs/images/screen-2-1.png"
+      "ASSETS/expresslrs-telemetry-widget-betaflight-inav/screenshot-1.png"
     ],
     "tags": [
       "expresslrs",
@@ -37,7 +37,7 @@
     "description": "Display RF Only telemetry for Planes/Heli/Glider. Shows rf-rate, link-quality, power, rssi1, rssi2, min & max indicators, and post flight summary with auto-detection end-of-flight.",
     "infourl": "https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf",
     "images": [
-      "https://user-images.githubusercontent.com/7026911/257013252-cc7ac64c-2b1c-4bef-a3bb-2718fbf264ac.gif"
+      "ASSETS/expresslrs-rf-telemetry-widget-for-fixed-wing-heli/screenshot-1.gif"
     ],
     "tags": [
       "expresslrs",
@@ -66,7 +66,7 @@
     "description": "LQorDBM widget for LQ, DBM, SNR and TX power. TXBatt widget for transmitter battery voltage and percentage. Battery widget for any battery sensor.",
     "infourl": "https://github.com/SpiderFI",
     "images": [
-      "https://github.com/user-attachments/assets/a03a616a-3ba6-4947-ba4a-3166cc8b8812"
+      "ASSETS/expresslrs-signal-battery-widgets-for-colorlcd/screenshot-1.jpg"
     ],
     "tags": [
       "expresslrs",
@@ -80,10 +80,10 @@
     "description": "ArduPilot LUA telemetry script for color and B&W radios.",
     "infourl": "https://github.com/yaapu/FrskyTelemetryScript",
     "images": [
-      "https://user-images.githubusercontent.com/30294218/198382377-cb48032f-ea5c-4f8d-aa12-f592c1e09358.png",
-      "https://user-images.githubusercontent.com/30294218/216000387-f330a204-b674-48ea-bdaf-64ec33871eb2.png",
-      "https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png",
-      "https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png"
+      "ASSETS/yaapu-telemetry-widget/screenshot-1.png",
+      "ASSETS/yaapu-telemetry-widget/screenshot-3.png",
+      "ASSETS/yaapu-telemetry-widget/screenshot-5.png",
+      "ASSETS/yaapu-telemetry-widget/screenshot-7.png"
     ],
     "tags": [
       "ardupilot",
@@ -101,7 +101,7 @@
     "description": "Offline GPS Mapping Widget for Horus and T16 radios. Supports Ardupilot, iNAV, Betaflight, Crossfire and whatever FC or firmware that can send GPS info to EdgeTX.",
     "infourl": "https://github.com/yaapu/HorusMappingWidget",
     "images": [
-      "https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png"
+      "ASSETS/yaapu-horus-mapping-widget/screenshot-1.png"
     ],
     "tags": [
       "ardupilot",
@@ -121,8 +121,8 @@
     "description": "GPS Telemetry Widget for B&W and Color radios. Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file with a built-in log viewer.",
     "infourl": "https://github.com/moschotto/OpenTX_GPS_Telemetry",
     "images": [
-      "https://raw.githubusercontent.com/moschotto/OpenTX_GPS_Telemetry/main/media/description.png",
-      "https://github.com/moschotto/OpenTX_GPS_Telemetry/raw/main/media/x9_GPS_screen.PNG"
+      "ASSETS/gps-widget/screenshot-1.png",
+      "ASSETS/gps-widget/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -136,9 +136,9 @@
     "description": "Collection of ColorLCD and B&W widgets. For ColorLCD includes GPS lat/long and Google Plus Code widget, Home direction/distance widget, and average battery voltage widget. For B&W includes GPS Telemetry screen and Home distance telemetry screen.",
     "infourl": "https://github.com/kristjanbjarni/opentx-widgets",
     "images": [
-      "https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/GPS.png",
-      "https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/AvgBatt.png",
-      "https://github.com/kristjanbjarni/opentx-widgets/raw/main/docs/images/home_taranis.png"
+      "ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-1.png",
+      "ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-3.png",
+      "ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-5.png"
     ],
     "tags": [
       "widget",
@@ -152,8 +152,8 @@
     "description": "Generates a QR code of last GPS coordinates received. For black-and-white screen radios only.",
     "infourl": "https://github.com/alufers/edgetx-gps-qrcode",
     "images": [
-      "https://raw.githubusercontent.com/alufers/edgetx-gps-qrcode/master/docs/sim-screenshot.png",
-      "https://raw.githubusercontent.com/alufers/edgetx-gps-qrcode/master/docs/x9dp-screenshot.png"
+      "ASSETS/gps-qr-code-generator/screenshot-1.png",
+      "ASSETS/gps-qr-code-generator/screenshot-3.png"
     ],
     "tags": [
       "script",
@@ -166,7 +166,7 @@
     "description": "Log each flight GPS coordinates to a separate GPX file. Telemetry script for radios with black-and-white displays only.",
     "infourl": "https://github.com/poweredjj/gpslog",
     "images": [
-      "https://github.com/poweredjj/gpslog/raw/main/screenshot.png"
+      "ASSETS/gps-logger-bw-only/screenshot-1.png"
     ],
     "tags": [
       "script",
@@ -179,7 +179,7 @@
     "description": "Log each flight GPS coordinates to a separate GPX file. Widget for radios with color displays only.",
     "infourl": "https://github.com/poweredjj/gpslog_color",
     "images": [
-      "https://github.com/poweredjj/gpslog_color/raw/main/screenshot.jpg"
+      "ASSETS/gps-logger-color-only/screenshot-1.jpg"
     ],
     "tags": [
       "widget",
@@ -192,7 +192,7 @@
     "description": "Plot logged flight telemetry data on a map of your airfield.",
     "infourl": "https://github.com/ktaliaferro/gps-viewer",
     "images": [
-      "https://github.com/ktaliaferro/gps-viewer/raw/master/images/screenshot_points.png"
+      "ASSETS/gps-viewer/screenshot-1.png"
     ],
     "tags": [
       "script",
@@ -205,7 +205,7 @@
     "description": "The Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.",
     "infourl": "https://github.com/betaflight/betaflight-tx-lua-scripts",
     "images": [
-      "https://oscarliang.com/ctt/uploads/2021/07/betaflight-lua-script-config-home-menu-screen-options.jpg"
+      "ASSETS/betaflight-setup/screenshot-1.jpg"
     ],
     "tags": [
       "betaflight",
@@ -221,8 +221,8 @@
     "description": "Shows telemetry and flight status information. Supports radios with color and black and white screens.",
     "infourl": "https://github.com/iNavFlight/OpenTX-Telemetry-Widget",
     "images": [
-      "https://github.com/teckel12/LuaTelemetry/raw/master/assets/iNavHorus.png",
-      "https://github.com/teckel12/LuaTelemetry/raw/master/assets/iNavQX7.png"
+      "ASSETS/inav-telemetry-flight-status/screenshot-1.png",
+      "ASSETS/inav-telemetry-flight-status/screenshot-3.png"
     ],
     "tags": [
       "inav",
@@ -239,16 +239,16 @@
     "description": "Feature rich LUA app focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links, custom alerts, VTx info, GPS and much more. Supports radios with color and black and white screens.",
     "infourl": "https://fm2m.online/toolbox-edgetx/",
     "images": [
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-db.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-vtx.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-armstop.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-gps.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-color-sticks.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-db.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-vtx.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-armstop.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-dbgps.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-toolbox-090-bw-sticks.png"
+      "ASSETS/fm2m-toolbox/screenshot-1.png",
+      "ASSETS/fm2m-toolbox/screenshot-3.png",
+      "ASSETS/fm2m-toolbox/screenshot-5.png",
+      "ASSETS/fm2m-toolbox/screenshot-7.png",
+      "ASSETS/fm2m-toolbox/screenshot-9.png",
+      "ASSETS/fm2m-toolbox/screenshot-11.png",
+      "ASSETS/fm2m-toolbox/screenshot-13.png",
+      "ASSETS/fm2m-toolbox/screenshot-15.png",
+      "ASSETS/fm2m-toolbox/screenshot-17.png",
+      "ASSETS/fm2m-toolbox/screenshot-19.png"
     ],
     "tags": [
       "betaflight",
@@ -265,8 +265,8 @@
     "description": "Configurable EdgeTX widget that shows a nifty Digital Clock.",
     "infourl": "https://fm2m.online/digital-clock-edgetx/",
     "images": [
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-dclock-10-1.png",
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-dclock-10-2.png"
+      "ASSETS/fm2m-digital-clock/screenshot-1.png",
+      "ASSETS/fm2m-digital-clock/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -279,7 +279,7 @@
     "description": "Enhanced Model, Timer, Channels and Analog Clock widgets.",
     "infourl": "https://fm2m.online/addons-edgetx/#WPack",
     "images": [
-      "https://download.fm2m.online/remote/edgetx-lua-scripts/fm2m-widgets-pack-021-promo.png"
+      "ASSETS/fm2m-widgets-pack/screenshot-1.png"
     ],
     "tags": [
       "widget",
@@ -305,10 +305,10 @@
     "description": "Displays various battery related data including voltage, current, and mAh consumed.",
     "infourl": "https://github.com/fdm225/mahRe2",
     "images": [
-      "https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811177-105-mAhRe2_full_screen.png",
-      "https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811165-83-mAhRe2_quarter.png",
-      "https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811163-82-mAhRe2_settings.png",
-      "https://static.rcgroups.net/forums/attachments/6/4/3/0/2/9/a16811169-236-mAhRe2_mAh_sensor.png"
+      "ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-1.png",
+      "ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-3.png",
+      "ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-5.png",
+      "ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-7.png"
     ],
     "tags": [
       "widget",
@@ -333,8 +333,8 @@
     "description": "Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.",
     "infourl": "https://github.com/DHaacke/Mambo-Tango",
     "images": [
-      "https://github.com/DHaacke/Mambo-Tango/raw/master/betaflight.bmp",
-      "https://github.com/DHaacke/Mambo-Tango/raw/master/edgetx.bmp"
+      "ASSETS/stick-commands/screenshot-1.bmp",
+      "ASSETS/stick-commands/screenshot-3.bmp"
     ],
     "tags": [
       "betaflight",
@@ -350,7 +350,7 @@
     "description": "ShowItAll displays various information in a single pane.",
     "infourl": "https://rc-soar.com/opentx/lua/showitall/index.htm",
     "images": [
-      "https://rc-soar.com/opentx/lua/showitall/sia.png"
+      "ASSETS/show-it-all/screenshot-1.png"
     ],
     "tags": [
       "script",
@@ -363,10 +363,10 @@
     "description": "View fullscreen images with layout information or photos on big screens. Cycle through them and have quick access to your favourite one.",
     "infourl": "https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html",
     "images": [
-      "https://www.schleth.com/wp-content/uploads/vu-screen1.jpg",
-      "https://www.schleth.com/wp-content/uploads/diagram.jpg",
-      "https://www.schleth.com/wp-content/uploads/vu_license.jpg",
-      "https://www.schleth.com/wp-content/uploads/vu-screen2.jpg"
+      "ASSETS/vu-fullscreen-image-viewer-widget/screenshot-1.jpg",
+      "ASSETS/vu-fullscreen-image-viewer-widget/screenshot-3.jpg",
+      "ASSETS/vu-fullscreen-image-viewer-widget/screenshot-5.jpg",
+      "ASSETS/vu-fullscreen-image-viewer-widget/screenshot-7.jpg"
     ],
     "tags": [
       "widget",
@@ -379,9 +379,9 @@
     "description": "Some widgets, themes and other scripts for EdgeTX.",
     "infourl": "https://github.com/MadMonkey87/EdgeTX-Goodies",
     "images": [
-      "https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-49-59.png",
-      "https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-02_18-52-08.png",
-      "https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-07_10-35-43.png",
+      "ASSETS/edgetx-goodies/screenshot-1.png",
+      "ASSETS/edgetx-goodies/screenshot-3.png",
+      "ASSETS/edgetx-goodies/screenshot-5.png",
       "https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-08.png"
     ],
     "tags": [
@@ -395,7 +395,7 @@
     "description": "On-radio import/export functionality for EdgeTX. Can be used to move functions, logical switches, mixes etc between models.",
     "infourl": "https://github.com/forbesmyester/EdgeTX-ImpExp",
     "images": [
-      "https://raw.githubusercontent.com/forbesmyester/EdgeTX-ImpExp/main/Screenshot.png"
+      "ASSETS/impexp/screenshot-1.png"
     ],
     "tags": [
       "tool",
@@ -409,8 +409,8 @@
     "description": "Widget that shows switch positions with customisable icons. Shows all switches with different icons for every switch position.",
     "infourl": "https://repository.justfly.solutions/index.php?view=product&id=115:switch-config",
     "images": [
-      "https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905909-20-screenshot_tx16s_21-04-25_20-19-54.png",
-      "https://static.rcgroups.net/forums/attachments/5/9/3/7/9/7/a14905913-151-screenshot_tx16s_21-04-25_20-19-25.png"
+      "ASSETS/switch2-widget/screenshot-1.png",
+      "ASSETS/switch2-widget/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -423,9 +423,9 @@
     "description": "Scripts to complement the Multi Protocol Module, such as configuring the module, automatically naming channels, DSM forward programming, and other protocol specific tasks.",
     "infourl": "https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts",
     "images": [
-      "https://img.youtube.com/vi/lGyCV2kpqHU/0.jpg",
-      "https://img.youtube.com/vi/L58ayXuewyA/0.jpg",
-      "https://img.youtube.com/vi/81wd8NlF3Qw/0.jpg"
+      "ASSETS/multi-protocol-module-tools/screenshot-1.jpg",
+      "ASSETS/multi-protocol-module-tools/screenshot-3.jpg",
+      "ASSETS/multi-protocol-module-tools/screenshot-5.jpg"
     ],
     "tags": [
       "multi-protocol",
@@ -441,13 +441,13 @@
     "description": "Scripts to use with Spektrum Receivers, including DSM Forward Programming, Spektrum Telemetry Scripts with TextGen for AVIAN ESC programming, and Smart RX support.",
     "infourl": "https://github.com/frankiearzu/DSMTools",
     "images": [
-      "https://user-images.githubusercontent.com/32604366/230751340-dd118f36-1884-405b-b12b-81cba16c7321.png",
-      "https://user-images.githubusercontent.com/32604366/230751281-0c71ff4a-179f-41fd-9290-302a6e0fe821.png",
-      "https://user-images.githubusercontent.com/32604366/230751350-59070e75-afa3-439b-8902-bc7b3b901084.png",
-      "https://user-images.githubusercontent.com/32604366/230751370-b4e4355f-a3d2-4c44-aa1a-57861f1ff3da.png",
-      "https://user-images.githubusercontent.com/32604366/230123260-614f4e5e-9546-4439-9196-db885894083f.jpg",
-      "https://user-images.githubusercontent.com/32604366/230751833-e92d3eae-2782-4009-a3dc-63ce893f2a38.png",
-      "https://user-images.githubusercontent.com/32604366/230751488-70b396b7-f08e-4152-a516-d355b3cf4001.png"
+      "ASSETS/spektrum-dsm-tools/screenshot-1.png",
+      "ASSETS/spektrum-dsm-tools/screenshot-3.png",
+      "ASSETS/spektrum-dsm-tools/screenshot-5.png",
+      "ASSETS/spektrum-dsm-tools/screenshot-7.png",
+      "ASSETS/spektrum-dsm-tools/screenshot-9.jpg",
+      "ASSETS/spektrum-dsm-tools/screenshot-11.png",
+      "ASSETS/spektrum-dsm-tools/screenshot-13.png"
     ],
     "tags": [
       "spektrum",
@@ -462,11 +462,11 @@
     "description": "Nice presentation of log file on the field — no computer needed for logs anymore.",
     "infourl": "https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer",
     "images": [
-      "https://user-images.githubusercontent.com/7026911/193412100-5cdb3b51-1e33-4eaa-94cd-6ca07aede43b.gif",
-      "https://user-images.githubusercontent.com/7026911/193409667-75e314ab-06cb-4136-a18f-88647755c755.png",
-      "https://user-images.githubusercontent.com/7026911/193409686-4fff1c25-229a-419e-8a2a-e64e703a4fc2.png",
-      "https://user-images.githubusercontent.com/7026911/193409707-1020eebe-f2af-4d83-b0a9-a138aad4aca3.png",
-      "https://user-images.githubusercontent.com/7026911/193409719-bd1b2f27-ad19-452b-b042-bba85822a5c1.png"
+      "ASSETS/log-viewer/screenshot-1.gif",
+      "ASSETS/log-viewer/screenshot-3.png",
+      "ASSETS/log-viewer/screenshot-5.png",
+      "ASSETS/log-viewer/screenshot-7.png",
+      "ASSETS/log-viewer/screenshot-9.png"
     ],
     "tags": [
       "tool",
@@ -479,7 +479,7 @@
     "description": "Simple EdgeTX LUA script for BW radios to read log files on the display. Rotary wheel is used to change the read value. Back switches between modes (columns, rows, or files).",
     "infourl": "https://github.com/nikbg3/EdgeTXLogViewerBW",
     "images": [
-      "https://github.com/user-attachments/assets/43b69333-3dcc-4186-a3e8-68544e4cb3fc"
+      "ASSETS/log-viewer-bw-only/screenshot-1.jpg"
     ],
     "tags": [
       "tool",
@@ -492,8 +492,8 @@
     "description": "A tool to visualize log entries recorded by the SD Logging special function on an EdgeTX B&W or color radio. Supports Model/File/Entry selection, graphical view, and cursor navigation.",
     "infourl": "https://github.com/icebreaker-ch/EdgeTX-LogViz",
     "images": [
-      "https://github.com/user-attachments/assets/bad26c6b-6f1c-467a-bb1b-4762f5a93560",
-      "https://github.com/user-attachments/assets/dd4e7625-e1fb-4d82-9f45-2cfb8ccd79fb"
+      "ASSETS/logviz/screenshot-1.jpg",
+      "ASSETS/logviz/screenshot-3.jpg"
     ],
     "tags": [
       "tool",
@@ -507,8 +507,8 @@
     "description": "A tool for managing log files created by the SD Logging Special Function on an EdgeTX B&W or color transmitter. Actions can be performed on all models or a selected model. Requires EdgeTX 2.11+ for color version.",
     "infourl": "https://github.com/icebreaker-ch/EdgeTX-LogManager",
     "images": [
-      "https://github.com/user-attachments/assets/891b5514-155c-4b78-80e0-24974929412a",
-      "https://github.com/user-attachments/assets/0836feaf-15ea-4b13-9185-b1557f2f7c04"
+      "ASSETS/logmanager/screenshot-1.jpg",
+      "ASSETS/logmanager/screenshot-3.jpg"
     ],
     "tags": [
       "tool",
@@ -522,9 +522,9 @@
     "description": "Simple logging scripts for EdgeTX flights. flylog.lua logs arming/disarming events, timestamps, GPS coordinates, and model name. tellog.lua logs detailed telemetry data at regular intervals.",
     "infourl": "https://github.com/JohnnyCarvi/flylog_edgetx",
     "images": [
-      "https://raw.githubusercontent.com/JohnnyCarvi/flylog_edgetx/refs/heads/main/screenshots/1_special_functions_tab.png",
-      "https://github.com/JohnnyCarvi/flylog_edgetx/blob/main/screenshots/2_special_functions.png?raw=true",
-      "https://github.com/CarviFPV/flylog_edgetx/blob/main/screenshots/flightdetails.png?raw=true"
+      "ASSETS/flylog-telelog/screenshot-1.png",
+      "ASSETS/flylog-telelog/screenshot-3.png",
+      "ASSETS/flylog-telelog/screenshot-5.png"
     ],
     "tags": [
       "script",
@@ -549,7 +549,7 @@
     "description": "A script that lights up LED's based on the throttle input. Only supports radios that have RGB LEDs special function capabilities.",
     "infourl": "https://github.com/btastic/rgb-throttle-edgetx/",
     "images": [
-      "https://img.youtube.com/vi/Pv36h7FIiYc/0.jpg"
+      "ASSETS/rgb-throttle-indicator/screenshot-1.jpg"
     ],
     "tags": [
       "script",
@@ -562,8 +562,8 @@
     "description": "Widget for color screen radios that allows touch buttons via logical switches. Interface is in German.",
     "infourl": "https://github.com/Ziege-One/TSwitch",
     "images": [
-      "https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/fullscreen.png",
-      "https://raw.githubusercontent.com/Ziege-One/TSwitch/main/docs/widget_status.png"
+      "ASSETS/tswitch-widget/screenshot-1.png",
+      "ASSETS/tswitch-widget/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -576,12 +576,12 @@
     "description": "Advanced lap timer script using as few controls as possible. Stores race and lap data for analysis back at the computer.",
     "infourl": "https://github.com/RadioMasterRC/EdgeTX-LapTimer",
     "images": [
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-1.bmp",
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-2.bmp",
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-3.bmp",
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-4.bmp",
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-5.bmp",
-      "https://github.com/RadioMasterRC/EdgeTX-LapTimer/raw/master/ScreenShot/screen-6.bmp"
+      "ASSETS/lap-timer/screenshot-1.bmp",
+      "ASSETS/lap-timer/screenshot-3.bmp",
+      "ASSETS/lap-timer/screenshot-5.bmp",
+      "ASSETS/lap-timer/screenshot-7.bmp",
+      "ASSETS/lap-timer/screenshot-9.bmp",
+      "ASSETS/lap-timer/screenshot-11.bmp"
     ],
     "tags": [
       "tool",
@@ -597,8 +597,8 @@
     "description": "Caller for practicing F3A pattern — updated to 2024 season.",
     "infourl": "https://github.com/jrwieland/F3A",
     "images": [
-      "https://github.com/jrwieland/F3A/raw/main/Screenshots/p-21.png",
-      "https://github.com/jrwieland/F3A/raw/main/Screenshots/f25.png"
+      "ASSETS/f3a-caller/screenshot-1.png",
+      "ASSETS/f3a-caller/screenshot-3.png"
     ],
     "tags": [
       "script",
@@ -612,10 +612,10 @@
     "description": "Enhanced music player for OpenTX and EdgeTX radios. Supports multiple playlists so you can listen to music while flying.",
     "infourl": "https://github.com/jrwieland/TaraniTunes-v4.x",
     "images": [
-      "https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Color%20Screen%20Widget/Screenshots3/Features.png",
-      "https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Color%20Screen%20Widget/Screenshots3/Colorscreen.PNG",
-      "https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Screenshots/TaraniTunesQX7.PNG",
-      "https://github.com/jrwieland/TaraniTunes-v4.x/raw/master/Screenshots/Customize.PNG"
+      "ASSETS/taranitunes/screenshot-1.png",
+      "ASSETS/taranitunes/screenshot-3.png",
+      "ASSETS/taranitunes/screenshot-5.png",
+      "ASSETS/taranitunes/screenshot-7.png"
     ],
     "tags": [
       "widget",
@@ -629,8 +629,8 @@
     "description": "Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on battery voltage from the 'Cels' sensor (FLVSS).",
     "infourl": "https://github.com/jrwieland/Battery-mAh",
     "images": [
-      "https://github.com/jrwieland/Battery-mAh/raw/main/Screenshots/4_2lipo.png",
-      "https://github.com/jrwieland/Battery-mAh/raw/main/Screenshots/4_35lipo.png"
+      "ASSETS/battery-percentage-and-mah-used/screenshot-1.png",
+      "ASSETS/battery-percentage-and-mah-used/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -643,7 +643,7 @@
     "description": "Battery and Telemetry Monitoring LUA Widget that relies as little as possible on radio settings — everything is defined in the script itself, with no need for manual Logical Switches or Custom Functions.",
     "infourl": "https://github.com/derelict/TxBatTele",
     "images": [
-      "https://github.com/derelict/TxBatTele/raw/main/screenshots/demovid.gif"
+      "ASSETS/txbattele/screenshot-1.gif"
     ],
     "tags": [
       "widget",
@@ -656,7 +656,7 @@
     "description": "A simple widget to display switches which are configured in special functions with a PLAY_TRACK behind them.",
     "infourl": "https://github.com/druckgott/getswitchesWdgets/",
     "images": [
-      "https://github.com/druckgott/getswitchesWdgets/raw/main/doc/img/example1.png"
+      "ASSETS/switchoverview/screenshot-1.png"
     ],
     "tags": [
       "widget",
@@ -730,8 +730,8 @@
     "description": "A Tetris clone for EdgeTX radios.",
     "infourl": "https://github.com/DavBfr/etx-tetris",
     "images": [
-      "https://davbfr.github.io/etx-tetris/snapshot_01.jpg",
-      "https://davbfr.github.io/etx-tetris/snapshot_02.jpg"
+      "ASSETS/tetris/screenshot-1.jpg",
+      "ASSETS/tetris/screenshot-3.jpg"
     ],
     "tags": [
       "game",
@@ -755,9 +755,9 @@
     "description": "A simple FPV flight simulator that runs directly on your EdgeTX radio.",
     "infourl": "https://github.com/alexeystn/lua-fpv-sim",
     "images": [
-      "https://raw.githubusercontent.com/alexeystn/lua-fpv-sim/master/images/scr1.png",
-      "https://raw.githubusercontent.com/alexeystn/lua-fpv-sim/master/images/scr2.png",
-      "https://raw.githubusercontent.com/alexeystn/lua-fpv-sim/master/images/scr3.png"
+      "ASSETS/lua-fpv-simulator/screenshot-1.png",
+      "ASSETS/lua-fpv-simulator/screenshot-3.png",
+      "ASSETS/lua-fpv-simulator/screenshot-5.png"
     ],
     "tags": [
       "game",
@@ -771,9 +771,9 @@
     "description": "A Galaxian/Space Invaders-style arcade shooter game for EdgeTX radios.",
     "infourl": "https://github.com/timmalahov/galuaxian",
     "images": [
-      "https://user-images.githubusercontent.com/61071739/210536027-88f94be0-f7e7-4a4c-a8d7-34821bd01494.jpeg",
-      "https://user-images.githubusercontent.com/61071739/210536020-fd2888df-b61d-4dfa-be3f-279537ed3778.jpeg",
-      "https://user-images.githubusercontent.com/61071739/209031393-089fd118-8d46-4912-9b01-c5c66882268e.png"
+      "ASSETS/galuaxian/screenshot-1.jpeg",
+      "ASSETS/galuaxian/screenshot-3.jpeg",
+      "ASSETS/galuaxian/screenshot-5.png"
     ],
     "tags": [
       "game",
