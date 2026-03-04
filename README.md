@@ -34,7 +34,7 @@ Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav fli
 - Display **min & max** indicator
 - **Post flight summary** (auto-detection end-of-flight)
 
-<a href="https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf"> 
+<a href="https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf">
     <img src="ASSETS/expresslrs-rf-telemetry-widget-for-fixed-wing-heli/screenshot-1.gif" width="400">
 </a>
 
@@ -53,7 +53,7 @@ An RSSI-based quad finder using ELRS/CRSF telemetry.
 - TXBatt for transmitter battery voltage and percentage
 - Battery for any battery sensor
 
-<a href="https://github.com/SpiderFI"> 
+<a href="https://github.com/SpiderFI">
     <img src="ASSETS/expresslrs-signal-battery-widgets-for-colorlcd/screenshot-1.jpg" width="400">
 </a>
 
@@ -191,9 +191,9 @@ View fullscreen images with layout information or photos, cycle through them and
 Some widgets, themes and other scripts for EdgeTX<br/>
 <a href="https://github.com/MadMonkey87/EdgeTX-Goodies">
 <img src="ASSETS/edgetx-goodies/screenshot-1.png"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-2.png"  width="250">
 <img src="ASSETS/edgetx-goodies/screenshot-3.png"  width="250">
-<img src="ASSETS/edgetx-goodies/screenshot-5.png"  width="250">
-<img src="https://github.com/MadMonkey87/EdgeTX-Goodies/raw/main/SCREENSHOTS/screenshot_tx16s_22-08-09_19-54-00.png"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-4.png"  width="250">
 </a>
 
 <br/>
@@ -255,13 +255,13 @@ Scripts to use with Spektrum Receivers. It has easy to install zip files version
 Nice presentation of log file on the field<br>
 no computer needed for logs anymore.
 
-<a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer"> 
+<a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer">
     <img src="ASSETS/log-viewer/screenshot-1.gif" width="480">
 </a>
 
 **Selecting files & columns**
 
-<a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer"> 
+<a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer">
     <img src="ASSETS/log-viewer/screenshot-3.png" width="200">
     <img src="ASSETS/log-viewer/screenshot-5.png" width="200">
     <img src="ASSETS/log-viewer/screenshot-7.png" width="200">
@@ -296,7 +296,7 @@ on an EdgeTX B&W or color radio.
 
 A tool for managing Log files (created by the SD Logging Special Function) on an EdgeTX B&W or color RC transmitter. Actions can be performed on all models or a selected model.
 
-> [!NOTE]  
+> [!NOTE]
 > The color version of this tool uses the LVGL widgets API, thus EdgeTX version 2.11 or later is needed to run it. However, the B&W version can be used on color radios with older versions of EdgeTX.
 
 ![LogManagerColor](ASSETS/logmanager/screenshot-1.jpg) ![LogManagerBW](ASSETS/logmanager/screenshot-3.jpg)
@@ -305,7 +305,7 @@ A tool for managing Log files (created by the SD Logging Special Function) on an
 
 These scripts provide simple logging functionality for your flights, making it easy to record and review important flight events and telemetry data.
 
-`flylog.lua`: Logs arming/disarming events, timestamps, GPS coordinates, and model name.  
+`flylog.lua`: Logs arming/disarming events, timestamps, GPS coordinates, and model name.
 `tellog.lua`: Logs detailed telemetry data at regular intervals during flight.
 
 For analyzing and visualizing the generated logs, you can use the [UAV Desk](https://uavdesk.app).
@@ -391,7 +391,7 @@ Generates a QR code of last GPS coordinates received (for black-and-white screen
 Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on battery voltage from 'Cels' sensor (FLVSS)<br/>
 <a href="https://github.com/jrwieland/Battery-mAh">
 <img src="ASSETS/battery-percentage-and-mah-used/screenshot-1.png" width="400">
-<img src="ASSETS/battery-percentage-and-mah-used/screenshot-3.png" width="400">  
+<img src="ASSETS/battery-percentage-and-mah-used/screenshot-3.png" width="400">
 </a>
 
 ### [TxBatTele](https://github.com/derelict/TxBatTele)
@@ -441,9 +441,9 @@ This widget controls a so-called multiswitch inside a model. A multiswitch is a 
 This widget controls a multiswitch via the CRSF protocol (ExpressLRS): https://github.com/wimalopaan/Electronics?tab=readme-ov-file#elrs_msw (or via ACCST/AFHDS2A and SBus ).
 Multiple instances of this widget can control multiple multiswitches inside a model, upto 255 theoretically.
 
-![Multiswitch widget controls](ASSETS/multiswitch_widget_1.png)
-![Multiswitch widget function settings](ASSETS/multiswitch_widget_2.png)
-![Multiswitch widget global settings](ASSETS/multiswitch_widget_3.png)
+![Multiswitch widget controls](ASSETS/multiswitch-widget/screenshot-1.png)
+![Multiswitch widget function settings](ASSETS/multiswitch-widget/screenshot-2.png)
+![Multiswitch widget global settings](ASSETS/multiswitch-widget/screenshot-3.png)
 
 ### [Hardware extension widget](https://github.com/wimalopaan/LUA)
 
@@ -453,9 +453,9 @@ By this means it can read external controls, like upto 16 11-bit (proportional) 
 
 Ideally the firmware for the radio has PR EdgeTX/edgetx#5885, so that this widget can set the virtual controls according to the external controls.
 
-![Hardware extension widget controls](ASSETS/hardware_extension_widget_1.png)
-![Hardware extension widget settings](ASSETS/hardware_extension_widget_2.png)
-![Hardware extension widget mapping](ASSETS/hardware_extension_widget_3.png)
+![Hardware extension widget controls](ASSETS/hardware_extension_widget_(\d)\.png)
+![Hardware extension widget settings](ASSETS/hardware_extension_widget_(\d)\.png)
+![Hardware extension widget mapping](ASSETS/hardware_extension_widget_(\d)\.png)
 
 ### [Virtual controls widget](https://github.com/wimalopaan/LUA)
 
@@ -466,9 +466,9 @@ This widget can manipulate these virtual controls by means of up to 16 sliders a
 
 If no virtual controls are available (firmware / simulator without EdgeTX/edgetx#5885), it is still useful as it can also manipulate the shm variables, which serve as a data exchange between widgets and mixer-scripts.
 
-![Virtual controls widget sliders](ASSETS/virtual_controls_widget_1.png)
-![Virtual controls widget buttons](ASSETS/virtual_controls_widget_2.png)
-![Virtual controls widget settings](ASSETS/virtual_controls_widget_3.png)
+![Virtual controls widget sliders](ASSETS/virtual-controls-widget/screenshot-1.png)
+![Virtual controls widget buttons](ASSETS/virtual-controls-widget/screenshot-2.png)
+![Virtual controls widget settings](ASSETS/virtual-controls-widget/screenshot-3.png)
 
 ### [Stick Commands](https://github.com/DHaacke/Mambo-Tango)
 
@@ -478,10 +478,10 @@ Standalone Lua tool which provides a scrollable list of common stick commands fo
 
 
 ### [Battery and Connection Bars Widgets](https://github.com/calmarc/EdgeTX-Widgets)
- 
+
 Battery Voltage + LQ Display (custom Lua widget)
 
-![Screenshot Battmeter Linkmeter](https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png)
+![Screenshot Battmeter Linkmeter](ASSETS/battery-and-connection-bars-widgets/screenshot-1.png)
 
 
 ### [Field Notes](https://github.com/iamsunilchahal/edgetx-lua-scripts-bw?tab=readme-ov-file#2-fieldnoteslua)
