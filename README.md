@@ -163,6 +163,23 @@ Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
 
 LUA configurator for numerous TBS products. Use this instead of Crossfire lua.
 
+
+<br/>
+
+### [VB Telemetry](https://github.com/And2Ex/VBtelemetry)
+
+Telemetry script for EdgeTX black-and-white radios with ExpressLRS support.<br/>
+Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX logging and QR position sharing.<br/>
+
+<a href="https://github.com/And2Ex/VBtelemetry">
+<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/9c29e013-f0be-4e61-8900-71d0906d030e" />
+<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/f05f9c1c-12fa-4e06-848b-c8fdc48231e9" />
+<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/46541ae9-f6f6-436a-8eee-97fdc799badc" />
+
+</a>
+
+<br/>
+
 ## Other
 
 ### [Show It All](https://rc-soar.com/opentx/lua/showitall/index.htm)
