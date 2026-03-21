@@ -185,7 +185,8 @@ RC Info Center (RCIC) is a highly optimized, full-featured telemetry script desi
 
 <a align="center" href="https://github.com/AlonsoLP/rcic">
    <img width="288" height="144" alt="RCIC Battery page" src="https://github.com/user-attachments/assets/f4148f3f-0a61-4153-87d7-569a8c24495b" />
-   <img width="288" height="144" alt="RCIC Location page" src="https://github.com/user-attachments/assets/9da64922-fe4e-4239-a54b-b3af538cc1aa" />
+   <img width="288" height="144" alt="RCIC GPS page" src="https://github.com/user-attachments/assets/d57b3e07-3253-45db-b4e3-b29efeb48ab9" />
+    <img width="288" height="144" alt="RCIC Location page" src="https://github.com/user-attachments/assets/9da64922-fe4e-4239-a54b-b3af538cc1aa" />
    <img width="288" height="144" alt="RCIC Totals page" src="https://github.com/user-attachments/assets/89e6f037-4b86-4a1c-a0d2-6e8343a1fd2b" />
    <img width="288" height="144" alt="RCIC Configuration page" src="https://github.com/user-attachments/assets/6c0a3e8f-e3e7-46f3-b6e6-452d6356f61f" />
 </a>
