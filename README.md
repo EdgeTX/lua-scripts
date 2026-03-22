@@ -175,7 +175,20 @@ Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX l
 <img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/9c29e013-f0be-4e61-8900-71d0906d030e" />
 <img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/f05f9c1c-12fa-4e06-848b-c8fdc48231e9" />
 <img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/46541ae9-f6f6-436a-8eee-97fdc799badc" />
+</a>
 
+<br/>
+
+### [RCIC (RC Info Center) - Telemetry Dashboard for EdgeTX](https://github.com/AlonsoLP/rcic)
+
+RC Info Center (RCIC) is a highly optimized, full-featured telemetry script designed for radio transmitters running EdgeTX 2.9 or higher (and compatible OpenTX). It provides a multifunctional tabbed dashboard, real-time configurable battery alerts, GPS coordinate validation, an integrated drone locator, and fast local QR/OLC generation.
+
+<a align="center" href="https://github.com/AlonsoLP/rcic">
+   <img width="288" height="144" alt="RCIC Battery page" src="https://github.com/user-attachments/assets/f4148f3f-0a61-4153-87d7-569a8c24495b" />
+   <img width="288" height="144" alt="RCIC GPS page" src="https://github.com/user-attachments/assets/c5aca0e8-81c5-413d-9ac9-a969e6944956" />
+    <img width="288" height="144" alt="RCIC Location page" src="https://github.com/user-attachments/assets/9da64922-fe4e-4239-a54b-b3af538cc1aa" />
+   <img width="288" height="144" alt="RCIC Totals page" src="https://github.com/user-attachments/assets/89e6f037-4b86-4a1c-a0d2-6e8343a1fd2b" />
+   <img width="288" height="144" alt="RCIC Configuration page" src="https://github.com/user-attachments/assets/6c0a3e8f-e3e7-46f3-b6e6-452d6356f61f" />
 </a>
 
 <br/>
