@@ -117,9 +117,12 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
     """Generate the complete HTML file."""
 
     # Convert data to JSON strings
-    scripts_json = json.dumps(scripts, indent=2)
-    categories_json = json.dumps(categories)
-    all_tags_json = json.dumps(all_tags)
+    def _safe_json(obj) -> str:
+        return json.dumps(obj, ensure_ascii=False).replace('</script>', '<\\/script>')
+
+    scripts_json = _safe_json(scripts)
+    categories_json = _safe_json(categories)
+    all_tags_json = _safe_json(all_tags)
 
     # HTML template with placeholders (avoiding f-string brace conflicts)
     html_template = """<!DOCTYPE html>
