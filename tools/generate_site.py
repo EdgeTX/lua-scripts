@@ -344,9 +344,9 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
         @window:filter-tag="toggleTag($event.detail.tag)"
         x-show="open"
         class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-        @keydown.escape="close()"
-        @keydown.left="prev()"
-        @keydown.right="next()"
+        @keydown.window.escape="close()"
+        @keydown.window.left="prev()"
+        @keydown.window.right="next()"
     >
         <template x-if="open">
             <div class="relative w-full h-full flex flex-col items-center justify-center max-w-4xl">
