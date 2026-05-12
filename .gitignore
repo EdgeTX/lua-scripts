@@ -1,2 +1,13 @@
 .DS_Store
 site/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
