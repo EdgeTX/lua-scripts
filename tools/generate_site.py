@@ -55,7 +55,18 @@ def process_images(scripts: list, assets_dir: Path, output_dir: Path) -> None:
             # Local file: copy and rewrite path
             # image_path is repo-relative (e.g. "ASSETS/foo/shot.jpg"),
             # so resolve from assets_dir's parent (the repo root), not assets_dir itself.
-            source_path = assets_dir.parent / image_path
+            repo_root = assets_dir.parent.resolve()
+            source_path = (repo_root / image_path).resolve()
+
+            # Reject paths outside the repository root
+            try:
+                source_path.relative_to(repo_root)
+            except ValueError:
+                print(
+                    f"Warning: Skipping out-of-repo image path for '{script.get('name', 'unknown')}': {image_path}",
+                    file=sys.stderr
+                )
+                continue
 
             if not source_path.exists():
                 print(
