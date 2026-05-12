@@ -316,7 +316,7 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                         </p>
 
                         <div class="flex flex-wrap gap-1">
-                            <template x-for="tag in script.tags" :key="tag">
+                            <template x-for="tag in (Array.isArray(script.tags) ? script.tags : [])" :key="tag">
                                 <button
                                     @click="window.dispatchEvent(new CustomEvent('filter-tag', { detail: { tag } }))"
                                     class="px-2 py-1 text-xs rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 transition cursor-pointer"
