@@ -310,8 +310,8 @@ Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary
 A tool to visualize log entries, recorded by the SD Logging special function
 on an EdgeTX B&W or color radio.
 
-![screenshot_zorro_25-06-15_13-22-16](ASSETS/logviz/screenshot-1.jpg)
-![screenshot_zorro_25-06-15_13-22-37](ASSETS/logviz/screenshot-3.jpg)
+![LogViz main graph view](ASSETS/logviz/screenshot-1.jpg)
+![LogViz cursor/value inspection view](ASSETS/logviz/screenshot-3.jpg)
 
 **Tested radios:** Radiomaster Zorro, Horus X12S, Horus X10S, Taranis X7 ACCESS, Taranis X9D+ 2019
 
