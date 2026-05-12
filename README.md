@@ -12,8 +12,8 @@ Games and other fun Lua scripts are listed [seperately here](/games.md).
 
 LUA configurator for ExpressLRS hardware<br/>
 <a href="https://www.expresslrs.org/quick-start/transmitters/lua-howto/">
-<img src="ASSETS/expresslrs-configurator/screenshot-1.jpg" width="250">
-<img src="ASSETS/expresslrs-configurator/screenshot-3.png" width="250">
+<img src="ASSETS/expresslrs-configurator/screenshot-1.jpg" alt="ExpressLRS Lua screenshot 1" width="250">
+<img src="ASSETS/expresslrs-configurator/screenshot-3.png" alt="ExpressLRS Lua screenshot 3" width="250">
 </a>
 
 <br/>
@@ -22,7 +22,7 @@ LUA configurator for ExpressLRS hardware<br/>
 
 Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav flight controller telemetry.<br/>
 <a href="https://github.com/ExpressLRS/ElrsTelemWidget">
-<img src="ASSETS/expresslrs-telemetry-widget-betaflight-inav/screenshot-1.png" width="250">
+<img src="ASSETS/expresslrs-telemetry-widget-betaflight-inav/screenshot-1.png" alt="ExpressLRS Telemetry Widget screenshot 1" width="250">
 </a>
 
 <br/>
@@ -35,7 +35,7 @@ Display ExpressLRS LinkStats telemetry as well as common Betaflight and iNav fli
 - **Post flight summary** (auto-detection end-of-flight)
 
 <a href="https://github.com/offer-shmuely/edgetx-x10-widgets/wiki/els_rf">
-    <img src="ASSETS/expresslrs-rf-telemetry-widget-for-fixed-wing-heli/screenshot-1.gif" width="400">
+    <img src="ASSETS/expresslrs-rf-telemetry-widget-for-fixed-wing-heli/screenshot-1.gif" alt="ExpressLRS RF Telemetry Widget screenshot 1" width="400">
 </a>
 
 <br/>
@@ -54,7 +54,7 @@ An RSSI-based quad finder using ELRS/CRSF telemetry.
 - Battery for any battery sensor
 
 <a href="https://github.com/SpiderFI">
-    <img src="ASSETS/expresslrs-signal-battery-widgets-for-colorlcd/screenshot-1.jpg" width="400">
+    <img src="ASSETS/expresslrs-signal-battery-widgets-for-colorlcd/screenshot-1.jpg" alt="ExpressLRS Signal/Battery Widgets for ColorLCD screenshot 1" width="400">
 </a>
 
 <br/>
@@ -65,17 +65,17 @@ An RSSI-based quad finder using ELRS/CRSF telemetry.
 ### [Yaapu telemetry widget](https://github.com/yaapu/FrskyTelemetryScript)
 
 ArduPilot LUA telemetry script for color and B&W.<br/>
-<a href="https://user-images.githubusercontent.com/30294218/198382377-cb48032f-ea5c-4f8d-aa12-f592c1e09358.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-1.png" width="250"></a>
-<a href="https://user-images.githubusercontent.com/30294218/216000387-f330a204-b674-48ea-bdaf-64ec33871eb2.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-3.png" width="150"></a>
-<a href="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-5.png" width="212"></a>
-<a href="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-7.png" width="128"></a>
+<a href="https://user-images.githubusercontent.com/30294218/198382377-cb48032f-ea5c-4f8d-aa12-f592c1e09358.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-1.png" alt="Yaapu telemetry widget screenshot 1" width="250"></a>
+<a href="https://user-images.githubusercontent.com/30294218/216000387-f330a204-b674-48ea-bdaf-64ec33871eb2.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-3.png" alt="Yaapu telemetry widget screenshot 3" width="150"></a>
+<a href="https://user-images.githubusercontent.com/30294218/215983189-06106fe8-b0d8-47f5-8e3f-e8d2472028ee.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-5.png" alt="Yaapu telemetry widget screenshot 5" width="212"></a>
+<a href="https://user-images.githubusercontent.com/30294218/215983214-b11f53a6-90f4-40ba-a29d-90a58cf6f1ff.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-telemetry-widget/screenshot-7.png" alt="Yaapu telemetry widget screenshot 7" width="128"></a>
 
 <br/>
 
 ### [Yaapu Horus Mapping Widget](https://github.com/yaapu/HorusMappingWidget)
 
 Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV, Betaflight, Crossfire and whatever FC or firmware that can send GPS info to EdgeTX.<br/>
-<a href="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-horus-mapping-widget/screenshot-1.png" width="250"></a>
+<a href="https://user-images.githubusercontent.com/30294218/76712734-946a6500-671b-11ea-9fbc-6c779cf4d0b5.png" target="_blank" title="Click for larger version"><img src="ASSETS/yaapu-horus-mapping-widget/screenshot-1.png" alt="Yaapu Horus Mapping Widget screenshot 1" width="250"></a>
 
 <br/>
 
@@ -83,8 +83,8 @@ Offline GPS Mapping Widget for Horus and T16 radios. It supports Ardupilot, iNAV
 
 GPS Telemetry Widget (B&W & Color). Shows total distance traveled, distance from home, as well as both home and last seen telemetry positions. Also logs to file, and has a log viewer so you don't have to worry about losing the coordinates if you turn the transmitter off.</br>
 <a href="https://github.com/moschotto/OpenTX_GPS_Telemetry">
-<img src="ASSETS/gps-widget/screenshot-1.png" width="250">
-<img src="ASSETS/gps-widget/screenshot-3.png" width="350">
+<img src="ASSETS/gps-widget/screenshot-1.png" alt="GPS widget screenshot 1" width="250">
+<img src="ASSETS/gps-widget/screenshot-3.png" alt="GPS widget screenshot 3" width="350">
 </a>
 
 <br/>
@@ -95,9 +95,9 @@ Collection of Colorlcd & B&W widgets.
 For colorlcd includes GPS lat/long and Google Plus code widget, Home direction/distance widget, and average battery voltage widget.
 For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
 <a href="https://github.com/kristjanbjarni/opentx-widgets">
-<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-1.png" width="250">
-<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-3.png" width="250">
-<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-5.png" width="250">
+<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-1.png" alt="GPS Plus Code, Home Arrow and AvgBatt widgets screenshot 1" width="250">
+<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-3.png" alt="GPS Plus Code, Home Arrow and AvgBatt widgets screenshot 3" width="250">
+<img src="ASSETS/gps-plus-code-home-arrow-and-avgbatt-widgets/screenshot-5.png" alt="GPS Plus Code, Home Arrow and AvgBatt widgets screenshot 5" width="250">
 </a>
 
 <br/>
@@ -108,7 +108,7 @@ For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
 
 The Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.<br/>
 <a href="https://github.com/betaflight/betaflight-tx-lua-scripts">
-<img src="ASSETS/betaflight-setup/screenshot-1.jpg" width="250">
+<img src="ASSETS/betaflight-setup/screenshot-1.jpg" alt="Betaflight Setup screenshot 1" width="250">
 </a>
 
 <br/>
@@ -117,8 +117,8 @@ The Betaflight LUA script allows you to change flight controller settings on you
 
 Shows you telementry and flight status information. Supports radios with color and black and white screens.<br/>
 <a href="https://github.com/iNavFlight/OpenTX-Telemetry-Widget">
-<img  src="ASSETS/inav-telemetry-flight-status/screenshot-1.png" width="250">
-<img src="ASSETS/inav-telemetry-flight-status/screenshot-3.png" width="128">
+<img  src="ASSETS/inav-telemetry-flight-status/screenshot-1.png" alt="INAV Telemetry Flight Status screenshot 1" width="250">
+<img src="ASSETS/inav-telemetry-flight-status/screenshot-3.png" alt="INAV Telemetry Flight Status screenshot 3" width="128">
 </a>
 
 <br/>
@@ -127,16 +127,16 @@ Shows you telementry and flight status information. Supports radios with color a
 
 Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dashboard with telemetry overview for all major RC Links, custom alerts , VTx info, GPS and much more. Supports radios with color and black and white screens.<br/>
 <a href="https://fm2m.online/toolbox-edgetx/">
-<img src="ASSETS/fm2m-toolbox/screenshot-1.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-3.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-5.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-7.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-9.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-11.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-13.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-15.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-17.png" width="250">
-<img src="ASSETS/fm2m-toolbox/screenshot-19.png" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-1.png" alt="FM2M ToolBox screenshot 1" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-3.png" alt="FM2M ToolBox screenshot 3" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-5.png" alt="FM2M ToolBox screenshot 5" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-7.png" alt="FM2M ToolBox screenshot 7" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-9.png" alt="FM2M ToolBox screenshot 9" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-11.png" alt="FM2M ToolBox screenshot 11" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-13.png" alt="FM2M ToolBox screenshot 13" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-15.png" alt="FM2M ToolBox screenshot 15" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-17.png" alt="FM2M ToolBox screenshot 17" width="250">
+<img src="ASSETS/fm2m-toolbox/screenshot-19.png" alt="FM2M ToolBox screenshot 19" width="250">
 </a>
 
 <br/>
@@ -145,8 +145,8 @@ Feature rich FM2M ToolBox is LUA App focusing on BetaFlight users. Provides dash
 
 Configurable EdgeTX widget that shows nifty Digital Clock.<br/>
 <a href="https://fm2m.online/digital-clock-edgetx/">
-<img src="ASSETS/fm2m-digital-clock/screenshot-1.png" width="400">
-<img src="ASSETS/fm2m-digital-clock/screenshot-3.png" width="400">
+<img src="ASSETS/fm2m-digital-clock/screenshot-1.png" alt="FM2M Digital Clock screenshot 1" width="400">
+<img src="ASSETS/fm2m-digital-clock/screenshot-3.png" alt="FM2M Digital Clock screenshot 3" width="400">
 </a>
 <br/>
 
@@ -154,7 +154,7 @@ Configurable EdgeTX widget that shows nifty Digital Clock.<br/>
 
 Enhanced Model, Timer, Channels and Analog Clock widgets.<br/>
 <a href="https://fm2m.online/addons-edgetx/#WPack">
-<img src="ASSETS/fm2m-widgets-pack/screenshot-1.png" width="400">
+<img src="ASSETS/fm2m-widgets-pack/screenshot-1.png" alt="FM2M Widgets Pack screenshot 1" width="400">
 </a>
 
 <br/>
@@ -172,9 +172,9 @@ Telemetry script for EdgeTX black-and-white radios with ExpressLRS support.<br/>
 Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX logging and QR position sharing.<br/>
 
 <a href="https://github.com/And2Ex/VBtelemetry">
-<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-1.png" />
-<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-3.png" />
-<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-5.png" />
+<img width="256" height="128" alt="VB Telemetry screenshot 1" src="ASSETS/vb-telemetry/screenshot-1.png" />
+<img width="256" height="128" alt="VB Telemetry screenshot 3" src="ASSETS/vb-telemetry/screenshot-3.png" />
+<img width="256" height="128" alt="VB Telemetry screenshot 5" src="ASSETS/vb-telemetry/screenshot-5.png" />
 </a>
 
 <br/>
@@ -198,7 +198,7 @@ RC Info Center (RCIC) is a highly optimized, full-featured telemetry script desi
 
 ShowItAll displays various information in a single pane.<br/>
 <a href="https://rc-soar.com/opentx/lua/showitall/index.htm">
-<img src="ASSETS/show-it-all/screenshot-1.png" width="250">
+<img src="ASSETS/show-it-all/screenshot-1.png" alt="Show It All screenshot 1" width="250">
 </a>
 
 <br/>
@@ -207,10 +207,10 @@ ShowItAll displays various information in a single pane.<br/>
 
 View fullscreen images with layout information or photos, cycle through them and have quick access to your favourite one.<br/>
 <a href="https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html">
-<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-1.jpg"  width="250">
-<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-3.jpg"  width="250">
-<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-5.jpg"  width="250">
-<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-7.jpg"  width="250">
+<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-1.jpg" alt="vu fullscreen image viewer widget for big screens screenshot 1"  width="250">
+<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-3.jpg" alt="vu fullscreen image viewer widget for big screens screenshot 3"  width="250">
+<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-5.jpg" alt="vu fullscreen image viewer widget for big screens screenshot 5"  width="250">
+<img src="ASSETS/vu-fullscreen-image-viewer-widget/screenshot-7.jpg" alt="vu fullscreen image viewer widget for big screens screenshot 7"  width="250">
 </a>
 
 <br/>
@@ -219,10 +219,10 @@ View fullscreen images with layout information or photos, cycle through them and
 
 Some widgets, themes and other scripts for EdgeTX<br/>
 <a href="https://github.com/MadMonkey87/EdgeTX-Goodies">
-<img src="ASSETS/edgetx-goodies/screenshot-1.png"  width="250">
-<img src="ASSETS/edgetx-goodies/screenshot-2.png"  width="250">
-<img src="ASSETS/edgetx-goodies/screenshot-3.png"  width="250">
-<img src="ASSETS/edgetx-goodies/screenshot-4.png"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-1.png" alt="EdgeTX Goodies screenshot 1"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-2.png" alt="EdgeTX Goodies screenshot 2"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-3.png" alt="EdgeTX Goodies screenshot 3"  width="250">
+<img src="ASSETS/edgetx-goodies/screenshot-4.png" alt="EdgeTX Goodies screenshot 4"  width="250">
 </a>
 
 <br/>
@@ -232,7 +232,7 @@ Some widgets, themes and other scripts for EdgeTX<br/>
 Basic and slightly incomplete on-radio import / export functionality for EdgeTX. Can be used to move functions / logical switches / mixes etc between models.
 
 <a href="https://github.com/forbesmyester/EdgeTX-ImpExp">
-<img src="ASSETS/impexp/screenshot-1.png" width="480">
+<img src="ASSETS/impexp/screenshot-1.png" alt="ImpExp screenshot 1" width="480">
 </a>
 
 ### [Switch2 widget](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config)
@@ -241,8 +241,8 @@ Widget that shows switch positions with customisable icons. Shows all switches w
 Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=115:switch-config), [RCGroups](https://www.rcgroups.com/forums/showpost.php?p=50176699&postcount=4012)
 
 <a href="https://www.rcgroups.com/forums/showpost.php?p=47009445&postcount=3793">
-    <img src="ASSETS/switch2-widget/screenshot-1.png" width="250">
-    <img src="ASSETS/switch2-widget/screenshot-3.png" width="250">
+    <img src="ASSETS/switch2-widget/screenshot-1.png" alt="Switch2 widget screenshot 1" width="250">
+    <img src="ASSETS/switch2-widget/screenshot-3.png" alt="Switch2 widget screenshot 3" width="250">
 </a>
 <br/>
 
@@ -250,9 +250,9 @@ Links: [JustFly](https://repository.justfly.solutions/index.php?view=product&id=
 
 Scripts to complement the Multi Protocol Module, such as allowing you to configure certain aspects of the module, automacitally name channels, do DSM forward programming, as well as other protocol specific tasks.</br>
 <a href="https://github.com/pascallanger/DIY-Multiprotocol-TX-Module/tree/master/Lua_scripts">
-<img src="ASSETS/multi-protocol-module-tools/screenshot-1.jpg" width="250">
-<img src="ASSETS/multi-protocol-module-tools/screenshot-3.jpg" width="250">
-<img src="ASSETS/multi-protocol-module-tools/screenshot-5.jpg" width="250">
+<img src="ASSETS/multi-protocol-module-tools/screenshot-1.jpg" alt="Multi Protocol Module Tools screenshot 1" width="250">
+<img src="ASSETS/multi-protocol-module-tools/screenshot-3.jpg" alt="Multi Protocol Module Tools screenshot 3" width="250">
+<img src="ASSETS/multi-protocol-module-tools/screenshot-5.jpg" alt="Multi Protocol Module Tools screenshot 5" width="250">
 </a>
 <br/>
 
@@ -267,14 +267,14 @@ Scripts to use with Spektrum Receivers. It has easy to install zip files version
 - Interim EdgeTX Firmware with latest (but tested) changes for Spektrum Sensors and TextGen (Official EdgeTx 2.8.1 + only Spektrum Telemetry changes). This change will be included in EdgeTx 2.9.0
   </br></br>
   <a href="https://github.com/frankiearzu/DSMTools">
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-1.png" width="250"/>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-3.png" width="250"/>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-5.png" width="250"/>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-7.png" width="250"/>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-9.jpg" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-1.png" alt="Spektrum DSM Tools screenshot 1" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-3.png" alt="Spektrum DSM Tools screenshot 3" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-5.png" alt="Spektrum DSM Tools screenshot 5" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-7.png" alt="Spektrum DSM Tools screenshot 7" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-9.jpg" alt="Spektrum DSM Tools screenshot 9" width="250"/>
   <br>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-11.png" width="250"/>
-  <img src="ASSETS/spektrum-dsm-tools/screenshot-13.png" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-11.png" alt="Spektrum DSM Tools screenshot 11" width="250"/>
+  <img src="ASSETS/spektrum-dsm-tools/screenshot-13.png" alt="Spektrum DSM Tools screenshot 13" width="250"/>
   </a>
 
 <br/>
@@ -285,16 +285,16 @@ Nice presentation of log file on the field<br>
 no computer needed for logs anymore.
 
 <a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer">
-    <img src="ASSETS/log-viewer/screenshot-1.gif" width="480">
+    <img src="ASSETS/log-viewer/screenshot-1.gif" alt="Log Viewer screenshot 1" width="480">
 </a>
 
 **Selecting files & columns**
 
 <a href="https://github.com/offer-shmuely/edgetx-x10-scripts/wiki/LogViewer">
-    <img src="ASSETS/log-viewer/screenshot-3.png" width="200">
-    <img src="ASSETS/log-viewer/screenshot-5.png" width="200">
-    <img src="ASSETS/log-viewer/screenshot-7.png" width="200">
-    <img src="ASSETS/log-viewer/screenshot-9.png" width="200">
+    <img src="ASSETS/log-viewer/screenshot-3.png" alt="Log Viewer screenshot 3" width="200">
+    <img src="ASSETS/log-viewer/screenshot-5.png" alt="Log Viewer screenshot 5" width="200">
+    <img src="ASSETS/log-viewer/screenshot-7.png" alt="Log Viewer screenshot 7" width="200">
+    <img src="ASSETS/log-viewer/screenshot-9.png" alt="Log Viewer screenshot 9" width="200">
 </a>
 
 ### [Log Viewer (BW only)](https://github.com/nikbg3/EdgeTXLogViewerBW)
@@ -302,7 +302,7 @@ no computer needed for logs anymore.
 Simple EdgeTX LUA script for BW radios to read logs files on the display. Rotary wheel is used to change the read value. Back is used to switch between modes. i.e., changing columns, rows or files.
 
 <a href="https://github.com/nikbg3/EdgeTXLogViewerBW">
-<img src="ASSETS/log-viewer-bw-only/screenshot-1.jpg">
+<img src="ASSETS/log-viewer-bw-only/screenshot-1.jpg" alt="Log Viewer screenshot 1">
 </a>
 
 ### [LogViz](https://github.com/icebreaker-ch/EdgeTX-LogViz)
@@ -340,19 +340,19 @@ These scripts provide simple logging functionality for your flights, making it e
 For analyzing and visualizing the generated logs, you can use the [UAV Desk](https://uavdesk.app).
 
 <a href="https://github.com/JohnnyCarvi/flylog_edgetx">
-  <img src="ASSETS/flylog-telelog/screenshot-1.png" width="250">
-  <img src="ASSETS/flylog-telelog/screenshot-3.png" width="250">
-  <img src="ASSETS/flylog-telelog/screenshot-5.png" width="500">
+  <img src="ASSETS/flylog-telelog/screenshot-1.png" alt="FlyLog & TeleLog - Logging Scripts for EdgeTX screenshot 1" width="250">
+  <img src="ASSETS/flylog-telelog/screenshot-3.png" alt="FlyLog & TeleLog - Logging Scripts for EdgeTX screenshot 3" width="250">
+  <img src="ASSETS/flylog-telelog/screenshot-5.png" alt="FlyLog & TeleLog - Logging Scripts for EdgeTX screenshot 5" width="500">
 </a>
 
 ### [Widget for Voltage and Current Telemetry](https://github.com/fdm225/mahRe2)
 
 Displays various battery related data.<br/>
 <a href="https://github.com/fdm225/mahRe2/raw/main/README.md">
-  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-1.png" width="250">
-  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-3.png" width="250">
-  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-5.png" width="250">
-  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-7.png" width="250">
+  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-1.png" alt="Widget for Voltage and Current Telemetry screenshot 1" width="250">
+  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-3.png" alt="Widget for Voltage and Current Telemetry screenshot 3" width="250">
+  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-5.png" alt="Widget for Voltage and Current Telemetry screenshot 5" width="250">
+  <img src="ASSETS/widget-for-voltage-and-current-telemetry-mahre2/screenshot-7.png" alt="Widget for Voltage and Current Telemetry screenshot 7" width="250">
 </a>
 
 ### [Quad Telemetry Dashboard (BW only)](https://github.com/mvaldesshc/advanced-edgetx-dashboard)
@@ -369,58 +369,58 @@ LUA-based dashboard (only for black-and-white display radios).<br/>
 
 Widget for color screen radios that allows touch buttons via logical switches (in German).<br/>
 <a href="https://github.com/Ziege-One/TSwitch">
-  <img src="ASSETS/tswitch-widget/screenshot-1.png" width="250">
-  <img src="ASSETS/tswitch-widget/screenshot-3.png" width="250">
+  <img src="ASSETS/tswitch-widget/screenshot-1.png" alt="TSwitch Widget screenshot 1" width="250">
+  <img src="ASSETS/tswitch-widget/screenshot-3.png" alt="TSwitch Widget screenshot 3" width="250">
 </a>
 
 ### [Lap Timer](https://github.com/RadioMasterRC/EdgeTX-LapTimer)
 
 Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
 <a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
-  <img src="ASSETS/lap-timer/screenshot-1.png" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-3.png" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-5.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-1.png" alt="Lap Timer screenshot 1" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-3.png" alt="Lap Timer screenshot 3" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-5.png" alt="Lap Timer screenshot 5" height="128px"/>
   <br>
   <br>
-  <img src="ASSETS/lap-timer/screenshot-7.png" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-9.png" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-11.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-7.png" alt="Lap Timer screenshot 7" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-9.png" alt="Lap Timer screenshot 9" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-11.png" alt="Lap Timer screenshot 11" height="128px"/>
 </a>
 
 ### [F3A Caller](https://github.com/jrwieland/F3A)
 
 Caller for practicing F3A pattern - Updated to 2024 Season<br/>
 <a href="https://github.com/jrwieland/F3A">
-  <img src="ASSETS/f3a-caller/screenshot-1.png">
-  <img src="ASSETS/f3a-caller/screenshot-3.png">
+  <img src="ASSETS/f3a-caller/screenshot-1.png" alt="F3A Caller screenshot 1">
+  <img src="ASSETS/f3a-caller/screenshot-3.png" alt="F3A Caller screenshot 3">
 </a>
 
 ### [TaraniTunes](https://github.com/jrwieland/TaraniTunes-v4.x)
 
 Enhanced music player for OpenTX & EdgeTX radios Multiple Playlists allow you to listen to your music while flying Your RC<br/>
 <a href="https://github.com/jrwieland/TaraniTunes-v4.x">
-<img src="ASSETS/taranitunes/screenshot-1.png" width="500">
+<img src="ASSETS/taranitunes/screenshot-1.png" alt="TaraniTunes screenshot 1" width="500">
 <br>
-<img src="ASSETS/taranitunes/screenshot-3.png" width="300">
-<img src="ASSETS/taranitunes/screenshot-5.png" width="300">
-<img src="ASSETS/taranitunes/screenshot-7.png" width="300">
+<img src="ASSETS/taranitunes/screenshot-3.png" alt="TaraniTunes screenshot 3" width="300">
+<img src="ASSETS/taranitunes/screenshot-5.png" alt="TaraniTunes screenshot 5" width="300">
+<img src="ASSETS/taranitunes/screenshot-7.png" alt="TaraniTunes screenshot 7" width="300">
 </a>
 
 ### [GPS QR Code generator](https://github.com/alufers/edgetx-gps-qrcode)
 
 Generates a QR code of last GPS coordinates received (for black-and-white screen radios)<br/>
 <a href="https://github.com/alufers/edgetx-gps-qrcode">
-<img src="ASSETS/gps-qr-code-generator/screenshot-1.png" width="500">
+<img src="ASSETS/gps-qr-code-generator/screenshot-1.png" alt="GPS QR Code generator screenshot 1" width="500">
 <br>
-<img src="ASSETS/gps-qr-code-generator/screenshot-3.png" width="500">
+<img src="ASSETS/gps-qr-code-generator/screenshot-3.png" alt="GPS QR Code generator screenshot 3" width="500">
 </a>
 
 ### [Battery Percentage and mAh Used](https://github.com/jrwieland/Battery-mAh)
 
 Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on battery voltage from 'Cels' sensor (FLVSS)<br/>
 <a href="https://github.com/jrwieland/Battery-mAh">
-<img src="ASSETS/battery-percentage-and-mah-used/screenshot-1.png" width="400">
-<img src="ASSETS/battery-percentage-and-mah-used/screenshot-3.png" width="400">
+<img src="ASSETS/battery-percentage-and-mah-used/screenshot-1.png" alt="Battery Percentage and mAh Used screenshot 1" width="400">
+<img src="ASSETS/battery-percentage-and-mah-used/screenshot-3.png" alt="Battery Percentage and mAh Used screenshot 3" width="400">
 </a>
 
 ### [TxBatTele](https://github.com/derelict/TxBatTele)
@@ -428,7 +428,7 @@ Widget to display the levels of Lipo/HV-Lipo battery with mAh used based on batt
 Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possible on radio settings (Everything is defined in the Script). So no need for "manual" Logical Switches or Custom Functions.
 
 <a href="https://github.com/derelict/TxBatTele">
-<img src="ASSETS/txbattele/screenshot-1.gif">
+<img src="ASSETS/txbattele/screenshot-1.gif" alt="TxBatTele screenshot 1">
 </a>
 
 ### [SwitchOverview](https://github.com/druckgott/getswitchesWdgets/)
@@ -436,7 +436,7 @@ Battery and Telemetry Monitoring LUA Widget which tries to rely as less as possi
 A simple widget to display switches which are configured in special function and have a PLAY_TRACK behind.
 
 <a href="https://github.com/druckgott/getswitchesWdgets">
-<img src="ASSETS/switchoverview/screenshot-1.png">
+<img src="ASSETS/switchoverview/screenshot-1.png" alt="SwitchOverview screenshot 1">
 </a>
 
 ### [GPS Viewer](https://github.com/ktaliaferro/gps-viewer)
@@ -444,7 +444,7 @@ A simple widget to display switches which are configured in special function and
 Plot logged flight telemetry data on a map of your airfield.
 
 <a href="https://github.com/ktaliaferro/gps-viewer">
-<img src="ASSETS/gps-viewer/screenshot-1.png">
+<img src="ASSETS/gps-viewer/screenshot-1.png" alt="GPS Viewer screenshot 1">
 </a>
 
 ### [GPS Logger (BW only)](https://github.com/poweredjj/gpslog)
@@ -452,7 +452,7 @@ Plot logged flight telemetry data on a map of your airfield.
 Log each flight GPS coordinates to a separate GPX file (telemetry script for radios with BW displays only).
 
 <a href="https://github.com/poweredjj/gpslog">
-<img src="ASSETS/gps-logger-bw-only/screenshot-1.png"  width="300">
+<img src="ASSETS/gps-logger-bw-only/screenshot-1.png" alt="GPS Logger screenshot 1"  width="300">
 </a>
 
 ### [GPS Logger (color only)](https://github.com/poweredjj/gpslog_color)
@@ -460,7 +460,7 @@ Log each flight GPS coordinates to a separate GPX file (telemetry script for rad
 Log each flight GPS coordinates to a separate GPX file (widget for radios with color displays only).
 
 <a href="https://github.com/poweredjj/gpslog_color">
-<img src="ASSETS/gps-logger-color-only/screenshot-1.jpg"  width="300">
+<img src="ASSETS/gps-logger-color-only/screenshot-1.jpg" alt="GPS Logger screenshot 1"  width="300">
 </a>
 
 ### [Multiswitch widget](https://github.com/wimalopaan/LUA)
