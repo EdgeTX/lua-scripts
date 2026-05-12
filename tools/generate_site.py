@@ -118,7 +118,7 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
 
     # Convert data to JSON strings
     def _safe_json(obj) -> str:
-        return json.dumps(obj, ensure_ascii=False).replace('</script>', '<\\/script>')
+        return json.dumps(obj, ensure_ascii=False).replace('<', '\\u003c')
 
     scripts_json = _safe_json(scripts)
     categories_json = _safe_json(categories)
