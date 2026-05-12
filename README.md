@@ -377,14 +377,14 @@ Widget for color screen radios that allows touch buttons via logical switches (i
 
 Advanced lap timer script using as little controls as possible. It stores race and lap data for analysis back at the computer.<br/>
 <a href="https://github.com/RadioMasterRC/EdgeTX-LapTimer">
-  <img src="ASSETS/lap-timer/screenshot-1.bmp" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-3.bmp" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-5.bmp" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-1.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-3.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-5.png" height="128px"/>
   <br>
   <br>
-  <img src="ASSETS/lap-timer/screenshot-7.bmp" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-9.bmp" height="128px"/>
-  <img src="ASSETS/lap-timer/screenshot-11.bmp" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-7.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-9.png" height="128px"/>
+  <img src="ASSETS/lap-timer/screenshot-11.png" height="128px"/>
 </a>
 
 ### [F3A Caller](https://github.com/jrwieland/F3A)
@@ -502,8 +502,8 @@ If no virtual controls are available (firmware / simulator without EdgeTX/edgetx
 ### [Stick Commands](https://github.com/DHaacke/Mambo-Tango)
 
 Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.
-![Stick commands B&W Betaflight](ASSETS/stick-commands/screenshot-1.bmp)
-![Stick commands colorlcd](ASSETS/stick-commands/screenshot-3.bmp)
+![Stick commands B&W Betaflight](ASSETS/stick-commands/screenshot-1.png)
+![Stick commands colorlcd](ASSETS/stick-commands/screenshot-3.png)
 
 
 ### [Battery and Connection Bars Widgets](https://github.com/calmarc/EdgeTX-Widgets)

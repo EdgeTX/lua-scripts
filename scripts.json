@@ -333,8 +333,8 @@
     "description": "Standalone Lua tool which provides a scrollable list of common stick commands for Betaflight, HDZero and INAV.",
     "infourl": "https://github.com/DHaacke/Mambo-Tango",
     "images": [
-      "ASSETS/stick-commands/screenshot-1.bmp",
-      "ASSETS/stick-commands/screenshot-3.bmp"
+      "ASSETS/stick-commands/screenshot-1.png",
+      "ASSETS/stick-commands/screenshot-3.png"
     ],
     "tags": [
       "betaflight",
@@ -576,12 +576,12 @@
     "description": "Advanced lap timer script using as few controls as possible. Stores race and lap data for analysis back at the computer.",
     "infourl": "https://github.com/RadioMasterRC/EdgeTX-LapTimer",
     "images": [
-      "ASSETS/lap-timer/screenshot-1.bmp",
-      "ASSETS/lap-timer/screenshot-3.bmp",
-      "ASSETS/lap-timer/screenshot-5.bmp",
-      "ASSETS/lap-timer/screenshot-7.bmp",
-      "ASSETS/lap-timer/screenshot-9.bmp",
-      "ASSETS/lap-timer/screenshot-11.bmp"
+      "ASSETS/lap-timer/screenshot-1.png",
+      "ASSETS/lap-timer/screenshot-3.png",
+      "ASSETS/lap-timer/screenshot-5.png",
+      "ASSETS/lap-timer/screenshot-7.png",
+      "ASSETS/lap-timer/screenshot-9.png",
+      "ASSETS/lap-timer/screenshot-11.png"
     ],
     "tags": [
       "tool",
