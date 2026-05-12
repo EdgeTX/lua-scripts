@@ -491,18 +491,26 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                     }
                 },
 
+                destroy() {
+                    this.pauseAuto();
+                },
+
                 startAuto() {
+                    this.pauseAuto();
                     this.timer = setInterval(() => {
                         this.next();
                     }, 4000 + si * 200);
                 },
 
                 pauseAuto() {
-                    clearInterval(this.timer);
+                    if (this.timer) {
+                        clearInterval(this.timer);
+                        this.timer = null;
+                    }
                 },
 
                 resumeAuto() {
-                    if (this.script.images.length > 1) {
+                    if (this.script.images.length > 1 && this.timer === null) {
                         this.startAuto();
                     }
                 },
