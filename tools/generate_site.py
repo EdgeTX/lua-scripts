@@ -86,7 +86,7 @@ def process_images(scripts: list, assets_dir: Path, output_dir: Path) -> None:
                 # Store relative path from the perspective of output_dir root
                 new_image_path = str(dest_path.relative_to(output_dir)).replace('\\', '/')
                 processed_images.append(new_image_path)
-            except Exception as e:
+            except OSError as e:
                 print(
                     f"Warning: Failed to copy image '{image_path}' for '{script.get('name', 'unknown')}': {e}",
                     file=sys.stderr
