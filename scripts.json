@@ -780,5 +780,39 @@
       "color",
       "black-and-white"
     ]
+  },
+  {
+    "name": "VB Telemetry",
+    "category": "Telemetry & Widgets",
+    "description": "Telemetry script for EdgeTX black-and-white radios with ExpressLRS support. Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX logging and QR position sharing.",
+    "infourl": "https://github.com/And2Ex/VBtelemetry",
+    "images": [
+      "ASSETS/vb-telemetry/screenshot-1.png",
+      "ASSETS/vb-telemetry/screenshot-3.png",
+      "ASSETS/vb-telemetry/screenshot-5.png"
+    ],
+    "tags": [
+      "script",
+      "black-and-white",
+      "expresslrs",
+      "gps"
+    ]
+  },
+  {
+    "name": "RCIC (RC Info Center)",
+    "category": "Telemetry & Widgets",
+    "description": "A highly optimized, full-featured telemetry script for EdgeTX 2.9+. Provides a multifunctional tabbed dashboard, real-time configurable battery alerts, GPS coordinate validation, an integrated drone locator, and fast local QR/OLC generation.",
+    "infourl": "https://github.com/AlonsoLP/rcic",
+    "images": [
+      "ASSETS/rcic/screenshot-1.webp",
+      "ASSETS/rcic/screenshot-3.webp",
+      "ASSETS/rcic/screenshot-5.webp",
+      "ASSETS/rcic/screenshot-7.webp"
+    ],
+    "tags": [
+      "script",
+      "color",
+      "gps"
+    ]
   }
 ]
