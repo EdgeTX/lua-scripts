@@ -1,0 +1,57 @@
+name: Deploy Script Gallery
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ASSETS/**'
+      - 'scripts.json'
+      - 'tools/generate_site.py'
+      - '.github/workflows/gh-pages.yml'
+  pull_request:
+    paths:
+      - 'ASSETS/**'
+      - 'scripts.json'
+      - 'tools/generate_site.py'
+      - '.github/workflows/gh-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+      - name: Generate site
+        run: uv run tools/generate_site.py --scripts-json scripts.json --assets-dir ASSETS --output-dir site
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+      - name: Upload PR preview artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-preview-pr-${{ github.event.pull_request.number }}
+          path: ./site
+
+  deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
