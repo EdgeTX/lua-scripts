@@ -75,16 +75,11 @@ def process_images(scripts: list, assets_dir: Path, output_dir: Path) -> None:
                 )
                 continue
 
-            # Compute destination: preserve subdirectory structure
-            # e.g., ASSETS/some-script/screenshot-1.jpg -> images/some-script/screenshot-1.jpg
+            # Compute destination: preserve full relative subdirectory structure
+            # e.g., ASSETS/foo/bar/screenshot-1.jpg -> images/ASSETS/foo/bar/screenshot-1.jpg
             relative_path = Path(image_path)
-            dest_path = images_output / relative_path.name
-
-            # If the relative path has a subdirectory, preserve it
-            if relative_path.parent != Path('.'):
-                dest_subdir = images_output / relative_path.parent.name
-                dest_subdir.mkdir(parents=True, exist_ok=True)
-                dest_path = dest_subdir / relative_path.name
+            dest_path = images_output / relative_path
+            dest_path.parent.mkdir(parents=True, exist_ok=True)
 
             try:
                 shutil.copy2(source_path, dest_path)
