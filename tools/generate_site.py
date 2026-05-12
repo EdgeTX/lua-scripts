@@ -344,7 +344,6 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
     <div
         x-data="lightbox()"
         @window:open-lightbox="openWith($event.detail)"
-        @window:filter-tag="toggleTag($event.detail.tag)"
         x-show="open"
         class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
         @keydown.window.escape="close()"
