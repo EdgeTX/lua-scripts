@@ -16,7 +16,6 @@
 ## [GaLuaxian](https://github.com/timmalahov/galuaxian)
 ![](ASSETS/galuaxian/screenshot-1.jpeg)
 ![](ASSETS/galuaxian/screenshot-3.jpeg)
-
 ![](ASSETS/galuaxian/screenshot-5.png)
-![](https://user-images.githubusercontent.com/61071739/209030458-455f44ae-3d48-488b-9f82-07bc89121f5c.png)
-![](https://user-images.githubusercontent.com/61071739/209030446-8c0ccbb9-aa7f-4003-a3e6-77c79dda545e.png)
+![](ASSETS/galuaxian/screenshot-7.png)
+![](ASSETS/galuaxian/screenshot-9.png)

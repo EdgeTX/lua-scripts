@@ -172,9 +172,9 @@ Telemetry script for EdgeTX black-and-white radios with ExpressLRS support.<br/>
 Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX logging and QR position sharing.<br/>
 
 <a href="https://github.com/And2Ex/VBtelemetry">
-<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/9c29e013-f0be-4e61-8900-71d0906d030e" />
-<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/f05f9c1c-12fa-4e06-848b-c8fdc48231e9" />
-<img width="256" height="128" alt="image" src="https://github.com/user-attachments/assets/46541ae9-f6f6-436a-8eee-97fdc799badc" />
+<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-1.png" />
+<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-3.png" />
+<img width="256" height="128" alt="image" src="ASSETS/vb-telemetry/screenshot-5.png" />
 </a>
 
 <br/>
@@ -184,11 +184,10 @@ Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX l
 RC Info Center (RCIC) is a highly optimized, full-featured telemetry script designed for radio transmitters running EdgeTX 2.9 or higher (and compatible OpenTX). It provides a multifunctional tabbed dashboard, real-time configurable battery alerts, GPS coordinate validation, an integrated drone locator, and fast local QR/OLC generation.
 
 <a align="center" href="https://github.com/AlonsoLP/rcic">
-   <img width="288" height="144" alt="RCIC Battery page" src="https://github.com/user-attachments/assets/f4148f3f-0a61-4153-87d7-569a8c24495b" />
-   <img width="288" height="144" alt="RCIC GPS page" src="https://github.com/user-attachments/assets/c5aca0e8-81c5-413d-9ac9-a969e6944956" />
-    <img width="288" height="144" alt="RCIC Location page" src="https://github.com/user-attachments/assets/9da64922-fe4e-4239-a54b-b3af538cc1aa" />
-   <img width="288" height="144" alt="RCIC Totals page" src="https://github.com/user-attachments/assets/89e6f037-4b86-4a1c-a0d2-6e8343a1fd2b" />
-   <img width="288" height="144" alt="RCIC Configuration page" src="https://github.com/user-attachments/assets/6c0a3e8f-e3e7-46f3-b6e6-452d6356f61f" />
+  <img width="288" height="144" alt="RCIC Battery page" src="ASSETS/rcic/screenshot-1.webp" />
+  <img width="288" height="144" alt="RCIC GPS page" src="ASSETS/rcic/screenshot-3.webp" />
+   <img width="288" height="144" alt="RCIC Location page" src="ASSETS/rcic/screenshot-5.webp" />
+  <img width="288" height="144" alt="RCIC Totals page" src="ASSETS/rcic/screenshot-7.webp" />
 </a>
 
 <br/>
@@ -483,9 +482,9 @@ By this means it can read external controls, like upto 16 11-bit (proportional) 
 
 Ideally the firmware for the radio has PR EdgeTX/edgetx#5885, so that this widget can set the virtual controls according to the external controls.
 
-![Hardware extension widget controls](ASSETS/hardware_extension_widget_(\d)\.png)
-![Hardware extension widget settings](ASSETS/hardware_extension_widget_(\d)\.png)
-![Hardware extension widget mapping](ASSETS/hardware_extension_widget_(\d)\.png)
+![Hardware extension widget controls](ASSETS/hardware-extension-widget/screenshot-1.png)
+![Hardware extension widget settings](ASSETS/hardware-extension-widget/screenshot-2.png)
+![Hardware extension widget mapping](ASSETS/hardware-extension-widget/screenshot-3.png)
 
 ### [Virtual controls widget](https://github.com/wimalopaan/LUA)
 

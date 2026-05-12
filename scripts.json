@@ -669,9 +669,9 @@
     "description": "Controls a multiswitch device inside a model via CRSF protocol (ExpressLRS), ACCST/AFHDS2A, or SBus. Popular for ship/crawler/functional-models to switch motors, LEDs, etc. Supports up to 255 multiswitches.",
     "infourl": "https://github.com/wimalopaan/LUA",
     "images": [
-      "ASSETS/multiswitch_widget_1.png",
-      "ASSETS/multiswitch_widget_2.png",
-      "ASSETS/multiswitch_widget_3.png"
+      "ASSETS/multiswitch-widget/screenshot-1.png",
+      "ASSETS/multiswitch-widget/screenshot-2.png",
+      "ASSETS/multiswitch-widget/screenshot-3.png"
     ],
     "tags": [
       "expresslrs",
@@ -687,9 +687,9 @@
     "description": "Reads and visualizes the state of external controls (pots, switches, buttons, incrementals) via the radio's AUX1 or AUX2 serial connection. Supports up to 16 proportional values and 64 binary switch values.",
     "infourl": "https://github.com/wimalopaan/LUA",
     "images": [
-      "ASSETS/hardware_extension_widget_1.png",
-      "ASSETS/hardware_extension_widget_2.png",
-      "ASSETS/hardware_extension_widget_3.png"
+      "ASSETS/hardware-extension-widget/screenshot-1.png",
+      "ASSETS/hardware-extension-widget/screenshot-2.png",
+      "ASSETS/hardware-extension-widget/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -702,9 +702,9 @@
     "description": "Manipulates virtual controls (virtual inputs and virtual switches) via up to 16 sliders and/or 64 buttons (normal, momentary or toggle). Also useful for exchanging data between widgets and mixer-scripts via shm variables.",
     "infourl": "https://github.com/wimalopaan/LUA",
     "images": [
-      "ASSETS/virtual_controls_widget_1.png",
-      "ASSETS/virtual_controls_widget_2.png",
-      "ASSETS/virtual_controls_widget_3.png"
+      "ASSETS/virtual-controls-widget/screenshot-1.png",
+      "ASSETS/virtual-controls-widget/screenshot-2.png",
+      "ASSETS/virtual-controls-widget/screenshot-3.png"
     ],
     "tags": [
       "widget",
@@ -717,7 +717,7 @@
     "description": "Battery Voltage and LQ Display custom Lua widget.",
     "infourl": "https://github.com/calmarc/EdgeTX-Widgets",
     "images": [
-      "https://github.com/calmarc/EdgeTX-Widgets/blob/master/images/screenshot.png"
+      "ASSETS/battery-and-connection-bars-widgets/screenshot-1.png"
     ],
     "tags": [
       "widget",
