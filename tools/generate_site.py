@@ -295,7 +295,7 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                     <div class="p-4 flex flex-col gap-2 flex-1">
                         <h3 class="font-bold text-lg">
                             <template x-if="script.infourl">
-                                <a :href="script.infourl" target="_blank" class="text-red-600 dark:text-red-400 hover:underline flex items-center gap-1">
+                                <a :href="script.infourl" target="_blank" rel="noopener noreferrer" class="text-red-600 dark:text-red-400 hover:underline flex items-center gap-1">
                                     <span x-text="script.name"></span>
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4m-4-6l6 6m0 0l-6 6m6-6H9"/>
