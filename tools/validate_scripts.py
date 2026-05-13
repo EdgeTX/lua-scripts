@@ -2,7 +2,7 @@
 """
 Validate scripts.json against the expected schema.
 
-Exit 0 = valid, Exit 1 = errors found.
+Exit 0 = valid or warnings only, Exit 1 = errors found.
 """
 
 import argparse
@@ -31,6 +31,9 @@ def load_and_parse(path: Path) -> list:
     try:
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
+    except OSError as e:
+        print(f"Error: unable to read {path}: {e}", file=sys.stderr)
+        sys.exit(1)
     except json.JSONDecodeError as e:
         print(f"Error: invalid JSON in {path}: {e}", file=sys.stderr)
         sys.exit(1)
@@ -40,8 +43,9 @@ def load_and_parse(path: Path) -> list:
     return data
 
 
-def validate(data: list) -> list[str]:
+def validate(data: list) -> tuple[list[str], list[str]]:
     errors = []
+    warnings = []
     seen_names: dict[str, int] = {}
 
     for i, entry in enumerate(data):
@@ -72,11 +76,17 @@ def validate(data: list) -> list[str]:
             if not (infourl.startswith("http://") or infourl.startswith("https://")):
                 errors.append(f"{prefix}: 'infourl' must start with http:// or https://")
 
-        if "images" in entry and not isinstance(entry["images"], list):
+        if "images" not in entry:
+            warnings.append(f"{prefix}: 'images' should be a non-empty list")
+        elif not isinstance(entry["images"], list):
             errors.append(f"{prefix}: 'images' must be a list")
+        elif len(entry["images"]) == 0:
+            warnings.append(f"{prefix}: 'images' should be a non-empty list")
 
-        if "tags" in entry and not isinstance(entry["tags"], list):
-            errors.append(f"{prefix}: 'tags' must be a list")
+        if "tags" in entry and (
+            not isinstance(entry["tags"], list) or len(entry["tags"]) == 0
+        ):
+            errors.append(f"{prefix}: 'tags' must be a non-empty list")
 
         name = entry.get("name")
         if isinstance(name, str) and name.strip():
@@ -89,7 +99,7 @@ def validate(data: list) -> list[str]:
             else:
                 seen_names[key] = i
 
-    return errors
+    return errors, warnings
 
 
 def main() -> None:
@@ -103,7 +113,12 @@ def main() -> None:
     args = parser.parse_args()
 
     data = load_and_parse(args.scripts_json)
-    errors = validate(data)
+    errors, warnings = validate(data)
+
+    if warnings:
+        print(f"Found {len(warnings)} warning(s) in {args.scripts_json}:", file=sys.stderr)
+        for warning in warnings:
+            print(f"  - {warning}", file=sys.stderr)
 
     if errors:
         print(f"Found {len(errors)} error(s) in {args.scripts_json}:")
