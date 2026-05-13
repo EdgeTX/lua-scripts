@@ -20,7 +20,7 @@ KNOWN_CATEGORIES = {
     "Telemetry & Widgets",
 }
 
-REQUIRED_FIELDS = ["name", "category", "description", "infourl", "images", "tags"]
+REQUIRED_FIELDS = ["name", "category", "description", "infourl", "tags"]
 STRING_FIELDS = ["name", "category", "description", "infourl"]
 
 
