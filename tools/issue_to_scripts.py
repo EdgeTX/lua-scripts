@@ -128,7 +128,15 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
     if not infourl or not infourl.startswith(("http://", "https://")):
         raise ValueError(f"Info URL must start with http:// or https://: {infourl!r}")
 
-    images = extract_image_urls(sections.get("Image URLs", ""))
+    raw_images = sections.get("Image URLs", "")
+    if not _is_empty(raw_images):
+        img_lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
+        invalid = [line for line in img_lines if not line.startswith(("http://", "https://"))]
+        if invalid:
+            raise ValueError(
+                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
+            )
+    images = extract_image_urls(raw_images)
     tags = build_tags(sections) or []
 
     return {
@@ -206,8 +214,8 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     raw_images = sections.get("Image URLs", "")
     if not _is_empty(raw_images):
-        lines = [l.strip() for l in raw_images.splitlines() if l.strip()]
-        invalid = [l for l in lines if not l.startswith(("http://", "https://"))]
+        lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
+        invalid = [line for line in lines if not line.startswith(("http://", "https://"))]
         if invalid:
             raise ValueError(
                 f"Image URLs must start with http:// or https://: {invalid[0]!r}"
