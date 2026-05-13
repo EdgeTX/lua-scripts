@@ -110,7 +110,7 @@ def build_tags(sections: dict[str, str]) -> list[str] | None:
 
 def build_insert_entry(sections: dict[str, str]) -> dict:
     """Validate sections and return a complete scripts.json entry."""
-    name = sections.get("Script Name", "").strip()
+    name = sections.get("App Name", "").strip()
     if not name:
         raise ValueError("Script Name is required.")
 
@@ -170,7 +170,7 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
     Update fields on the entry matching the submitted Script Name.
     Returns (updated_list, patched_entry).
     """
-    lookup = sections.get("Script Name", "").strip()
+    lookup = sections.get("App Name", "").strip()
     if not lookup:
         raise ValueError("Script Name is required to identify the entry to update.")
 
@@ -206,6 +206,12 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     raw_images = sections.get("Image URLs", "")
     if not _is_empty(raw_images):
+        lines = [l.strip() for l in raw_images.splitlines() if l.strip()]
+        invalid = [l for l in lines if not l.startswith(("http://", "https://"))]
+        if invalid:
+            raise ValueError(
+                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
+            )
         urls = extract_image_urls(raw_images)
         if urls:
             entry["images"] = urls
