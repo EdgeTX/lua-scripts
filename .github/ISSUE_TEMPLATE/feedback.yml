@@ -1,0 +1,34 @@
+name: Feedback / Report an Issue
+description: Report a broken link, outdated script, suggest an improvement, or give general feedback about the gallery.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Feedback type
+      options:
+        - Broken or outdated link
+        - Script no longer maintained
+        - Missing Lua app / suggest an addition
+        - Gallery website issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: script_name
+    attributes:
+      label: App name (if applicable)
+      description: Leave blank if this is about the gallery in general.
+      placeholder: e.g. ExpressLRS Configurator
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the issue or suggestion.
+    validations:
+      required: true

@@ -1,0 +1,99 @@
+name: Update / Correct a Lua App Entry
+description: Fix a typo, update a broken link, add screenshots, or correct any other detail for an existing gallery entry.
+title: "[Lua App Update] "
+labels: ["script-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to correct or update an existing gallery entry.
+        **Only fill in the fields you want to change** — blank fields are left as-is.
+        A maintainer will review your submission and add the `update-in-gallery` label to trigger the automated PR.
+
+  - type: input
+    id: name
+    attributes:
+      label: App Name
+      description: Must match the existing name in the gallery exactly (case-insensitive).
+      placeholder: e.g. ExpressLRS Configurator
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Leave unselected to keep the existing category.
+      options:
+        - Audio & Media
+        - Flight Controller Config
+        - Games & Fun
+        - GPS & Mapping
+        - Logging & Analysis
+        - Radio Tools
+        - Telemetry & Widgets
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Leave blank to keep the existing description.
+      placeholder: Updated description...
+    validations:
+      required: false
+
+  - type: input
+    id: infourl
+    attributes:
+      label: Info URL
+      description: Leave blank to keep the existing URL.
+      placeholder: https://github.com/yourname/yourscript
+    validations:
+      required: false
+
+  - type: textarea
+    id: images
+    attributes:
+      label: Image URLs
+      description: |
+        One external image URL per line. Leave blank to keep existing images.
+        **Filling this in will replace the entire image list.**
+      placeholder: https://raw.githubusercontent.com/yourname/repo/main/screenshot.png
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: tags_common
+    attributes:
+      label: Tags
+      description: |
+        Leave **all boxes unchecked** to keep existing tags unchanged.
+        Checking any box (or filling in Additional Tags) will **replace the full tag list**.
+      options:
+        - label: ardupilot
+        - label: betaflight
+        - label: black-and-white
+        - label: color
+        - label: crossfire
+        - label: expresslrs
+        - label: fixed-wing
+        - label: game
+        - label: gps
+        - label: heli
+        - label: inav
+        - label: logging
+        - label: quad
+        - label: script
+        - label: tool
+        - label: widget
+
+  - type: input
+    id: tags_extra
+    attributes:
+      label: Additional Tags
+      description: Any tags not listed above, comma-separated. Triggers tag replacement (see note above).
+      placeholder: spektrum, multi-protocol
+    validations:
+      required: false
