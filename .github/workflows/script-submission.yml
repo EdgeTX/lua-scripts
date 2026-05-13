@@ -1,0 +1,141 @@
+name: Script Submission — Create PR
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  create-pr:
+    # Only run when a maintainer applies one of the two approval labels
+    if: |
+      github.event.label.name == 'add-to-gallery' ||
+      github.event.label.name == 'update-in-gallery'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v8.1.0
+
+      - name: Write issue body to file
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
+
+      - name: Determine parser mode
+        id: mode
+        run: |
+          if [ "${{ github.event.label.name }}" = "add-to-gallery" ]; then
+            echo "value=insert" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=patch" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Parse issue and update scripts.json
+        id: parser
+        run: |
+          uv run tools/issue_to_scripts.py \
+            --issue-body /tmp/issue_body.txt \
+            --scripts-json scripts.json \
+            --mode ${{ steps.mode.outputs.value }}
+
+      - name: Validate scripts.json
+        run: uv run tools/validate_scripts.py --scripts-json scripts.json
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Create branch and commit
+        id: commit
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          MODE: ${{ steps.mode.outputs.value }}
+        run: |
+          BRANCH="add-script/${ISSUE_NUMBER}"
+          git checkout -b "$BRANCH"
+          git add scripts.json
+          VERB="Add"
+          if [ "$MODE" = "patch" ]; then VERB="Update"; fi
+          git commit -m "feat(scripts): ${VERB} script from issue #${ISSUE_NUMBER}
+
+          ${ISSUE_TITLE}
+
+          Closes #${ISSUE_NUMBER}"
+          git push origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Open draft PR
+        uses: actions/github-script@v9
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          BRANCH: ${{ steps.commit.outputs.branch }}
+          MODE: ${{ steps.mode.outputs.value }}
+        with:
+          script: |
+            const issueNumber = parseInt(process.env.ISSUE_NUMBER);
+            const issueTitle  = process.env.ISSUE_TITLE;
+            const branch      = process.env.BRANCH;
+            const mode        = process.env.MODE;
+
+            const verb = mode === "insert" ? "Add" : "Update";
+
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              title: `feat(scripts): ${verb} script — ${issueTitle}`,
+              head:  branch,
+              base:  "main",
+              draft: true,
+              body: [
+                `Automated PR for script submission from issue #${issueNumber}.`,
+                "",
+                "### Checklist before merging",
+                "- [ ] Verify the `scripts.json` diff looks correct",
+                "- [ ] If screenshots are available locally, add them to `ASSETS/` and update image paths in `scripts.json`",
+                "- [ ] Remove draft status when ready to merge",
+                "",
+                `Closes #${issueNumber}`
+              ].join("\n")
+            });
+
+            await github.rest.issues.createComment({
+              owner:        context.repo.owner,
+              repo:         context.repo.repo,
+              issue_number: issueNumber,
+              body: `A draft PR has been created: ${pr.data.html_url}\n\nA maintainer will review before merging.`
+            });
+
+      - name: Post failure comment
+        if: always()
+        uses: actions/github-script@v9
+        with:
+          script: |
+            if ('${{ job.status }}' !== 'failure') return;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                "Automated PR creation failed. The submission could not be processed.",
+                "",
+                "Common reasons:",
+                "- A script with this name already exists in `scripts.json` (insert mode)",
+                "- The script name was not found in `scripts.json` (update mode)",
+                "- A required field was left blank",
+                "- The selected Category does not match a known value",
+                "- The Info URL is missing or does not start with `http://` or `https://`",
+                "",
+                "Please check the [workflow run](" +
+                  `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions` +
+                  ") for details, then remove and re-apply the approval label after fixing the issue."
+              ].join("\n")
+            });

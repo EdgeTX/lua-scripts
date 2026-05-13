@@ -1,0 +1,99 @@
+name: Add a Lua App or Widget to the Gallery
+description: Submit a new Lua app or widget for inclusion in the EdgeTX gallery.
+title: "[Lua App Submission] "
+labels: ["script-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a Lua app or widget! A maintainer will review your submission and
+        add the `add-to-gallery` label to trigger the automated PR.
+
+        > **Images:** Only external URLs (raw GitHub, Imgur, etc.) are supported here.
+        > Local `ASSETS/` screenshots can be added by a maintainer after review.
+
+  - type: input
+    id: name
+    attributes:
+      label: App Name
+      description: The display name as it should appear in the gallery.
+      placeholder: e.g. My Awesome Widget
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Choose the most appropriate category.
+      options:
+        - Audio & Media
+        - Flight Controller Config
+        - Games & Fun
+        - GPS & Mapping
+        - Logging & Analysis
+        - Radio Tools
+        - Telemetry & Widgets
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Short description of what the script does (1–3 sentences).
+      placeholder: Describe your script...
+    validations:
+      required: true
+
+  - type: input
+    id: infourl
+    attributes:
+      label: Info URL
+      description: Link to the project page, GitHub repo, or documentation.
+      placeholder: https://github.com/yourname/yourscript
+    validations:
+      required: true
+
+  - type: textarea
+    id: images
+    attributes:
+      label: Image URLs
+      description: |
+        One external image URL per line (raw GitHub URLs, Imgur, etc.).
+        Leave blank if you have no screenshots yet.
+      placeholder: https://raw.githubusercontent.com/yourname/repo/main/screenshot.png
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: tags_common
+    attributes:
+      label: Tags
+      description: Check all that apply.
+      options:
+        - label: ardupilot
+        - label: betaflight
+        - label: black-and-white
+        - label: color
+        - label: crossfire
+        - label: expresslrs
+        - label: fixed-wing
+        - label: game
+        - label: gps
+        - label: heli
+        - label: inav
+        - label: logging
+        - label: quad
+        - label: script
+        - label: tool
+        - label: widget
+
+  - type: input
+    id: tags_extra
+    attributes:
+      label: Additional Tags
+      description: Any tags not listed above, comma-separated.
+      placeholder: spektrum, multi-protocol
+    validations:
+      required: false
