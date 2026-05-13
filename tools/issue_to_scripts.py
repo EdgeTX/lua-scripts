@@ -112,7 +112,7 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
     """Validate sections and return a complete scripts.json entry."""
     name = sections.get("App Name", "").strip()
     if not name:
-        raise ValueError("Script Name is required.")
+        raise ValueError("App Name is required.")
 
     category = sections.get("Category", "").strip()
     if category not in VALID_CATEGORIES:
@@ -175,12 +175,12 @@ def do_insert(scripts: list, new_entry: dict) -> list:
 
 def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
     """
-    Update fields on the entry matching the submitted Script Name.
+    Update fields on the entry matching the submitted App Name.
     Returns (updated_list, patched_entry).
     """
     lookup = sections.get("App Name", "").strip()
     if not lookup:
-        raise ValueError("Script Name is required to identify the entry to update.")
+        raise ValueError("App Name is required to identify the entry to update.")
 
     target_idx = next(
         (i for i, e in enumerate(scripts) if e.get("name", "").lower() == lookup.lower()),
