@@ -1,8 +1,13 @@
-# Lua-scripts
 
-The goal for this repo is to have a central place to share example Lua scripts, host any 'new' scripts, and to document where to find Lua scripts that already exist, as well as any tips or tricks related to getting started with them.
 
-Games and other fun Lua scripts are listed [seperately here](/games.md).
+# EdgeTX Lua Apps and Widgets
+
+The goal for this repo is to have a centralised place to be able to share and showcase Lua scripts ("Apps") and Widgets, as well as potentially document any tips or tricks related to getting started with them.
+
+
+[![EdgeTX Lua Apps and Widgets Gallery](ASSETS/edgetx_btn_lua_shadow.png)](https://edgetx.org/lua-scripts/)
+
+The entries listed below and [games listed here](/games.md) are legacy, and will be removed in the future, as they are all viewable in the gallery linked above. The future goal is to rely on [scripts.json](scripts.json) as the single source of content.
 
 ---
 
