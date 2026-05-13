@@ -1,0 +1,23 @@
+name: Validate scripts.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts.json'
+      - 'tools/validate_scripts.py'
+      - '.github/workflows/validate-scripts-json.yml'
+  pull_request:
+    paths:
+      - 'scripts.json'
+      - 'tools/validate_scripts.py'
+      - '.github/workflows/validate-scripts-json.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+      - name: Validate scripts.json
+        run: uv run tools/validate_scripts.py --scripts-json scripts.json
