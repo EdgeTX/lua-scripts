@@ -1,4 +1,4 @@
-name: Add a Lua App to the Gallery
+name: Add a Lua App or Widget to the Gallery
 description: Submit a new Lua app or widget for inclusion in the EdgeTX gallery.
 title: "[Lua App Submission] "
 labels: ["script-submission"]
@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for submitting a Lua app! A maintainer will review your submission and
+        Thanks for submitting a Lua app or widget! A maintainer will review your submission and
         add the `add-to-gallery` label to trigger the automated PR.
 
         > **Images:** Only external URLs (raw GitHub, Imgur, etc.) are supported here.

@@ -1,4 +1,4 @@
-name: Update / Correct a Lua App Entry
+name: Update / Correct a Lua App or Widget Entry
 description: Fix a typo, update a broken link, add screenshots, or correct any other detail for an existing gallery entry.
 title: "[Lua App Update] "
 labels: ["script-update"]
