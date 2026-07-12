@@ -816,5 +816,22 @@
       "color",
       "gps"
     ]
+  },
+  {
+    "name": "AG Dashboard",
+    "category": "Telemetry & Widgets",
+    "description": "A simple widget to display model information and configurable values, telemetry and timers.",
+    "infourl": "https://github.com/agnauck/EdgeTX-Widgets/tree/main/WIDGETS/Dashboard",
+    "images": [
+      "ASSETS/ag-dashboard/screenshot-1.png",
+      "ASSETS/ag-dashboard/screenshot-2.png",
+      "ASSETS/ag-dashboard/screenshot-3.png"
+    ],
+    "tags": [
+      "widget",
+      "color",
+      "fixed-wing",
+      "heli"
+    ]
   }
 ]
