@@ -107,6 +107,15 @@ For B&W includes GPS Telemetry screen, and Home distance telemetry screen.</br>
 
 <br/>
 
+### [GPSQR](https://github.com/JoelFPV/GPSQR)
+
+Full-screen GPS and ELRS telemetry widget for color radios, with a scannable Google-Maps QR code of the model's last known position. Shows distance to home, trip, height above take-off with MSL, speed, heading, satellites, flight time, mAh drawn and a full ELRS panel, and switches to a MAX debrief on landing. Betaflight and iNAV are detected automatically.<br/>
+<a href="https://github.com/JoelFPV/GPSQR">
+<img src="ASSETS/gpsqr/screenshot-1.png" alt="GPSQR screenshot 1" width="250">
+</a>
+
+<br/>
+
 ## Telemetery & Flight Controllers
 
 ### [Betaflight Setup](https://github.com/betaflight/betaflight-tx-lua-scripts)
