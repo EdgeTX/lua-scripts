@@ -200,6 +200,26 @@
     ]
   },
   {
+    "name": "GPSQR",
+    "category": "GPS & Mapping",
+    "description": "Full-screen GPS and ELRS telemetry widget for color radios, with a scannable Google-Maps QR code of the model's last known position - point a phone at the radio to walk to a downed model. Shows distance to home, trip, height above take-off with MSL, speed, heading, satellites, flight time, mAh drawn and a full ELRS panel, and switches to a MAX debrief on landing. Betaflight and iNAV are detected automatically.",
+    "infourl": "https://github.com/JoelFPV/GPSQR",
+    "images": [
+      "ASSETS/gpsqr/screenshot-1.png"
+    ],
+    "tags": [
+      "widget",
+      "color",
+      "gps",
+      "expresslrs",
+      "crossfire",
+      "betaflight",
+      "inav",
+      "quad",
+      "fixed-wing"
+    ]
+  },
+  {
     "name": "Betaflight Setup",
     "category": "Flight Controller Config",
     "description": "The Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.",
