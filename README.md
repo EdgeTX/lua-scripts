@@ -542,3 +542,12 @@ A script that lights up LED's based on the throttle input.
 Only supports radios that have RGB leds special function capabilities.
 
 <a href="https://www.youtube.com/watch?v=Pv36h7FIiYc">![Turn Your Radio's LEDs Into a Throttle Indicator | EdgeTX Tutorial](ASSETS/rgb-throttle-indicator/screenshot-1.jpg)</a>
+
+### [AG Dashboard](https://github.com/agnauck/EdgeTX-Widgets/tree/main/WIDGETS/Dashboard)
+
+A simple fullscreen widget to show model information and selected values.
+
+The grid for the values get adjusted automatically based on the number of selected values.
+
+![Screenshot Dashboard](ASSETS/ag-dashboard/screenshot-1.png)
+![Widget options Dashboard](ASSETS/ag-dashboard/screenshot-3.png)
