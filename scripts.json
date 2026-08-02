@@ -868,5 +868,21 @@
       "color",
       "battery"
     ]
+  },
+  {
+    "name": "ELRS Link Sentinel",
+    "category": "Telemetry & Widgets",
+    "description": "Watches the ExpressLRS link in the background and gives graded audible warnings before the connection breaks down. Reads per-antenna RSSI, link quality and the current RF mode, then fires a Link Warning near the mode's sensitivity limit and a Link Critical once packets start dropping (RQly < 42%). Ships as an all-radios function script (audio only) or a color widget that adds a live link display (range %, RF mode, RSSI, LQ, TX power, flight mode, active antenna). Install exactly one.",
+    "infourl": "https://github.com/Mariator-pro/elrs-link-sentinel",
+    "images": [
+      "ASSETS/elrs-link-sentinel/screenshot-1.png"
+    ],
+    "tags": [
+      "expresslrs",
+      "widget",
+      "script",
+      "color",
+      "black-and-white"
+    ]
   }
 ]
