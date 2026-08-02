@@ -220,6 +220,21 @@
     ]
   },
   {
+    "name": "Rotorflight LUA Scripts",
+    "category": "Flight Controller Config",
+    "description": "LUA configurator for Rotorflight, a flight control software suite designed for single-rotor helicopters. Allows you to configure the flight controller directly from your transmitter. Also includes the RF Tool and RF Stats widgets (color radios, EdgeTX 2.11+) for displaying model name, a customizable sensor value, and flight statistics.",
+    "infourl": "https://github.com/rotorflight/rotorflight-lua-scripts",
+    "images": [],
+    "tags": [
+      "script",
+      "widget",
+      "color",
+      "black-and-white",
+      "heli",
+      "rotorflight"
+    ]
+  },
+  {
     "name": "Betaflight Setup",
     "category": "Flight Controller Config",
     "description": "The Betaflight LUA script allows you to change flight controller settings on your radio, such as PID, rates, VTX channels and power, and many more.",
