@@ -853,5 +853,20 @@
       "fixed-wing",
       "heli"
     ]
+  },
+  {
+    "name": "Lipo Nanny",
+    "category": "Telemetry & Widgets",
+    "description": "Battery telemetry widget that auto-selects the pack from resting voltage, estimates starting state-of-charge from a chemistry-specific curve (LiPo/LiPoHV/LiIon), and tracks remaining capacity from FC-reported consumed mAh. Two one-shot voice warnings fire on percentage thresholds (default 30% warn / 20% critical), with optional haptic buzz; per-pack cycle counting and a wear% that makes warnings trigger earlier as a battery ages. ELRS/CRSF out of the box; other systems via per-model sensor mapping.",
+    "infourl": "https://github.com/Mariator-pro/edgetx-lipo-nanny",
+    "images": [
+      "ASSETS/lipo-nanny/screenshot-1.png"
+    ],
+    "tags": [
+      "battery",
+      "expresslrs",
+      "widget",
+      "color"
+    ]
   }
 ]
