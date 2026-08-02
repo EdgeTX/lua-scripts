@@ -73,6 +73,7 @@ body:
       description: Check all that apply.
       options:
         - label: ardupilot
+        - label: battery
         - label: betaflight
         - label: black-and-white
         - label: color
