@@ -457,7 +457,7 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                         }
 
                         return true;
-                    });
+                    }).sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' }));
                 },
 
                 toggleTag(tag) {
