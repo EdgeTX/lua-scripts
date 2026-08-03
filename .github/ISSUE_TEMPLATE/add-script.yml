@@ -77,6 +77,7 @@ body:
         - label: betaflight
         - label: black-and-white
         - label: color
+        - label: crawler
         - label: crossfire
         - label: expresslrs
         - label: fixed-wing
@@ -86,6 +87,7 @@ body:
         - label: inav
         - label: logging
         - label: quad
+        - label: rotorflight
         - label: script
         - label: tool
         - label: widget
