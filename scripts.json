@@ -773,7 +773,7 @@
     "description": "Sends AT commands to a Bluetooth serial module straight from the radio, so a module can be renamed, reset, or moved from 9600 to 115200 baud without a laptop or a USB serial adapter. Every module family numbers its baud rates differently — AT+BAUD4 is 115200 on an HM-10 but 19200 on a DX-BT24 — so the tool knows the numbering for DX-BT24, BT24-S, BT27, HM-10, AT-09, HC-05 and HC-06, and shows the exact command before it sends it. A baud scan finds a module whose rate has been forgotten.",
     "infourl": "https://github.com/juricabi/edgetx-bt-at-terminal",
     "images": [
-      "https://raw.githubusercontent.com/juricabi/edgetx-bt-at-terminal/master/screenshot.png"
+      "ASSETS/edgetx-bt-at-terminal/screenshot-1.png"
     ],
     "tags": [
       "black-and-white",
