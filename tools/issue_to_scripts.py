@@ -60,15 +60,20 @@ def extract_checkboxes(text: str) -> list[str]:
     return checked
 
 
+IMAGE_URL_RE = re.compile(r"https?://[^\s)\]]+")
+
+
 def extract_image_urls(text: str) -> list[str]:
-    """Return valid http(s) URLs from a newline-separated textarea."""
+    """
+    Return http(s) URLs referenced anywhere in the textarea, in order.
+    Handles both bare URLs (one per line) and Markdown image syntax, e.g.
+    ![image](https://github.com/user-attachments/assets/<uuid>) — GitHub
+    inserts the latter automatically when a contributor drags/pastes an
+    image directly into the field rather than typing a URL.
+    """
     if _is_empty(text):
         return []
-    return [
-        line.strip()
-        for line in text.splitlines()
-        if line.strip().startswith(("http://", "https://"))
-    ]
+    return IMAGE_URL_RE.findall(text)
 
 
 def extract_extra_tags(text: str) -> list[str]:
@@ -129,14 +134,11 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
         raise ValueError(f"Info URL must start with http:// or https://: {infourl!r}")
 
     raw_images = sections.get("Image URLs", "")
-    if not _is_empty(raw_images):
-        img_lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
-        invalid = [line for line in img_lines if not line.startswith(("http://", "https://"))]
-        if invalid:
-            raise ValueError(
-                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
-            )
     images = extract_image_urls(raw_images)
+    if not _is_empty(raw_images) and not images:
+        raise ValueError(
+            f"Image URLs must contain at least one http:// or https:// URL: {raw_images!r}"
+        )
     tags = build_tags(sections) or []
 
     return {
@@ -210,15 +212,12 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     raw_images = sections.get("Image URLs", "")
     if not _is_empty(raw_images):
-        lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
-        invalid = [line for line in lines if not line.startswith(("http://", "https://"))]
-        if invalid:
-            raise ValueError(
-                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
-            )
         urls = extract_image_urls(raw_images)
-        if urls:
-            entry["images"] = urls
+        if not urls:
+            raise ValueError(
+                f"Image URLs must contain at least one http:// or https:// URL: {raw_images!r}"
+            )
+        entry["images"] = urls
 
     new_tags = build_tags(sections)
     if new_tags is not None:
