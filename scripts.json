@@ -600,6 +600,30 @@
     ]
   },
   {
+    "name": "EdgeTX Flight Log",
+    "category": "Logging & Analysis",
+    "description": "Reads the CSV logs EdgeTX already writes to /LOGS and shows the flight on the radio, with no computer and no card reader: duration and armed time, battery start and low, mAh used, worst link and dropouts, maximum altitude, speed and distance, full screen line graphs, a GPS track with a plus code for finding the model, and every sensor in the log with min, average and max. Columns are matched to roles by name from the log header, so CRSF, GHST, ELRS and FrSky all work with no per-protocol code, and an unrecognised sensor is still listed rather than hidden.",
+    "infourl": "https://github.com/juricabi/edgetx-flight-log",
+    "images": [
+      "ASSETS/edgetx-flight-log/screenshot-1.png",
+      "ASSETS/edgetx-flight-log/screenshot-2.png",
+      "ASSETS/edgetx-flight-log/screenshot-3.png",
+      "ASSETS/edgetx-flight-log/screenshot-4.png"
+    ],
+    "tags": [
+      "betaflight",
+      "black-and-white",
+      "color",
+      "crossfire",
+      "expresslrs",
+      "gps",
+      "logging",
+      "quad",
+      "script",
+      "ghost"
+    ]
+  },
+  {
     "name": "RGB Throttle indicator",
     "category": "Radio Tools",
     "description": "A script that lights up LED's based on the throttle input. Only supports radios that have RGB LEDs special function capabilities.",
