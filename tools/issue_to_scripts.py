@@ -20,16 +20,6 @@ import re
 import sys
 from pathlib import Path
 
-VALID_CATEGORIES = {
-    "Audio & Media",
-    "Flight Controller Config",
-    "Games & Fun",
-    "GPS & Mapping",
-    "Logging & Analysis",
-    "Radio Tools",
-    "Telemetry & Widgets",
-}
-
 _NO_RESPONSE = "_no response_"
 
 
@@ -88,6 +78,18 @@ def extract_extra_tags(text: str) -> list[str]:
     return [t.strip().lower() for t in text.split(",") if t.strip()]
 
 
+def build_category(sections: dict[str, str]) -> str | None:
+    """
+    Return the category to use: the free-text "New Category" field takes
+    precedence over the "Category" dropdown when both are filled in.
+    """
+    new_category = sections.get("New Category", "").strip()
+    if not _is_empty(new_category):
+        return new_category
+    dropdown = sections.get("Category", "").strip()
+    return dropdown if not _is_empty(dropdown) else None
+
+
 def build_tags(sections: dict[str, str]) -> list[str] | None:
     """
     Return the combined tag list, or None if the submitter left tags entirely
@@ -114,11 +116,9 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
     if not name:
         raise ValueError("App Name is required.")
 
-    category = sections.get("Category", "").strip()
-    if category not in VALID_CATEGORIES:
-        raise ValueError(
-            f"Category '{category}' is not valid. Must be one of: {sorted(VALID_CATEGORIES)}"
-        )
+    category = build_category(sections)
+    if category is None:
+        raise ValueError("Category is required (pick one from the dropdown or fill in New Category).")
 
     description = sections.get("Description", "").strip()
     if _is_empty(description):
@@ -194,13 +194,9 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     entry = dict(scripts[target_idx])
 
-    raw_category = sections.get("Category", "").strip()
-    if raw_category and not _is_empty(raw_category):
-        if raw_category not in VALID_CATEGORIES:
-            raise ValueError(
-                f"Category '{raw_category}' is not valid. Must be one of: {sorted(VALID_CATEGORIES)}"
-            )
-        entry["category"] = raw_category
+    new_category = build_category(sections)
+    if new_category is not None:
+        entry["category"] = new_category
 
     raw_description = sections.get("Description", "").strip()
     if not _is_empty(raw_description):

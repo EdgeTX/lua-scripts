@@ -23,15 +23,31 @@ body:
     id: category
     attributes:
       label: Category
-      description: Leave unselected to keep the existing category.
+      description: |
+        Leave unselected to keep the existing category. If none of these fit, use the
+        New Category field below instead.
       options:
+        # --- BEGIN AUTO-GENERATED CATEGORIES (see scripts.schema.json: items.properties.category.examples) ---
         - Audio & Media
         - Flight Controller Config
-        - Games & Fun
         - GPS & Mapping
+        - Games & Fun
         - Logging & Analysis
         - Radio Tools
         - Telemetry & Widgets
+        # --- END AUTO-GENERATED CATEGORIES ---
+    validations:
+      required: false
+
+  - type: input
+    id: category_extra
+    attributes:
+      label: New Category
+      description: |
+        Only fill this in if you want to change to a category not in the dropdown above —
+        this creates a brand-new gallery category (a new top-level tab on the site), so
+        please only use it if you're confident an existing one genuinely doesn't apply.
+      placeholder: e.g. Simulators
     validations:
       required: false
 
@@ -72,6 +88,7 @@ body:
         Leave **all boxes unchecked** to keep existing tags unchanged.
         Checking any box (or filling in Additional Tags) will **replace the full tag list**.
       options:
+        # --- BEGIN AUTO-GENERATED TAGS (see scripts.schema.json: items.properties.tags.items.examples) ---
         - label: ardupilot
         - label: battery
         - label: betaflight
@@ -85,12 +102,14 @@ body:
         - label: gps
         - label: heli
         - label: inav
-        - label: logging
+        - label: multi-protocol
         - label: quad
         - label: rotorflight
         - label: script
+        - label: spektrum
         - label: tool
         - label: widget
+        # --- END AUTO-GENERATED TAGS ---
 
   - type: input
     id: tags_extra
