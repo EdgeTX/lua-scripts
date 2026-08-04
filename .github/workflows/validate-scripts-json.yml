@@ -19,5 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
       - name: Validate scripts.json
         run: uv run tools/validate_scripts.py --scripts-json scripts.json
