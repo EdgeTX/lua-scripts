@@ -42,6 +42,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
       - name: Run sync script tests
         run: uv run tools/test_sync_issue_template_options.py
       - name: Check tags/category sync
@@ -59,6 +61,8 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
       - name: Run sync script tests
         run: uv run tools/test_sync_issue_template_options.py
       - name: Sync tags/category
@@ -102,6 +106,8 @@ jobs:
       # job to execute.
       - uses: actions/checkout@v6
       - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
       - name: Fetch PR's scripts.json as data only (never executed)
         run: |
           git fetch origin "pull/${{ github.event.pull_request.number }}/head"
