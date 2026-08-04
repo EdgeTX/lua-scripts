@@ -107,7 +107,7 @@ jobs:
                 "",
                 "### Checklist before merging",
                 "- [ ] Verify the `scripts.json` diff looks correct",
-                "- [ ] If screenshots are available locally, add them to `ASSETS/` and update image paths in `scripts.json`",
+                "- [ ] If any images are still external URLs, run `uv run tools/download_external_images.py` to pull them into `ASSETS/` and update `scripts.json` automatically (use `--dry-run` to preview first)",
                 "- [ ] Remove draft status when ready to merge",
                 "",
                 `Closes #${issueNumber}`
