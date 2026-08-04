@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v8.1.0
+      - uses: astral-sh/setup-uv@v9.0.0
         with:
           enable-cache: false
 
@@ -71,9 +71,10 @@ jobs:
             .github/ISSUE_TEMPLATE/update-script.yml
           VERB="Add"
           if [ "$MODE" = "patch" ]; then VERB="Update"; fi
+          CLEAN_TITLE=$(echo "$ISSUE_TITLE" | sed -E 's/^\[Lua App (Submission|Update)\] *//')
           git commit -m "feat(scripts): ${VERB} script from issue #${ISSUE_NUMBER}
 
-          ${ISSUE_TITLE}
+          ${CLEAN_TITLE}
 
           Closes #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
@@ -94,11 +95,12 @@ jobs:
             const mode        = process.env.MODE;
 
             const verb = mode === "insert" ? "Add" : "Update";
+            const cleanTitle = issueTitle.replace(/^\[Lua App (?:Submission|Update)\]\s*/, "");
 
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo:  context.repo.repo,
-              title: `feat(scripts): ${verb} script — ${issueTitle}`,
+              title: `feat(scripts): ${verb} ${cleanTitle}`,
               head:  branch,
               base:  "main",
               draft: true,
@@ -107,7 +109,7 @@ jobs:
                 "",
                 "### Checklist before merging",
                 "- [ ] Verify the `scripts.json` diff looks correct",
-                "- [ ] If any images are still external URLs, run `uv run tools/download_external_images.py` to pull them into `ASSETS/` and update `scripts.json` automatically (use `--dry-run` to preview first)",
+                "- [ ] If any images are still external URLs, add the `localize-images` label to this PR to pull them into `ASSETS/` and update `scripts.json` automatically (or run `uv run tools/download_external_images.py` locally, using `--dry-run` to preview first)",
                 "- [ ] Remove draft status when ready to merge",
                 "",
                 `Closes #${issueNumber}`
