@@ -112,17 +112,24 @@ def save_schema(path: Path, schema: dict) -> None:
 
 # ── Computation ──────────────────────────────────────────────────────────────
 
-def compute(scripts: list, schema: dict) -> dict:
-    current_tags = sorted({tag for e in scripts for tag in e.get("tags", []) if isinstance(tag, str)})
+def _sort(values) -> list[str]:
+    """Case-insensitive sort — plain sorted() would put e.g. 'GPS & Mapping'
+    before 'Games & Fun' (uppercase 'P' < lowercase 'a' in ASCII), which
+    isn't the order a human reading the dropdown/checkbox list would expect."""
+    return sorted(values, key=str.casefold)
 
-    used_categories = sorted({
+
+def compute(scripts: list, schema: dict) -> dict:
+    current_tags = _sort({tag for e in scripts for tag in e.get("tags", []) if isinstance(tag, str)})
+
+    used_categories = _sort({
         e["category"] for e in scripts
         if isinstance(e.get("category"), str) and e["category"].strip()
     })
     previous_categories = get_schema_examples(schema, "category")
-    current_categories = sorted(set(previous_categories) | set(used_categories))
-    new_categories = sorted(set(used_categories) - set(previous_categories))
-    unused_categories = sorted(set(current_categories) - set(used_categories))
+    current_categories = _sort(set(previous_categories) | set(used_categories))
+    new_categories = _sort(set(used_categories) - set(previous_categories))
+    unused_categories = _sort(set(current_categories) - set(used_categories))
 
     return {
         "current_tags": current_tags,
@@ -219,8 +226,8 @@ def check_template(template_path: Path, current_tags: list[str], current_categor
         expected_values = current_tags if block_name == "tags" else current_categories
         if actual == expected_values:
             continue
-        missing = sorted(set(expected_values) - set(actual))
-        extra = sorted(set(actual) - set(expected_values))
+        missing = _sort(set(expected_values) - set(actual))
+        extra = _sort(set(actual) - set(expected_values))
         diff = "\n".join(
             difflib.unified_diff(
                 lines[begin_idx:end_idx + 1],
@@ -277,19 +284,24 @@ def main() -> None:
     if args.check:
         issues = []
 
+        # Direct (order-sensitive) comparison, not sorted() on both sides —
+        # the schema's examples arrays are always supposed to already hold
+        # the canonical _sort()-ordered list, so a stale *order* on disk
+        # (e.g. written before a sort-key change) must count as drift too,
+        # not just a stale *set* of values.
         schema_tags = get_schema_examples(schema, "tags")
-        if sorted(schema_tags) != current_tags:
+        if schema_tags != current_tags:
             issues.append(
                 f"{args.schema} [tags.examples]: out of sync\n"
-                f"  missing: {sorted(set(current_tags) - set(schema_tags))}\n"
-                f"  extra:   {sorted(set(schema_tags) - set(current_tags))}"
+                f"  missing: {_sort(set(current_tags) - set(schema_tags))}\n"
+                f"  extra:   {_sort(set(schema_tags) - set(current_tags))}"
             )
         schema_categories = get_schema_examples(schema, "category")
-        if sorted(schema_categories) != current_categories:
+        if schema_categories != current_categories:
             issues.append(
                 f"{args.schema} [category.examples]: out of sync\n"
-                f"  missing: {sorted(set(current_categories) - set(schema_categories))}\n"
-                f"  extra:   {sorted(set(schema_categories) - set(current_categories))}"
+                f"  missing: {_sort(set(current_categories) - set(schema_categories))}\n"
+                f"  extra:   {_sort(set(schema_categories) - set(current_categories))}"
             )
 
         for template_path in args.templates:
@@ -310,7 +322,7 @@ def main() -> None:
 
     schema_tags = get_schema_examples(schema, "tags")
     schema_categories = get_schema_examples(schema, "category")
-    if sorted(schema_tags) != current_tags or sorted(schema_categories) != current_categories:
+    if schema_tags != current_tags or schema_categories != current_categories:
         set_schema_examples(schema, "tags", current_tags)
         set_schema_examples(schema, "category", current_categories)
         save_schema(args.schema, schema)

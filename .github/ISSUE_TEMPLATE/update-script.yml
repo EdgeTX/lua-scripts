@@ -30,8 +30,8 @@ body:
         # --- BEGIN AUTO-GENERATED CATEGORIES (see scripts.schema.json: items.properties.category.examples) ---
         - Audio & Media
         - Flight Controller Config
-        - GPS & Mapping
         - Games & Fun
+        - GPS & Mapping
         - Logging & Analysis
         - Radio Tools
         - Telemetry & Widgets

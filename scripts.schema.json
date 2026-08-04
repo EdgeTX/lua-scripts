@@ -6,7 +6,13 @@
   "items": {
     "type": "object",
     "title": "ScriptEntry",
-    "required": ["name", "category", "description", "infourl", "tags"],
+    "required": [
+      "name",
+      "category",
+      "description",
+      "infourl",
+      "tags"
+    ],
     "properties": {
       "name": {
         "type": "string",
@@ -20,8 +26,8 @@
         "examples": [
           "Audio & Media",
           "Flight Controller Config",
-          "GPS & Mapping",
           "Games & Fun",
+          "GPS & Mapping",
           "Logging & Analysis",
           "Radio Tools",
           "Telemetry & Widgets"
@@ -39,7 +45,9 @@
       },
       "images": {
         "type": "array",
-        "items": { "type": "string" },
+        "items": {
+          "type": "string"
+        },
         "description": "Screenshot references: local ASSETS/ paths or external image URLs."
       },
       "tags": {
