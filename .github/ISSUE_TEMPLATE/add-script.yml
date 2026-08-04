@@ -76,8 +76,9 @@ body:
     attributes:
       label: Image URLs
       description: |
-        One external image URL per line (raw GitHub URLs, Imgur, etc.).
-        Leave blank if you have no screenshots yet.
+        One external image URL per line (raw GitHub URLs, Imgur, etc.) — or just drag
+        and drop, or paste, image files directly into this box and GitHub will upload
+        them for you automatically. Leave blank if you have no screenshots yet.
       placeholder: https://raw.githubusercontent.com/yourname/repo/main/screenshot.png
     validations:
       required: false
