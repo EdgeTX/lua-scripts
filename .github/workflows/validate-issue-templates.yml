@@ -1,0 +1,159 @@
+name: Validate Issue Template Tags & Categories
+
+on:
+  push:
+    paths:
+      - 'scripts.json'
+      - 'scripts.schema.json'
+      - '.github/ISSUE_TEMPLATE/add-script.yml'
+      - '.github/ISSUE_TEMPLATE/update-script.yml'
+      - 'tools/sync_issue_template_options.py'
+      - 'tools/test_sync_issue_template_options.py'
+      - '.github/workflows/validate-issue-templates.yml'
+  pull_request:
+    paths:
+      - 'scripts.json'
+      - 'scripts.schema.json'
+      - '.github/ISSUE_TEMPLATE/add-script.yml'
+      - '.github/ISSUE_TEMPLATE/update-script.yml'
+      - 'tools/sync_issue_template_options.py'
+      - 'tools/test_sync_issue_template_options.py'
+      - '.github/workflows/validate-issue-templates.yml'
+  pull_request_target:
+    paths:
+      - 'scripts.json'
+      - 'scripts.schema.json'
+      - '.github/ISSUE_TEMPLATE/add-script.yml'
+      - '.github/ISSUE_TEMPLATE/update-script.yml'
+      - 'tools/sync_issue_template_options.py'
+      - 'tools/test_sync_issue_template_options.py'
+      - '.github/workflows/validate-issue-templates.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  # Read-only check. Runs for every PR, including forks (which get a
+  # restricted, non-writable GITHUB_TOKEN here — that's fine, this job never
+  # writes anything).
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
+      - name: Run sync script tests
+        run: uv run tools/test_sync_issue_template_options.py
+      - name: Check tags/category sync
+        run: uv run tools/sync_issue_template_options.py --check
+
+  # Self-heals same-repo branches (this workflow's own commit is made with
+  # GITHUB_TOKEN, so it never re-triggers itself or any other workflow —
+  # GitHub Actions doesn't fire new workflow-triggering events for
+  # GITHUB_TOKEN-authored pushes).
+  sync:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
+      - name: Run sync script tests
+        run: uv run tools/test_sync_issue_template_options.py
+      - name: Sync tags/category
+        run: uv run tools/sync_issue_template_options.py --write | tee /tmp/sync-output.txt
+      - name: Annotate new categories
+        run: |
+          line=$(grep '^new_categories=' /tmp/sync-output.txt || true)
+          if [ -n "$line" ]; then
+            echo "::warning::New categories introduced: ${line#new_categories=} — please confirm these aren't duplicates/typos before merging."
+          fi
+      - name: Annotate unused categories
+        run: |
+          line=$(grep '^unused_categories=' /tmp/sync-output.txt || true)
+          if [ -n "$line" ]; then
+            echo "::notice::Categories with no current entries: ${line#unused_categories=} — consider pruning scripts.schema.json if any of these are stale."
+          fi
+      - name: Commit corrections if needed
+        run: |
+          if ! git diff --quiet -- scripts.schema.json .github/ISSUE_TEMPLATE/add-script.yml .github/ISSUE_TEMPLATE/update-script.yml; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add scripts.schema.json .github/ISSUE_TEMPLATE/add-script.yml .github/ISSUE_TEMPLATE/update-script.yml
+            git commit -m "chore: sync issue template tags/categories"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+
+  # Fork PRs can never be auto-committed to (GITHUB_TOKEN cannot push to a
+  # different repository under any trigger, pull_request_target included —
+  # that event only grants a writable token for *this* repo). Instead this
+  # job safely computes the same fix and posts it as a sticky PR comment.
+  suggest-fix-for-fork-prs:
+    if: github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+    steps:
+      # Deliberately no `ref:` override: this checks out the *base* branch's
+      # trusted copy of the sync script, never the PR's own version — a
+      # malicious PR can't smuggle in a modified script for this elevated
+      # job to execute.
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: false
+      - name: Fetch PR's scripts.json as data only (never executed)
+        run: |
+          git fetch origin "pull/${{ github.event.pull_request.number }}/head"
+          git show FETCH_HEAD:scripts.json > /tmp/pr-scripts.json
+      - name: Compute what --write would change, without committing
+        id: diff
+        run: |
+          uv run tools/sync_issue_template_options.py --write --scripts-json /tmp/pr-scripts.json || true
+          if git diff --quiet -- scripts.schema.json .github/ISSUE_TEMPLATE/add-script.yml .github/ISSUE_TEMPLATE/update-script.yml; then
+            echo "has_diff=false" >> "$GITHUB_OUTPUT"
+          else
+            git diff -- scripts.schema.json .github/ISSUE_TEMPLATE/add-script.yml .github/ISSUE_TEMPLATE/update-script.yml | head -n 200 > /tmp/sync.diff
+            echo "has_diff=true" >> "$GITHUB_OUTPUT"
+          fi
+          # Discard the local write — nothing from this job is ever committed.
+          git checkout -- scripts.schema.json .github/ISSUE_TEMPLATE/add-script.yml .github/ISSUE_TEMPLATE/update-script.yml
+      - name: Post or update sticky PR comment
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            const marker = '<!-- sync-issue-template-options-bot -->';
+            const hasDiff = '${{ steps.diff.outputs.has_diff }}' === 'true';
+            let body;
+            if (hasDiff) {
+              const diff = fs.existsSync('/tmp/sync.diff') ? fs.readFileSync('/tmp/sync.diff', 'utf8') : '';
+              body = marker + '\n\n⚠️ This PR introduces a new tag or category not yet reflected in `scripts.schema.json` / the issue form templates.\n\n' +
+                'Since this PR comes from a fork, this can\'t be fixed automatically here. To resolve it:\n' +
+                '- a maintainer can pull this branch into the repo (the automatic fix runs on push), or\n' +
+                '- you (or a maintainer) can run `uv run tools/sync_issue_template_options.py --write` locally and commit the result to this branch.\n\n' +
+                '<details><summary>Diff that would be applied (truncated to 200 lines)</summary>\n\n```diff\n' + diff + '\n```\n</details>';
+            } else {
+              body = marker + '\n\n✅ Tags/categories are in sync.';
+            }
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner, repo: context.repo.repo, comment_id: existing.id, body,
+              });
+            } else if (hasDiff) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body,
+              });
+            }
