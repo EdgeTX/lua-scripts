@@ -100,9 +100,11 @@ body:
         - label: expresslrs
         - label: fixed-wing
         - label: game
+        - label: ghost
         - label: gps
         - label: heli
         - label: inav
+        - label: logging
         - label: multi-protocol
         - label: quad
         - label: rotorflight
