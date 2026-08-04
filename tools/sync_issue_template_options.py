@@ -10,11 +10,14 @@ new categories used in scripts.json get promoted, but a category already known
 is never removed just because it currently has zero entries — see the plan
 this script was built from for why (categories drive the gallery's top-level
 navigation tabs, and dropping one from the dropdown just because it's briefly
-empty would be actively unhelpful).
+empty would be actively unhelpful). Pass --prune-categories to deliberately
+override that and remove currently-unused categories too.
 
 Usage:
     uv run tools/sync_issue_template_options.py --check
     uv run tools/sync_issue_template_options.py --write
+    uv run tools/sync_issue_template_options.py --check --prune-categories
+    uv run tools/sync_issue_template_options.py --write --prune-categories
 
 Exit codes:
     0  in sync (--check) or write completed/no-op (--write)
@@ -119,7 +122,7 @@ def _sort(values) -> list[str]:
     return sorted(values, key=str.casefold)
 
 
-def compute(scripts: list, schema: dict) -> dict:
+def compute(scripts: list, schema: dict, prune_categories: bool = False) -> dict:
     current_tags = _sort({tag for e in scripts for tag in e.get("tags", []) if isinstance(tag, str)})
 
     used_categories = _sort({
@@ -127,7 +130,12 @@ def compute(scripts: list, schema: dict) -> dict:
         if isinstance(e.get("category"), str) and e["category"].strip()
     })
     previous_categories = get_schema_examples(schema, "category")
-    current_categories = _sort(set(previous_categories) | set(used_categories))
+    if prune_categories:
+        # Deliberate override of the normal monotonic-add-only behavior —
+        # only takes effect when explicitly requested (--prune-categories).
+        current_categories = used_categories
+    else:
+        current_categories = _sort(set(previous_categories) | set(used_categories))
     new_categories = _sort(set(used_categories) - set(previous_categories))
     unused_categories = _sort(set(current_categories) - set(used_categories))
 
@@ -270,6 +278,15 @@ def main() -> None:
     parser.add_argument("--scripts-json", default=Path("scripts.json"), type=Path)
     parser.add_argument("--schema", default=Path("scripts.schema.json"), type=Path)
     parser.add_argument("--templates", nargs="+", type=Path, default=DEFAULT_TEMPLATES)
+    parser.add_argument(
+        "--prune-categories", action="store_true",
+        help=(
+            "Also remove categories with zero current entries in scripts.json, "
+            "overriding the normal monotonic-add-only behavior. Use deliberately "
+            "(e.g. after confirming a category should be retired) — combine with "
+            "--check first to preview what would be pruned."
+        ),
+    )
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--check", action="store_true", help="Exit 1 if anything is out of sync")
     mode.add_argument("--write", action="store_true", help="Regenerate schema examples and template blocks in place")
@@ -277,7 +294,7 @@ def main() -> None:
 
     scripts = load_scripts_json(args.scripts_json)
     schema = load_schema(args.schema)
-    computed = compute(scripts, schema)
+    computed = compute(scripts, schema, prune_categories=args.prune_categories)
     current_tags = computed["current_tags"]
     current_categories = computed["current_categories"]
 

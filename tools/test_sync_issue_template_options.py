@@ -163,7 +163,19 @@ class TestSync(unittest.TestCase):
         _, categories = fx.schema_examples()
         self.assertIn("Cat B", categories, "unused category must not be pruned automatically")
         self.assertIn("- Cat B", fx.template_a.read_text())
-        self.assertIn("unused_categories=Cat B", result.stdout)
+
+    def test_prune_categories_flag_removes_unused(self):
+        # Same setup as test_category_removal_is_monotonic, but explicitly
+        # asking to prune should remove Cat B this time.
+        entries = [{"category": "Cat A", "tags": ["tag-a"]}]
+        fx = SyncFixture(self.tmpdir, entries, schema_categories=["Cat A", "Cat B"],
+                          template_categories=["Cat A", "Cat B"])
+        result = fx.run("--write", "--prune-categories")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        _, categories = fx.schema_examples()
+        self.assertNotIn("Cat B", categories, "--prune-categories should remove unused categories")
+        self.assertNotIn("- Cat B", fx.template_a.read_text())
+        self.assertNotIn("unused_categories=", result.stdout)
 
     def test_tag_removal_drops_from_checkboxes(self):
         # tag-old is in the schema/templates but no entry currently uses it.
