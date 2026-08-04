@@ -37,6 +37,13 @@ form and GitHub will host them for you.
   dropdowns in the issue templates in sync with `scripts.schema.json`, and self-heals same-repo branches
   automatically when they drift.
 
+## AI tools
+
+An AI collaboration guide is maintained at [`.ai/instructions.md`](.ai/instructions.md). It is symlinked from
+`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`, and `.github/copilot-instructions.md`
+so all common AI/LLM tools pick it up automatically. Update it when repo-specific workflows change or when you
+find yourself correcting an AI agent on the same point twice.
+
 ## Running the tooling locally
 
 The scripts under [`tools/`](tools/) are plain Python, run via [`uv`](https://docs.astral.sh/uv/) — no project
