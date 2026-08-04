@@ -49,6 +49,9 @@ jobs:
       - name: Validate scripts.json
         run: uv run tools/validate_scripts.py --scripts-json scripts.json
 
+      - name: Sync issue template tags/categories
+        run: uv run tools/sync_issue_template_options.py --write
+
       - name: Configure git identity
         run: |
           git config user.name  "github-actions[bot]"
@@ -63,7 +66,9 @@ jobs:
         run: |
           BRANCH="add-script/${ISSUE_NUMBER}"
           git checkout -b "$BRANCH"
-          git add scripts.json
+          git add scripts.json scripts.schema.json \
+            .github/ISSUE_TEMPLATE/add-script.yml \
+            .github/ISSUE_TEMPLATE/update-script.yml
           VERB="Add"
           if [ "$MODE" = "patch" ]; then VERB="Update"; fi
           git commit -m "feat(scripts): ${VERB} script from issue #${ISSUE_NUMBER}
@@ -133,7 +138,7 @@ jobs:
                 "- A script with this name already exists in `scripts.json` (insert mode)",
                 "- The script name was not found in `scripts.json` (update mode)",
                 "- A required field was left blank",
-                "- The selected Category does not match a known value",
+                "- No Category was selected and no New Category was provided",
                 "- The Info URL is missing or does not start with `http://` or `https://`",
                 "",
                 "Please check the [workflow run](" +
