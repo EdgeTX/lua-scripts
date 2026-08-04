@@ -62,6 +62,7 @@
             "battery",
             "betaflight",
             "black-and-white",
+            "bluetooth",
             "color",
             "crawler",
             "crossfire",
@@ -76,6 +77,7 @@
             "rotorflight",
             "script",
             "spektrum",
+            "telemetry",
             "tool",
             "widget"
           ]
