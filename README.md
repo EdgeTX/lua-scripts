@@ -9,3 +9,9 @@ The goal for this repo is to have a centralised place to be able to share and sh
 
 Browse the full list of Apps and Widgets in the gallery linked above. [scripts.json](scripts.json) is the single source of content for this repo — new entries are added there, not in this README.
 
+Want to add your own App/Widget, or fix/update an existing entry? Open an issue using one of the templates below:
+
+- [Add a Lua App or Widget to the Gallery](https://github.com/EdgeTX/lua-scripts/issues/new?template=add-script.yml)
+- [Update / Correct a Lua App or Widget Entry](https://github.com/EdgeTX/lua-scripts/issues/new?template=update-script.yml)
+- [Feedback / Report an Issue](https://github.com/EdgeTX/lua-scripts/issues/new?template=feedback.yml)
+
