@@ -25,8 +25,11 @@ body:
     id: category
     attributes:
       label: Category
-      description: Choose the most appropriate category.
+      description: |
+        Choose the most appropriate category. If none of these fit, leave this blank and
+        use the New Category field below instead.
       options:
+        # --- BEGIN AUTO-GENERATED CATEGORIES (see scripts.schema.json: items.properties.category.examples) ---
         - Audio & Media
         - Flight Controller Config
         - Games & Fun
@@ -34,8 +37,21 @@ body:
         - Logging & Analysis
         - Radio Tools
         - Telemetry & Widgets
+        # --- END AUTO-GENERATED CATEGORIES ---
     validations:
-      required: true
+      required: false
+
+  - type: input
+    id: category_extra
+    attributes:
+      label: New Category
+      description: |
+        Only fill this in if none of the categories above fit — this creates a brand-new
+        gallery category (a new top-level tab on the site), so please only use it if you're
+        confident an existing one genuinely doesn't apply.
+      placeholder: e.g. Simulators
+    validations:
+      required: false
 
   - type: textarea
     id: description
@@ -60,8 +76,9 @@ body:
     attributes:
       label: Image URLs
       description: |
-        One external image URL per line (raw GitHub URLs, Imgur, etc.).
-        Leave blank if you have no screenshots yet.
+        One external image URL per line (raw GitHub URLs, Imgur, etc.) — or just drag
+        and drop, or paste, image files directly into this box and GitHub will upload
+        them for you automatically. Leave blank if you have no screenshots yet.
       placeholder: https://raw.githubusercontent.com/yourname/repo/main/screenshot.png
     validations:
       required: false
@@ -72,22 +89,32 @@ body:
       label: Tags
       description: Check all that apply.
       options:
+        # --- BEGIN AUTO-GENERATED TAGS (see scripts.schema.json: items.properties.tags.items.examples) ---
         - label: ardupilot
+        - label: battery
         - label: betaflight
         - label: black-and-white
+        - label: bluetooth
         - label: color
+        - label: crawler
         - label: crossfire
         - label: expresslrs
         - label: fixed-wing
         - label: game
+        - label: ghost
         - label: gps
         - label: heli
         - label: inav
         - label: logging
+        - label: multi-protocol
         - label: quad
+        - label: rotorflight
         - label: script
+        - label: spektrum
+        - label: telemetry
         - label: tool
         - label: widget
+        # --- END AUTO-GENERATED TAGS ---
 
   - type: input
     id: tags_extra

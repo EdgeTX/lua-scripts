@@ -23,8 +23,11 @@ body:
     id: category
     attributes:
       label: Category
-      description: Leave unselected to keep the existing category.
+      description: |
+        Leave unselected to keep the existing category. If none of these fit, use the
+        New Category field below instead.
       options:
+        # --- BEGIN AUTO-GENERATED CATEGORIES (see scripts.schema.json: items.properties.category.examples) ---
         - Audio & Media
         - Flight Controller Config
         - Games & Fun
@@ -32,6 +35,19 @@ body:
         - Logging & Analysis
         - Radio Tools
         - Telemetry & Widgets
+        # --- END AUTO-GENERATED CATEGORIES ---
+    validations:
+      required: false
+
+  - type: input
+    id: category_extra
+    attributes:
+      label: New Category
+      description: |
+        Only fill this in if you want to change to a category not in the dropdown above —
+        this creates a brand-new gallery category (a new top-level tab on the site), so
+        please only use it if you're confident an existing one genuinely doesn't apply.
+      placeholder: e.g. Simulators
     validations:
       required: false
 
@@ -58,8 +74,10 @@ body:
     attributes:
       label: Image URLs
       description: |
-        One external image URL per line. Leave blank to keep existing images.
-        **Filling this in will replace the entire image list.**
+        One external image URL per line — or drag and drop, or paste, image files
+        directly into this box and GitHub will upload them for you automatically.
+        Leave blank to keep existing images. **Filling this in will replace the
+        entire image list.**
       placeholder: https://raw.githubusercontent.com/yourname/repo/main/screenshot.png
     validations:
       required: false
@@ -72,22 +90,32 @@ body:
         Leave **all boxes unchecked** to keep existing tags unchanged.
         Checking any box (or filling in Additional Tags) will **replace the full tag list**.
       options:
+        # --- BEGIN AUTO-GENERATED TAGS (see scripts.schema.json: items.properties.tags.items.examples) ---
         - label: ardupilot
+        - label: battery
         - label: betaflight
         - label: black-and-white
+        - label: bluetooth
         - label: color
+        - label: crawler
         - label: crossfire
         - label: expresslrs
         - label: fixed-wing
         - label: game
+        - label: ghost
         - label: gps
         - label: heli
         - label: inav
         - label: logging
+        - label: multi-protocol
         - label: quad
+        - label: rotorflight
         - label: script
+        - label: spektrum
+        - label: telemetry
         - label: tool
         - label: widget
+        # --- END AUTO-GENERATED TAGS ---
 
   - type: input
     id: tags_extra

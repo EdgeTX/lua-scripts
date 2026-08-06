@@ -20,16 +20,6 @@ import re
 import sys
 from pathlib import Path
 
-VALID_CATEGORIES = {
-    "Audio & Media",
-    "Flight Controller Config",
-    "Games & Fun",
-    "GPS & Mapping",
-    "Logging & Analysis",
-    "Radio Tools",
-    "Telemetry & Widgets",
-}
-
 _NO_RESPONSE = "_no response_"
 
 
@@ -70,15 +60,20 @@ def extract_checkboxes(text: str) -> list[str]:
     return checked
 
 
+IMAGE_URL_RE = re.compile(r"https?://[^\s)\]]+")
+
+
 def extract_image_urls(text: str) -> list[str]:
-    """Return valid http(s) URLs from a newline-separated textarea."""
+    """
+    Return http(s) URLs referenced anywhere in the textarea, in order.
+    Handles both bare URLs (one per line) and Markdown image syntax, e.g.
+    ![image](https://github.com/user-attachments/assets/<uuid>) — GitHub
+    inserts the latter automatically when a contributor drags/pastes an
+    image directly into the field rather than typing a URL.
+    """
     if _is_empty(text):
         return []
-    return [
-        line.strip()
-        for line in text.splitlines()
-        if line.strip().startswith(("http://", "https://"))
-    ]
+    return IMAGE_URL_RE.findall(text)
 
 
 def extract_extra_tags(text: str) -> list[str]:
@@ -86,6 +81,18 @@ def extract_extra_tags(text: str) -> list[str]:
     if _is_empty(text):
         return []
     return [t.strip().lower() for t in text.split(",") if t.strip()]
+
+
+def build_category(sections: dict[str, str]) -> str | None:
+    """
+    Return the category to use: the free-text "New Category" field takes
+    precedence over the "Category" dropdown when both are filled in.
+    """
+    new_category = sections.get("New Category", "").strip()
+    if not _is_empty(new_category):
+        return new_category
+    dropdown = sections.get("Category", "").strip()
+    return dropdown if not _is_empty(dropdown) else None
 
 
 def build_tags(sections: dict[str, str]) -> list[str] | None:
@@ -114,11 +121,9 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
     if not name:
         raise ValueError("App Name is required.")
 
-    category = sections.get("Category", "").strip()
-    if category not in VALID_CATEGORIES:
-        raise ValueError(
-            f"Category '{category}' is not valid. Must be one of: {sorted(VALID_CATEGORIES)}"
-        )
+    category = build_category(sections)
+    if category is None:
+        raise ValueError("Category is required (pick one from the dropdown or fill in New Category).")
 
     description = sections.get("Description", "").strip()
     if _is_empty(description):
@@ -129,14 +134,11 @@ def build_insert_entry(sections: dict[str, str]) -> dict:
         raise ValueError(f"Info URL must start with http:// or https://: {infourl!r}")
 
     raw_images = sections.get("Image URLs", "")
-    if not _is_empty(raw_images):
-        img_lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
-        invalid = [line for line in img_lines if not line.startswith(("http://", "https://"))]
-        if invalid:
-            raise ValueError(
-                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
-            )
     images = extract_image_urls(raw_images)
+    if not _is_empty(raw_images) and not images:
+        raise ValueError(
+            f"Image URLs must contain at least one http:// or https:// URL: {raw_images!r}"
+        )
     tags = build_tags(sections) or []
 
     return {
@@ -194,13 +196,9 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     entry = dict(scripts[target_idx])
 
-    raw_category = sections.get("Category", "").strip()
-    if raw_category and not _is_empty(raw_category):
-        if raw_category not in VALID_CATEGORIES:
-            raise ValueError(
-                f"Category '{raw_category}' is not valid. Must be one of: {sorted(VALID_CATEGORIES)}"
-            )
-        entry["category"] = raw_category
+    new_category = build_category(sections)
+    if new_category is not None:
+        entry["category"] = new_category
 
     raw_description = sections.get("Description", "").strip()
     if not _is_empty(raw_description):
@@ -214,15 +212,12 @@ def do_patch(scripts: list, sections: dict[str, str]) -> tuple[list, dict]:
 
     raw_images = sections.get("Image URLs", "")
     if not _is_empty(raw_images):
-        lines = [line.strip() for line in raw_images.splitlines() if line.strip()]
-        invalid = [line for line in lines if not line.startswith(("http://", "https://"))]
-        if invalid:
-            raise ValueError(
-                f"Image URLs must start with http:// or https://: {invalid[0]!r}"
-            )
         urls = extract_image_urls(raw_images)
-        if urls:
-            entry["images"] = urls
+        if not urls:
+            raise ValueError(
+                f"Image URLs must contain at least one http:// or https:// URL: {raw_images!r}"
+            )
+        entry["images"] = urls
 
     new_tags = build_tags(sections)
     if new_tags is not None:

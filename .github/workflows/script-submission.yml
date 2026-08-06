@@ -18,9 +18,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v8.1.0
+      - uses: astral-sh/setup-uv@v9.0.0
+        with:
+          enable-cache: false
 
       - name: Write issue body to file
         env:
@@ -47,6 +49,9 @@ jobs:
       - name: Validate scripts.json
         run: uv run tools/validate_scripts.py --scripts-json scripts.json
 
+      - name: Sync issue template tags/categories
+        run: uv run tools/sync_issue_template_options.py --write
+
       - name: Configure git identity
         run: |
           git config user.name  "github-actions[bot]"
@@ -61,12 +66,15 @@ jobs:
         run: |
           BRANCH="add-script/${ISSUE_NUMBER}"
           git checkout -b "$BRANCH"
-          git add scripts.json
+          git add scripts.json scripts.schema.json \
+            .github/ISSUE_TEMPLATE/add-script.yml \
+            .github/ISSUE_TEMPLATE/update-script.yml
           VERB="Add"
           if [ "$MODE" = "patch" ]; then VERB="Update"; fi
+          CLEAN_TITLE=$(echo "$ISSUE_TITLE" | sed -E 's/^\[Lua App (Submission|Update)\] *//')
           git commit -m "feat(scripts): ${VERB} script from issue #${ISSUE_NUMBER}
 
-          ${ISSUE_TITLE}
+          ${CLEAN_TITLE}
 
           Closes #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
@@ -87,11 +95,12 @@ jobs:
             const mode        = process.env.MODE;
 
             const verb = mode === "insert" ? "Add" : "Update";
+            const cleanTitle = issueTitle.replace(/^\[Lua App (?:Submission|Update)\]\s*/, "");
 
             const pr = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo:  context.repo.repo,
-              title: `feat(scripts): ${verb} script — ${issueTitle}`,
+              title: `feat(scripts): ${verb} ${cleanTitle}`,
               head:  branch,
               base:  "main",
               draft: true,
@@ -100,7 +109,7 @@ jobs:
                 "",
                 "### Checklist before merging",
                 "- [ ] Verify the `scripts.json` diff looks correct",
-                "- [ ] If screenshots are available locally, add them to `ASSETS/` and update image paths in `scripts.json`",
+                "- [ ] If any images are still external URLs, add the `localize-images` label to this PR to pull them into `ASSETS/` and update `scripts.json` automatically (or run `uv run tools/download_external_images.py` locally, using `--dry-run` to preview first)",
                 "- [ ] Remove draft status when ready to merge",
                 "",
                 `Closes #${issueNumber}`
@@ -131,7 +140,7 @@ jobs:
                 "- A script with this name already exists in `scripts.json` (insert mode)",
                 "- The script name was not found in `scripts.json` (update mode)",
                 "- A required field was left blank",
-                "- The selected Category does not match a known value",
+                "- No Category was selected and no New Category was provided",
                 "- The Info URL is missing or does not start with `http://` or `https://`",
                 "",
                 "Please check the [workflow run](" +

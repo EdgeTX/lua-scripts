@@ -1,0 +1,59 @@
+name: Localize External Images
+
+on:
+  pull_request:
+    types: [labeled]
+
+permissions:
+  contents: write
+
+jobs:
+  localize-images:
+    # Only run when a maintainer applies the trigger label, and only for
+    # same-repo branches — GITHUB_TOKEN can never push to a fork's branch
+    # anyway, so skip the attempt rather than fail noisily.
+    if: |
+      github.event.label.name == 'localize-images' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - uses: astral-sh/setup-uv@v9.0.0
+        with:
+          enable-cache: false
+
+      - name: Configure git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Download and localize external images
+        run: |
+          set +e
+          uv run tools/download_external_images.py 2>&1 | tee /tmp/localize-images-output.txt
+          exit_code=${PIPESTATUS[0]}
+          set -e
+          if [ "$exit_code" -eq 2 ]; then
+            echo "::error::download_external_images.py failed with a file I/O or argument error — see the log above."
+            exit 2
+          fi
+          if [ "$exit_code" -eq 1 ]; then
+            echo "::warning::Some images failed to download — see the log above. Any entries that succeeded were still applied."
+          fi
+
+      # Downloaded images are new, untracked files under ASSETS/, not just
+      # modifications to scripts.json — stage first so `git diff --cached`
+      # picks those up too, then only commit if something actually changed.
+      - name: Commit localized images if anything changed
+        run: |
+          git add scripts.json ASSETS
+          if git diff --cached --quiet; then
+            echo "No image changes to commit."
+          else
+            git commit -m "chore: localize external images"
+            git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+          fi

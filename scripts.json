@@ -157,7 +157,8 @@
     ],
     "tags": [
       "script",
-      "black-and-white"
+      "black-and-white",
+      "gps"
     ]
   },
   {
@@ -197,6 +198,59 @@
     "tags": [
       "script",
       "color"
+    ]
+  },
+  {
+    "name": "GPSQR",
+    "category": "GPS & Mapping",
+    "description": "Full-screen GPS and ELRS telemetry widget for color radios, with a scannable Google-Maps QR code of the model's last known position - point a phone at the radio to walk to a downed model. Shows distance to home, trip, height above take-off with MSL, speed, heading, satellites, flight time, mAh drawn and a full ELRS panel, and switches to a MAX debrief on landing. Betaflight and iNAV are detected automatically.",
+    "infourl": "https://github.com/JoelFPV/GPSQR",
+    "images": [
+      "ASSETS/gpsqr/screenshot-1.png"
+    ],
+    "tags": [
+      "widget",
+      "color",
+      "gps",
+      "expresslrs",
+      "crossfire",
+      "betaflight",
+      "inav",
+      "quad",
+      "fixed-wing"
+    ]
+  },
+  {
+    "name": "Recovery QR",
+    "category": "GPS & Mapping",
+    "description": "Color-screen widget that turns the model's latest valid GPS telemetry position into a native LVGL QR code for Google Maps. Saves the last known position per model so it survives telemetry loss and radio restarts, and shows it full-screen for quick recovery of a downed aircraft. Configurable telemetry source.",
+    "infourl": "https://github.com/bultodepapas/edgetx-recovery-qr",
+    "images": [
+      "ASSETS/recovery-qr/screenshot-1.png",
+      "ASSETS/recovery-qr/screenshot-2.png",
+      "ASSETS/recovery-qr/screenshot-3.png",
+      "ASSETS/recovery-qr/screenshot-4.png",
+      "ASSETS/recovery-qr/screenshot-5.png"
+    ],
+    "tags": [
+      "widget",
+      "color",
+      "gps"
+    ]
+  },
+  {
+    "name": "Rotorflight LUA Scripts",
+    "category": "Flight Controller Config",
+    "description": "LUA configurator for Rotorflight, a flight control software suite designed for single-rotor helicopters. Allows you to configure the flight controller directly from your transmitter. Also includes the RF Tool and RF Stats widgets (color radios, EdgeTX 2.11+) for displaying model name, a customizable sensor value, and flight statistics.",
+    "infourl": "https://github.com/rotorflight/rotorflight-lua-scripts",
+    "images": [],
+    "tags": [
+      "script",
+      "widget",
+      "color",
+      "black-and-white",
+      "heli",
+      "rotorflight"
     ]
   },
   {
@@ -546,6 +600,30 @@
     ]
   },
   {
+    "name": "EdgeTX Flight Log",
+    "category": "Logging & Analysis",
+    "description": "Reads the CSV logs EdgeTX already writes to /LOGS and shows the flight on the radio, with no computer and no card reader: duration and armed time, battery start and low, mAh used, worst link and dropouts, maximum altitude, speed and distance, full screen line graphs, a GPS track with a plus code for finding the model, and every sensor in the log with min, average and max. Columns are matched to roles by name from the log header, so CRSF, GHST, ELRS and FrSky all work with no per-protocol code, and an unrecognised sensor is still listed rather than hidden.",
+    "infourl": "https://github.com/juricabi/edgetx-flight-log",
+    "images": [
+      "ASSETS/edgetx-flight-log/screenshot-1.png",
+      "ASSETS/edgetx-flight-log/screenshot-2.png",
+      "ASSETS/edgetx-flight-log/screenshot-3.png",
+      "ASSETS/edgetx-flight-log/screenshot-4.png"
+    ],
+    "tags": [
+      "betaflight",
+      "black-and-white",
+      "color",
+      "crossfire",
+      "expresslrs",
+      "gps",
+      "logging",
+      "quad",
+      "script",
+      "ghost"
+    ]
+  },
+  {
     "name": "RGB Throttle indicator",
     "category": "Radio Tools",
     "description": "A script that lights up LED's based on the throttle input. Only supports radios that have RGB LEDs special function capabilities.",
@@ -714,6 +792,23 @@
     ]
   },
   {
+    "name": "EdgeTX BT AT Terminal",
+    "category": "Radio Tools",
+    "description": "Sends AT commands to a Bluetooth serial module straight from the radio, so a module can be renamed, reset, or moved from 9600 to 115200 baud without a laptop or a USB serial adapter. Every module family numbers its baud rates differently — AT+BAUD4 is 115200 on an HM-10 but 19200 on a DX-BT24 — so the tool knows the numbering for DX-BT24, BT24-S, BT27, HM-10, AT-09, HC-05 and HC-06, and shows the exact command before it sends it. A baud scan finds a module whose rate has been forgotten.",
+    "infourl": "https://github.com/juricabi/edgetx-bt-at-terminal",
+    "images": [
+      "ASSETS/edgetx-bt-at-terminal/screenshot-1.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "color",
+      "script",
+      "tool",
+      "bluetooth",
+      "telemetry"
+    ]
+  },
+  {
     "name": "Battery and Connection Bars Widgets",
     "category": "Telemetry & Widgets",
     "description": "Battery Voltage and LQ Display custom Lua widget.",
@@ -815,6 +910,54 @@
       "script",
       "color",
       "gps"
+    ]
+  },
+  {
+    "name": "AG Dashboard",
+    "category": "Telemetry & Widgets",
+    "description": "A simple widget to display model information and configurable values, telemetry and timers.",
+    "infourl": "https://github.com/agnauck/EdgeTX-Widgets/tree/main/WIDGETS/Dashboard",
+    "images": [
+      "ASSETS/ag-dashboard/screenshot-1.png",
+      "ASSETS/ag-dashboard/screenshot-2.png",
+      "ASSETS/ag-dashboard/screenshot-3.png"
+    ],
+    "tags": [
+      "widget",
+      "color",
+      "fixed-wing",
+      "heli"
+    ]
+  },
+  {
+    "name": "Lipo Nanny",
+    "category": "Telemetry & Widgets",
+    "description": "Battery telemetry widget that auto-selects the pack from resting voltage, estimates starting state-of-charge from a chemistry-specific curve (LiPo/LiPoHV/LiIon), and tracks remaining capacity from FC-reported consumed mAh. Two one-shot voice warnings fire on percentage thresholds (default 30% warn / 20% critical), with optional haptic buzz; per-pack cycle counting and a wear% that makes warnings trigger earlier as a battery ages. ELRS/CRSF out of the box; other systems via per-model sensor mapping.",
+    "infourl": "https://github.com/Mariator-pro/edgetx-lipo-nanny",
+    "images": [
+      "ASSETS/lipo-nanny/screenshot-1.png"
+    ],
+    "tags": [
+      "expresslrs",
+      "widget",
+      "color",
+      "battery"
+    ]
+  },
+  {
+    "name": "ELRS Link Sentinel",
+    "category": "Telemetry & Widgets",
+    "description": "Watches the ExpressLRS link in the background and gives graded audible warnings before the connection breaks down. Reads per-antenna RSSI, link quality and the current RF mode, then fires a Link Warning near the mode's sensitivity limit and a Link Critical once packets start dropping (RQly < 42%). Ships as an all-radios function script (audio only) or a color widget that adds a live link display (range %, RF mode, RSSI, LQ, TX power, flight mode, active antenna). Install exactly one.",
+    "infourl": "https://github.com/Mariator-pro/elrs-link-sentinel",
+    "images": [
+      "ASSETS/elrs-link-sentinel/screenshot-1.png"
+    ],
+    "tags": [
+      "expresslrs",
+      "widget",
+      "script",
+      "color",
+      "black-and-white"
     ]
   }
 ]

@@ -10,16 +10,6 @@ import json
 import sys
 from pathlib import Path
 
-KNOWN_CATEGORIES = {
-    "Audio & Media",
-    "Flight Controller Config",
-    "Games & Fun",
-    "GPS & Mapping",
-    "Logging & Analysis",
-    "Radio Tools",
-    "Telemetry & Widgets",
-}
-
 REQUIRED_FIELDS = ["name", "category", "description", "infourl", "tags"]
 STRING_FIELDS = ["name", "category", "description", "infourl"]
 
@@ -63,13 +53,6 @@ def validate(data: list) -> tuple[list[str], list[str]]:
             if field in entry:
                 if not isinstance(entry[field], str) or not entry[field].strip():
                     errors.append(f"{prefix}: '{field}' must be a non-empty string")
-
-        category = entry.get("category")
-        if isinstance(category, str) and category.strip() and category not in KNOWN_CATEGORIES:
-            errors.append(
-                f"{prefix}: unknown category '{category}'"
-                f" (known: {sorted(KNOWN_CATEGORIES)})"
-            )
 
         infourl = entry.get("infourl")
         if isinstance(infourl, str) and infourl.strip():
