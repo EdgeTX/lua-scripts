@@ -959,5 +959,12 @@
       "color",
       "black-and-white"
     ]
-  }
+  },
+  {
+    "name": "FK LED - RGB Configurator", 
+    "category": "Radio Tools", 
+    "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.", 
+    "infourl": "https://github.com/FebyKris/FK-LED-EdgeTX", 
+    "images": [ "ASSETS/fk-led-rgb-configurator/screenshot-1.png" ], 
+    "tags": [ "script", "color" ] }
 ]
