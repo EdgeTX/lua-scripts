@@ -412,9 +412,9 @@
     ]
   },
   {
-    "name": "vu Fullscreen Image Viewer Widget",
+    "name": "vu Fullscreen Image & Text Viewer Widget",
     "category": "Radio Tools",
-    "description": "View fullscreen images with layout information or photos on big screens. Cycle through them and have quick access to your favourite one.",
+    "description": "View fullscreen images & texts on big screens. Cycle through them and have quick access to your favourite one.",
     "infourl": "https://www.schleth.com/fpv/vu-a-simple-image-viewer-for-edgetx-radios-with-big-screens-2113.html",
     "images": [
       "ASSETS/vu-fullscreen-image-viewer-widget/screenshot-1.jpg",
