@@ -962,10 +962,27 @@
     ]
   },
   {
-    "name": "FK LED - RGB Configurator", 
-    "category": "Radio Tools", 
-    "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.", 
-    "infourl": "https://github.com/FebyKris/FK-LED-EdgeTX", 
-    "images": [ "ASSETS/fk-led-rgb-configurator/screenshot-1.png" ], 
-    "tags": [ "script", "color" ] }
+    "name": "CKD PANEL",
+    "category": "Telemetry & Widgets",
+    "description": "Hi everyone, I created an EdgeTX telemetry widget for fixed-wing / ELRS aircraft, mainly tested on a RadioMaster TX16S MKII.\n\nIt has a normal flight screen and a compact ELRS + battery diagnostic screen.\n\nI would appreciate help with code review, sensor compatibility, layout improvements, and optimization.\n\nGitHub repo:\n[pegar aquí el enlace]",
+    "infourl": "https://github.com/ckd0013/HCLIVE-EdgeTX-Widget",
+    "images": [],
+    "tags": [
+      "color",
+      "widget"
+    ]
+  },
+  {
+    "name": "FK LED - RGB Configurator",
+    "category": "Radio Tools",
+    "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.",
+    "infourl": "https://github.com/FebyKris/FK-LED-EdgeTX",
+    "images": [
+      "ASSETS/fk-led-rgb-configurator/screenshot-1.png"
+    ],
+    "tags": [
+      "script",
+      "color"
+    ]
+  }
 ]
