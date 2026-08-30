@@ -962,10 +962,30 @@
     ]
   },
   {
-    "name": "FK LED - RGB Configurator", 
-    "category": "Radio Tools", 
-    "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.", 
-    "infourl": "https://github.com/FebyKris/FK-LED-EdgeTX", 
-    "images": [ "ASSETS/fk-led-rgb-configurator/screenshot-1.png" ], 
-    "tags": [ "script", "color" ] }
+    "name": "FK LED - RGB Configurator",
+    "category": "Radio Tools",
+    "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.",
+    "infourl": "https://github.com/FebyKris/FK-LED-EdgeTX",
+    "images": [
+      "ASSETS/fk-led-rgb-configurator/screenshot-1.png"
+    ],
+    "tags": [
+      "script",
+      "color"
+    ]
+  },
+  {
+    "name": "RGB Toolbox",
+    "category": "Radio Tools",
+    "description": "# RGB Toolbox\n\nRGB LED control tool for EdgeTX 2.11+ radios.\n\n## Features\n\n- **Persists across model changes** - your selected mode and custom colour are stored in `/SCRIPTS/TOOLS/RGB.dat` on the SD card, so the same RGB setting applies to every model.\n- **Quick and easy interface** - a simple tap-to-select tool screen with all modes grouped by category, plus live on-screen preview before you exit.\n- **Advanced RGB patterns** - 60+ modes including animations, gimbal lighting and dual-gimbal FX.\n- **Custom colour** - R/G/B sliders for any colour you want.\n\n## Installation\n\n1. Power off your radio and remove the SD card.\n2. Copy the entire `SCRIPTS` folder from this repository onto your SD card to merge/copy the contents:\n   - `SCRIPTS/TOOLS/RGB.lua` -> `/SCRIPTS/TOOLS/RGB.lua` (the RGB Toolbox tool)\n   - `SCRIPTS/RGBLED/rgbk.lua` -> `/SCRIPTS/RGBLED/rgbk.lua` (the background keeper script)\n3. Reinsert the SD card and power on the radio.\n\n## Usage\n\n1. Long-press the SYS key, then open **Tools** and run **RGB Toolbox**.\n2. Tap **Setup Background Script on Model** to install the keeper as Special Function 64 on the current model. Repeat for every model you want the LED control on. This only needs to be done once per model.\n3. Restart your radio or switch models to load the background script.\n4. Pick a mode or set a custom RGB colour with the R/G/B sliders. Your selection is remembered, takes effect when the tool exits, and persists across model changes.\n\n## RGB Modes\n\n**Solid:** Off, Red, Green, Blue, Yellow, White, Orange, Purple, Sapphire\n\n**Scroll:** Green Fwd, Green Back, Purple Fwd, Purple Back, Blue Fwd, Blue Back\n\n**Rainbow:** Rainbow, Flow, Loop, Runner, Police\n\n**Gimbal:** Gimbal White, Gimbal Red, Gimbal Green, Gimbal Blue, Gimbal Yellow, Gimbal Cyan, Gimbal Magenta, Gimbal Orange, Gimbal Purple, Gimbal Lime, Gimbal Pink, Gimbal Turquoise\n\n**Patterns:** Breath, Comet, Chase, Spinner, Dual Spin, Ping Pong, Knight, Sparkle, Twinkle, Wave, Half Sweep, Orbit, Candy Rain\n\n**Advanced:** Fire, Vortex, Dual Helix, Mirror, Nuclear, Plasma, Scanner\n\n**Gimbal FX:** Compass, Vector, Trail, Velocity, Detent, Quadrant, Afterburner\n\n**Dual Gimbal:** Transfer, Opposing, Crosshair\n\n**Custom:** any colour via the R/G/B sliders\n\n## Notes\n\n- Requires EdgeTX 2.11 or newer.\n- The keeper polls `/SCRIPTS/TOOLS/RGB.dat` and runs the selected mode, so no other mode scripts are needed.",
+    "infourl": "https://github.com/pigd0g/EdgeTx-RGB-Toolbox",
+    "images": [
+      "https://raw.githubusercontent.com/pigd0g/EdgeTx-RGB-Toolbox/main/screenshot.png"
+    ],
+    "tags": [
+      "color",
+      "tool",
+      "rgb"
+    ]
+  }
 ]

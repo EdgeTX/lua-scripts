@@ -108,6 +108,7 @@ body:
         - label: logging
         - label: multi-protocol
         - label: quad
+        - label: rgb
         - label: rotorflight
         - label: script
         - label: spektrum
