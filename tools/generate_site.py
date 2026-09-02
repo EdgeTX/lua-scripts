@@ -159,6 +159,37 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                 >
             </div>
 
+            <div class="flex items-center gap-1 bg-gray-200 dark:bg-gray-700 rounded-lg p-1" role="group" aria-label="Carousel animations">
+                <button
+                    @click="$store.anim.toggle()"
+                    class="p-1.5 rounded-md transition text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+                    :aria-label="$store.anim.paused ? 'Resume carousel animations' : 'Pause carousel animations'"
+                    :title="$store.anim.paused ? 'Resume carousel animations' : 'Pause carousel animations'"
+                    :aria-pressed="$store.anim.paused"
+                >
+                    <template x-if="!$store.anim.paused">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5"/>
+                        </svg>
+                    </template>
+                    <template x-if="$store.anim.paused">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 010 1.972l-11.54 6.347a1.125 1.125 0 01-1.667-.986V5.653z"/>
+                        </svg>
+                    </template>
+                </button>
+                <button
+                    @click="resetCarousels()"
+                    class="p-1.5 rounded-md transition text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100"
+                    aria-label="Reset carousels to first image"
+                    title="Reset carousels to first image"
+                >
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+                    </svg>
+                </button>
+            </div>
+
             <div class="flex items-center gap-1 bg-gray-200 dark:bg-gray-700 rounded-lg p-1" role="group" aria-label="Theme">
                 <button
                     @click="setTheme('light')"
@@ -439,6 +470,22 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
         const CATEGORIES = ___CATEGORIES_JSON___;
         const ALL_TAGS = ___ALL_TAGS_JSON___;
 
+        document.addEventListener('alpine:init', () => {
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const storedAnim = localStorage.getItem('anim-paused');
+            Alpine.store('anim', {
+                paused: storedAnim !== null ? storedAnim === 'true' : prefersReduced,
+                toggle() {
+                    this.paused = !this.paused;
+                    localStorage.setItem('anim-paused', this.paused);
+                }
+            });
+        });
+
+        function resetCarousels() {
+            window.dispatchEvent(new CustomEvent('reset-carousels'));
+        }
+
         function gallery() {
             return {
                 scripts: SCRIPTS,
@@ -523,13 +570,29 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                 timer: null,
 
                 init() {
-                    if (script.images.length > 1) {
+                    if (script.images.length > 1 && !Alpine.store('anim').paused) {
                         this.startAuto();
                     }
+
+                    this.$watch(() => Alpine.store('anim').paused, (paused) => {
+                        if (paused) {
+                            this.pauseAuto();
+                        } else {
+                            this.resumeAuto();
+                        }
+                    });
+
+                    this._resetHandler = () => {
+                        this.currentIndex = 0;
+                        this.pauseAuto();
+                        this.resumeAuto();
+                    };
+                    window.addEventListener('reset-carousels', this._resetHandler);
                 },
 
                 destroy() {
                     this.pauseAuto();
+                    window.removeEventListener('reset-carousels', this._resetHandler);
                 },
 
                 startAuto() {
@@ -547,7 +610,7 @@ def generate_html(scripts: list, categories: list, all_tags: list) -> str:
                 },
 
                 resumeAuto() {
-                    if (this.script.images.length > 1 && this.timer === null) {
+                    if (this.script.images.length > 1 && this.timer === null && !Alpine.store('anim').paused) {
                         this.startAuto();
                     }
                 },
