@@ -98,6 +98,7 @@ body:
         - label: color
         - label: crawler
         - label: crossfire
+        - label: drone finder
         - label: expresslrs
         - label: fixed-wing
         - label: game

@@ -1082,5 +1082,29 @@
       "telemetry",
       "widget"
     ]
+  },
+  {
+    "name": "tx16s-elrs-finder",
+    "category": "Radio Tools",
+    "description": "An RSSI-based ELRS lost model finder (Geiger style) using ELRS/CRSF telemetry, fully redesigned for color screens.\nA quick logging tool for recording flight details directly from your radio, optimized to prevent text overflow on the TX16S.",
+    "infourl": "https://github.com/CrashOverr/tx16s-elrs-finder",
+    "images": [
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042701.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042712.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042732.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042740.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042741.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042822.png",
+      "https://github.com/CrashOverr/tx16s-elrs-finder/blob/main/screen-2026-09-12-042837.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "color",
+      "expresslrs",
+      "logging",
+      "telemetry",
+      "tool",
+      "drone finder"
+    ]
   }
 ]
