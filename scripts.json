@@ -978,7 +978,7 @@
     "description": "AeroGrid is a customizable dashboard widget for EdgeTX color-screen radios that organizes flight, telemetry, battery, navigation, model, trim, and switch-state information into configurable panels. It supports multiple model-specific layouts and an on-radio editor, with a consistent visual language throughout so readings, alerts, and controls feel like part of one cohesive dashboard.",
     "infourl": "https://github.com/thomaskistler/aero-grid",
     "images": [
-      "https://raw.githubusercontent.com/thomaskistler/aero-grid/refs/heads/main/docs/assets/dashboard/dashboard.png"
+      "ASSETS/aerogrid/screenshot-1.png"
     ],
     "tags": [
       "battery",
