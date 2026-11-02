@@ -1082,5 +1082,47 @@
       "telemetry",
       "widget"
     ]
+  },
+  {
+    "name": "ELRS Finder (CrashOverr)",
+    "category": "Radio Tools",
+    "description": "An RSSI-based ELRS lost model finder (Geiger style) using ELRS/CRSF telemetry. Adapted from the original ELRS Finder with a universal UI that auto-detects colour and B/W screens, colour-graded signal bar, giant typography for visibility at a distance, and faster beeps as signal strength increases.",
+    "infourl": "https://github.com/CrashOverr/edgetx-elrs-finder",
+    "images": [
+      "ASSETS/elrs-finder-crashoverr/screenshot-1.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-2.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-3.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-4.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-5.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-6.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-7.png",
+      "ASSETS/elrs-finder-crashoverr/screenshot-8.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "color",
+      "expresslrs",
+      "model finder",
+      "telemetry",
+      "tool"
+    ]
+  },
+  {
+    "name": "Field Notes (CrashOverr)",
+    "category": "Logging & Analysis",
+    "description": "A quick logging tool for recording flight details (pack number and condition, prop size and condition, notes) directly from your radio. Adapted from the original Field Notes with an auto-scaling layout for colour and B/W screens, status colour coding, and fast digit-by-digit prop size entry. Saves timestamped entries to /LOGS/fieldnotes.txt.",
+    "infourl": "https://github.com/CrashOverr/edgetx-elrs-finder",
+    "images": [
+      "ASSETS/field-notes-crashoverr/screenshot-1.png",
+      "ASSETS/field-notes-crashoverr/screenshot-2.png",
+      "ASSETS/field-notes-crashoverr/screenshot-3.png",
+      "ASSETS/field-notes-crashoverr/screenshot-4.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "color",
+      "logging",
+      "tool"
+    ]
   }
 ]

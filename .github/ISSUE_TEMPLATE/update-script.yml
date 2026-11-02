@@ -107,6 +107,7 @@ body:
         - label: heli
         - label: inav
         - label: logging
+        - label: model finder
         - label: multi-protocol
         - label: quad
         - label: rgb
