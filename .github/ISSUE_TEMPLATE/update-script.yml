@@ -112,6 +112,7 @@ body:
         - label: rgb
         - label: rotorflight
         - label: script
+        - label: simulator
         - label: spektrum
         - label: telemetry
         - label: tool

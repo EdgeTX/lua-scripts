@@ -880,6 +880,25 @@
     ]
   },
   {
+    "name": "StickTime FPV Simulator",
+    "category": "Games & Fun",
+    "description": "A real 3D FPV quad simulator that runs on your radio: race AI pilots, fly freestyle tricks or chase gates against the clock on seven tracks, with realistic 5-inch quad physics and Betaflight rates. Filled 3D on every color screen, wireframe on B&W radios, a Lite edition for older radios with little memory, and a browser emulator to try it first.",
+    "infourl": "https://github.com/juricabi/sticktime",
+    "images": [
+      "https://raw.githubusercontent.com/juricabi/sticktime/main/docs/tx16s-race.png",
+      "https://raw.githubusercontent.com/juricabi/sticktime/main/docs/tx16s-bando.png",
+      "https://raw.githubusercontent.com/juricabi/sticktime/main/docs/tx16s-freestyle.png",
+      "https://raw.githubusercontent.com/juricabi/sticktime/main/docs/x9d-race.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "color",
+      "game",
+      "quad",
+      "simulator"
+    ]
+  },
+  {
     "name": "VB Telemetry",
     "category": "Telemetry & Widgets",
     "description": "Telemetry script for EdgeTX black-and-white radios with ExpressLRS support. Includes a compact telemetry dashboard, GPS navigation, flight statistics, GPX logging and QR position sharing.",
