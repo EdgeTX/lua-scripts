@@ -992,6 +992,25 @@
     ]
   },
   {
+    "name": "AeroGrid",
+    "category": "Telemetry & Widgets",
+    "description": "AeroGrid is a customizable dashboard widget for EdgeTX color-screen radios that organizes flight, telemetry, battery, navigation, model, trim, and switch-state information into configurable panels. It supports multiple model-specific layouts and an on-radio editor, with a consistent visual language throughout so readings, alerts, and controls feel like part of one cohesive dashboard.",
+    "infourl": "https://github.com/thomaskistler/aero-grid",
+    "images": [
+      "ASSETS/aerogrid/screenshot-1.png"
+    ],
+    "tags": [
+      "battery",
+      "color",
+      "fixed-wing",
+      "gps",
+      "heli",
+      "quad",
+      "telemetry",
+      "widget"
+    ]
+  },
+  {
     "name": "FK LED - RGB Configurator",
     "category": "Radio Tools",
     "description": "Touchscreen-friendly, profile-based RGB LED Configurator for radios with addressable Gimbal LEDs (e.g. TX16S MK3). Supports 3-profile switch override, live preview, and 14 animations.",
