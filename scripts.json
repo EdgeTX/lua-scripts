@@ -998,5 +998,21 @@
       "tool",
       "rgb"
     ]
+  },
+  {
+    "name": "ELRS BLE joystick",
+    "category": "Radio Tools",
+    "description": "Starts ExpressLRS bluetooth joystick when a model is selected. Saves you up to several button presses when flying on simulator.",
+    "infourl": "https://github.com/mmilata/edgetx-elrs-ble-joystick",
+    "images": [
+      "https://github.com/user-attachments/assets/1b444074-3887-40fd-a2e6-a306ed964627\""
+    ],
+    "tags": [
+      "black-and-white",
+      "bluetooth",
+      "color",
+      "expresslrs",
+      "script"
+    ]
   }
 ]
