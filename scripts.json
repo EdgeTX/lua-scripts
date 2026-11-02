@@ -984,5 +984,19 @@
       "script",
       "color"
     ]
+  },
+  {
+    "name": "RGB Toolbox",
+    "category": "Radio Tools",
+    "description": "RGB LED control tool for EdgeTX 2.11+. Persists across model changes. Quick and easy interface. Advanced RGB patterns. Custom colour sliders.",
+    "infourl": "https://github.com/pigd0g/EdgeTx-RGB-Toolbox",
+    "images": [
+      "ASSETS/rgb-toolbox/screenshot-1.png"
+    ],
+    "tags": [
+      "color",
+      "tool",
+      "rgb"
+    ]
   }
 ]
