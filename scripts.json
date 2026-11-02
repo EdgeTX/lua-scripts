@@ -1065,5 +1065,22 @@
       "telemetry",
       "widget"
     ]
+  },
+  {
+    "name": "Whoopsie Daisy Telemetry Dashboard",
+    "category": "Telemetry & Widgets",
+    "description": "A Flipper-style telemetry dashboard for EdgeTX B&W radios (128×64, e.g. RadioMaster Pocket), built for 1S ELRS whoops like the BetaFPV Air65 II. Comes with Daisy, a pixel dragonfly who hovers, blinks, worries about your link quality, and blurs all four wings when you punch the throttle.",
+    "infourl": "https://github.com/rafikli/whoopsie-daisy",
+    "images": [
+      "ASSETS/whoopsie-daisy-telemetry-dashboard/screenshot-1.png"
+    ],
+    "tags": [
+      "battery",
+      "black-and-white",
+      "expresslrs",
+      "quad",
+      "telemetry",
+      "widget"
+    ]
   }
 ]
