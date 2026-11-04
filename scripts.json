@@ -1058,7 +1058,11 @@
     "category": "Telemetry & Widgets",
     "description": "A full-screen RC-link dashboard for EdgeTX color-screen radios using ExpressLRS telemetry. Large Link Quality and receiver-signal readings. 30-second history of receiver signal and Link Quality. Immediate worsening indications and configurable delayed recovery. Automatic RSSI thresholds. Four selectable ELRS footer readings.",
     "infourl": "https://github.com/Pencilvestr/elrs-signalview",
-    "images": [],
+    "images": [
+      "ASSETS/elrs-signalview/theme-dark.png",
+      "ASSETS/elrs-signalview/theme-ivory.png",
+      "ASSETS/elrs-signalview/theme-white.png"
+    ],
     "tags": [
       "color",
       "expresslrs",
