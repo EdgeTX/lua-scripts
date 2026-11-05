@@ -240,6 +240,26 @@
     ]
   },
   {
+    "name": "GPS Homer",
+    "category": "GPS & Mapping",
+    "description": "Puts a home arrow on your radio: a small widget that shows which way home is and how far away it is, relative to your flight direction, using the GPS data your flight controller already sends. Home is set on its own, and the radio tells you by voice when the GPS is ready, when home is set, when the GPS is lost or back and, if you set a limit, when the model flies too high or too far. Ships as a color widget or an all-radios function script (voice only), and keeps the last known position after a lost link to help you find the model.",
+    "infourl": "https://github.com/Mariator-pro/edgetx-gps-homer",
+    "images": [
+      "ASSETS/gps-homer/screenshot-1.png",
+      "ASSETS/gps-homer/screenshot-2.png",
+      "ASSETS/gps-homer/screenshot-3.png"
+    ],
+    "tags": [
+      "betaflight",
+      "black-and-white",
+      "color",
+      "expresslrs",
+      "gps",
+      "telemetry",
+      "widget"
+    ]
+  },
+  {
     "name": "Rotorflight LUA Scripts",
     "category": "Flight Controller Config",
     "description": "LUA configurator for Rotorflight, a flight control software suite designed for single-rotor helicopters. Allows you to configure the flight controller directly from your transmitter. Also includes the RF Tool and RF Stats widgets (color radios, EdgeTX 2.11+) for displaying model name, a customizable sensor value, and flight statistics.",
