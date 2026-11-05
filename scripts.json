@@ -1089,11 +1089,11 @@
     "description": "Full-screen widget for color radios that brings battery, ExpressLRS link and the way home together on one screen and switches pages on its own for each phase of a flight: waiting, preflight with a GO/CHECK ready check, flight, post-flight summary and a search page with QR code and Geiger-style beeps to find a crashed model. Builds on Lipo Nanny, Link Sentinel and GPS Homer and ships with all three, keeping their voice warnings running even when the widget is not on screen. Includes the Flight Bag settings tool.",
     "infourl": "https://github.com/Mariator-pro/edgetx-flight-wingman",
     "images": [
-      "https://raw.githubusercontent.com/Mariator-pro/edgetx-flight-wingman/main/docs/img/widget-flight.png",
-      "https://raw.githubusercontent.com/Mariator-pro/edgetx-flight-wingman/main/docs/img/widget-flight-horizon.png",
-      "https://raw.githubusercontent.com/Mariator-pro/edgetx-flight-wingman/main/docs/img/widget-preflight.png",
-      "https://raw.githubusercontent.com/Mariator-pro/edgetx-flight-wingman/main/docs/img/widget-end.png",
-      "https://raw.githubusercontent.com/Mariator-pro/edgetx-flight-wingman/main/docs/img/widget-search.png"
+      "ASSETS/flight-wingman/screenshot-1.png",
+      "ASSETS/flight-wingman/screenshot-2.png",
+      "ASSETS/flight-wingman/screenshot-3.png",
+      "ASSETS/flight-wingman/screenshot-4.png",
+      "ASSETS/flight-wingman/screenshot-5.png"
     ],
     "tags": [
       "battery",
