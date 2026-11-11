@@ -1175,5 +1175,22 @@
       "logging",
       "tool"
     ]
+  },
+  {
+    "name": "PropRush",
+    "category": "Games & Fun",
+    "description": "An FPV quad simulator for black-and-white EdgeTX radios. Race 10 gate tracks against the clock with best laps saved, or fly 12 freestyle maps: chase a drifting car or a plane, thread a moving train, dodge wind turbine blades and dive through a city, scoring flips, rolls, power loops and gaps. Acro or Angle mode, Betaflight rates, adjustable camera angle and FOV, a sagging LiPo and prop strikes.",
+    "infourl": "https://github.com/jurgelenas/PropRush",
+    "images": [
+      "ASSETS/proprush/screenshot-1.png",
+      "ASSETS/proprush/screenshot-2.png",
+      "ASSETS/proprush/screenshot-3.png"
+    ],
+    "tags": [
+      "black-and-white",
+      "game",
+      "quad",
+      "simulator"
+    ]
   }
 ]
